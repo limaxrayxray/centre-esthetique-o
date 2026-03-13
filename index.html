@@ -613,6 +613,251 @@
       .tcard { width: 260px; height: 380px; padding: 1.5rem; }
       .tcard-avatar { width: 5.5rem; height: 5.5rem; font-size: 1.4rem; }
     }
+
+    /* ─── CONTACT / NOUS TROUVER ─────────────────────────── */
+    #contact {
+      background: #faf8f5;
+      padding: 100px 40px;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .contact-header .label {
+      display: inline-block;
+      font-size: .8rem;
+      font-weight: 600;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: #9b7e6a;
+      background: rgba(155,126,106,.1);
+      border: 1px solid rgba(155,126,106,.25);
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+    .contact-header h2 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 700;
+      color: #1c1917;
+      letter-spacing: -.02em;
+      line-height: 1.15;
+    }
+    .contact-header p {
+      margin-top: 14px;
+      font-size: 1.05rem;
+      color: #78716c;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 3rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    /* Info cards */
+    .contact-info { display: flex; flex-direction: column; gap: 1.25rem; }
+
+    .contact-card {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,.07);
+      border-radius: 1rem;
+      padding: 1.4rem 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .contact-card-icon {
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: .6rem;
+      background: rgba(155,126,106,.1);
+      border: 1px solid rgba(155,126,106,.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #9b7e6a;
+    }
+    .contact-card-icon svg { width: 1.1rem; height: 1.1rem; }
+    .contact-card-body { flex: 1; }
+    .contact-card-title {
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #9b7e6a;
+      margin-bottom: .45rem;
+    }
+    .contact-card-text {
+      font-size: .925rem;
+      color: #1c1917;
+      line-height: 1.65;
+    }
+    .contact-card-text a { color: #1c1917; text-decoration: none; }
+    .contact-card-text a:hover { color: #9b7e6a; }
+
+    /* Hours list */
+    .hours-list { list-style: none; margin-top: .2rem; }
+    .hours-list li {
+      display: flex;
+      justify-content: space-between;
+      font-size: .865rem;
+      color: #57534e;
+      padding: .32rem 0;
+      border-bottom: 1px solid rgba(0,0,0,.05);
+    }
+    .hours-list li:last-child { border-bottom: none; }
+    .hours-list li.today { font-weight: 700; color: #1c1917; }
+    .hours-list li.today .hours-day::before {
+      content: '▸ ';
+      color: #9b7e6a;
+    }
+    .hours-closed { color: #a8a29e; }
+
+    /* CTA buttons */
+    .contact-ctas { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+    .btn-call, .btn-directions {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: .65rem 1.4rem;
+      border-radius: 999px;
+      font-size: .875rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all .2s ease;
+    }
+    .btn-call svg, .btn-directions svg { width: 14px; height: 14px; }
+    .btn-call { background: #9b7e6a; color: #fff; }
+    .btn-call:hover { background: #7c6254; }
+    .btn-directions {
+      background: transparent;
+      color: #9b7e6a;
+      border: 1.5px solid rgba(155,126,106,.35);
+    }
+    .btn-directions:hover { background: rgba(155,126,106,.08); }
+
+    /* Map */
+    .contact-map {
+      border-radius: 1.25rem;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,.07);
+      box-shadow: 0 8px 30px rgba(0,0,0,.08);
+      min-height: 480px;
+      height: 100%;
+    }
+    .contact-map iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 480px;
+      border: none;
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .contact-map { min-height: 300px; }
+      .contact-map iframe { min-height: 300px; }
+    }
+    @media (max-width: 600px) {
+      #contact { padding: 60px 20px; }
+    }
+
+    /* ─── FOOTER ─────────────────────────────────────────── */
+    footer {
+      background: #050505;
+      border-top: 1px solid rgba(255,255,255,.06);
+      padding: 64px 40px 32px;
+    }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 50px;
+    }
+
+    .footer-brand {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      letter-spacing: -.01em;
+      margin-bottom: .5rem;
+    }
+    .footer-tagline {
+      font-size: .875rem;
+      color: #475569;
+      line-height: 1.65;
+      max-width: 250px;
+    }
+
+    .footer-social { display: flex; gap: .6rem; margin-top: 1.25rem; }
+    .footer-social a {
+      width: 2.1rem;
+      height: 2.1rem;
+      border-radius: .5rem;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #64748b;
+      transition: all .2s ease;
+      text-decoration: none;
+    }
+    .footer-social a:hover { background: rgba(255,255,255,.1); color: #f1f5f9; }
+    .footer-social svg { width: 15px; height: 15px; }
+
+    .footer-col-title {
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #334155;
+      margin-bottom: 1rem;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: .55rem; }
+    .footer-links a {
+      font-size: .875rem;
+      color: #475569;
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .footer-links a:hover { color: #e2e8f0; }
+
+    .footer-addr { font-size: .875rem; color: #475569; line-height: 1.75; }
+    .footer-addr a { color: #475569; text-decoration: none; transition: color .2s; }
+    .footer-addr a:hover { color: #e2e8f0; }
+
+    .footer-bottom {
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: .75rem;
+    }
+    .footer-copy { font-size: .78rem; color: #1e293b; }
+
+    @media (max-width: 900px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      footer { padding: 48px 20px 24px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; margin-bottom: 36px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
   </style>
 </head>
 <body>
@@ -852,6 +1097,149 @@
   </div>
 
 </section>
+
+<!-- ─── CONTACT / NOUS TROUVER ──────────────────────────── -->
+<section id="contact">
+
+  <div class="contact-header">
+    <span class="label">Nous Trouver</span>
+    <h2>Venez nous rendre visite</h2>
+    <p>Prenez rendez-vous par téléphone — notre équipe est là pour vous accueillir.</p>
+  </div>
+
+  <div class="contact-grid">
+
+    <!-- Left: info cards -->
+    <div class="contact-info">
+
+      <!-- Adresse -->
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+        </div>
+        <div class="contact-card-body">
+          <div class="contact-card-title">Adresse</div>
+          <div class="contact-card-text">
+            682 Bd Adolphe-Chapleau<br>
+            Bois-des-Filion, QC&nbsp; J6Z&nbsp;1L4
+          </div>
+        </div>
+      </div>
+
+      <!-- Téléphone -->
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+        </div>
+        <div class="contact-card-body">
+          <div class="contact-card-title">Téléphone</div>
+          <div class="contact-card-text">
+            <a href="tel:+14509659773">(450) 965-9773</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horaires — TODO: remplacer par les vrais horaires -->
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+        </div>
+        <div class="contact-card-body">
+          <div class="contact-card-title">Horaires</div>
+          <div class="contact-card-text">
+            <ul class="hours-list" id="hours-list">
+              <li data-days="1"><span class="hours-day">Lundi</span>        <span class="hours-closed">Fermé</span></li>
+              <li data-days="2,3,4,5"><span class="hours-day">Mar – Ven</span> <span>9h00 – 18h00</span></li>
+              <li data-days="6"><span class="hours-day">Samedi</span>       <span>9h00 – 17h00</span></li>
+              <li data-days="0"><span class="hours-day">Dimanche</span>     <span class="hours-closed">Fermé</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTAs -->
+      <div class="contact-ctas">
+        <a href="tel:+14509659773" class="btn-call">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+          Appeler
+        </a>
+        <a href="https://share.google/gTa2Q16LLkkJs909N" target="_blank" rel="noopener" class="btn-directions">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+          Itinéraire
+        </a>
+      </div>
+
+    </div><!-- /contact-info -->
+
+    <!-- Right: Google Maps embed -->
+    <div class="contact-map">
+      <iframe
+        src="https://maps.google.com/maps?q=682+Bd+Adolphe-Chapleau,+Bois-des-Filion,+QC+J6Z+1L4&output=embed&hl=fr&z=15"
+        title="Centre Esthétique O — Google Maps"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+  </div><!-- /contact-grid -->
+
+</section>
+
+<!-- ─── FOOTER ────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-grid">
+
+      <!-- Brand + social -->
+      <div>
+        <div class="footer-brand">Centre Esthétique O</div>
+        <p class="footer-tagline">Votre espace de beauté et de bien-être à Bois-des-Filion, depuis 2019.</p>
+        <div class="footer-social">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/centreesthetiqueo/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/CentreEsthetiqueO" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <!-- TikTok -->
+          <a href="https://tiktok.com/@ocentredesthetique" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <div class="footer-col-title">Navigation</div>
+        <ul class="footer-links">
+          <li><a href="#services">Nos Prestations</a></li>
+          <li><a href="#gallery">Notre Univers</a></li>
+          <li><a href="#testimonials">Témoignages</a></li>
+          <li><a href="#contact">Nous Trouver</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <div class="footer-addr">
+          682 Bd Adolphe-Chapleau<br>
+          Bois-des-Filion, QC J6Z 1L4<br><br>
+          <a href="tel:+14509659773">(450) 965-9773</a>
+        </div>
+      </div>
+
+    </div><!-- /footer-grid -->
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Centre Esthétique O — Tous droits réservés</p>
+    </div>
+
+  </div><!-- /footer-inner -->
+</footer>
 
 <script>
   /* ─── State ─────────────────────────────────────────── */
@@ -1152,6 +1540,15 @@
   document.addEventListener('touchend', function() {
     if (dragStartX !== null) onDragEnd();
   });
+
+  /* ─── Highlight today's hours row ───────────────────── */
+  (function() {
+    var today = new Date().getDay(); /* 0=dim, 1=lun, 2=mar … 6=sam */
+    document.querySelectorAll('#hours-list li').forEach(function(li) {
+      var days = (li.getAttribute('data-days') || '').split(',').map(Number);
+      if (days.indexOf(today) !== -1) li.classList.add('today');
+    });
+  })();
 
   /* ─── Focus Cards ────────────────────────────────────── */
   const focusGrid  = document.querySelector('.focus-grid');
