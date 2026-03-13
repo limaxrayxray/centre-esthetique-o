@@ -469,6 +469,150 @@
       .focus-grid { grid-template-columns: 1fr; }
       .focus-card { height: 18rem; }
     }
+
+    /* ─── TESTIMONIALS / DRAG CARDS ─────────────────────────── */
+    #testimonials {
+      background: #0a0a0a;
+      padding: 100px 40px;
+    }
+
+    .testimonials-header {
+      text-align: center;
+      margin-bottom: 70px;
+    }
+    .testimonials-header .label {
+      display: inline-block;
+      font-size: .8rem;
+      font-weight: 600;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: #bfdbfe;
+      background: rgba(191,219,254,.08);
+      border: 1px solid rgba(191,219,254,.2);
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+    .testimonials-header h2 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 700;
+      color: #f1f5f9;
+      letter-spacing: -.02em;
+      line-height: 1.15;
+    }
+    .testimonials-header p {
+      margin-top: 14px;
+      font-size: 1.05rem;
+      color: #64748b;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    /* Outer wrapper — centres the stack */
+    .testi-stack-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    /* Relative container sized to show all 3 stacked cards */
+    .testi-stack {
+      position: relative;
+      width: min(580px, 90vw);
+      height: 450px;
+    }
+
+    /* Each card */
+    .tcard {
+      position: absolute;
+      top: 0; left: 0;
+      width: 320px;
+      height: 430px;
+      border-radius: 1.25rem;
+      border: 1.5px solid rgba(148,163,184,.2);
+      background: rgba(15,23,42,.7);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding: 2rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+      box-shadow: 0 25px 60px rgba(0,0,0,.55);
+      transition: transform .35s cubic-bezier(.4,0,.2,1);
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Positions */
+    .tcard[data-pos="front"]  { transform: rotate(-6deg) translateX(0%);   z-index: 2; cursor: grab; }
+    .tcard[data-pos="middle"] { transform: rotate(0deg)  translateX(33%);  z-index: 1; }
+    .tcard[data-pos="back"]   { transform: rotate(6deg)  translateX(66%);  z-index: 0; }
+    .tcard[data-pos="front"]:active { cursor: grabbing; }
+    /* Disable transition while dragging */
+    .tcard.is-dragging { transition: none; }
+
+    /* Avatar circle — initials by default, photo if available */
+    .tcard-avatar {
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+      border: 2px solid rgba(148,163,184,.2);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #0f172a;
+      flex-shrink: 0;
+    }
+    .tcard-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    .tcard-quote {
+      font-size: .95rem;
+      font-style: italic;
+      color: #94a3b8;
+      text-align: center;
+      line-height: 1.75;
+      flex: 1;
+    }
+    .tcard-author {
+      font-size: .875rem;
+      font-weight: 600;
+      color: #818cf8;
+      text-align: center;
+    }
+    .tcard-role {
+      font-size: .78rem;
+      color: #475569;
+      text-align: center;
+      margin-top: 2px;
+    }
+
+    /* Drag hint */
+    .testi-hint {
+      font-size: .85rem;
+      color: #475569;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      letter-spacing: .04em;
+    }
+
+    @media (max-width: 600px) {
+      #testimonials { padding: 60px 20px; }
+      .tcard { width: 260px; height: 380px; padding: 1.5rem; }
+      .tcard-avatar { width: 5.5rem; height: 5.5rem; font-size: 1.4rem; }
+    }
   </style>
 </head>
 <body>
@@ -676,6 +820,39 @@
 
 </section>
 
+<!-- ─── TESTIMONIALS ─────────────────────────────────────────── -->
+<!--
+  Pour remplacer par de vrais avis Google :
+  Option A — Elfsight (gratuit jusqu'à 150 vues/mois) :
+    1. elfsight.com → "Google Reviews" widget
+    2. Connecter ta fiche Google My Business
+    3. Coller le <script> Elfsight ici et supprimer cette section
+
+  Option B — Manuel : modifier le tableau `TESTIMONIALS` dans le <script>
+-->
+<section id="testimonials">
+
+  <div class="testimonials-header">
+    <span class="label">Témoignages</span>
+    <h2>Ce que disent<br>nos clientes</h2>
+    <p>Des retours authentiques de celles qui nous font confiance au quotidien.</p>
+  </div>
+
+  <!-- Draggable card stack — 3 cards always visible, drag front left to shuffle -->
+  <div class="testi-stack-wrap">
+    <div class="testi-stack" id="testi-stack">
+      <div class="tcard" data-pos="front"  data-idx="0"></div>
+      <div class="tcard" data-pos="middle" data-idx="1"></div>
+      <div class="tcard" data-pos="back"   data-idx="2"></div>
+    </div>
+    <p class="testi-hint">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"/></svg>
+      Glisser pour voir plus
+    </p>
+  </div>
+
+</section>
+
 <script>
   /* ─── State ─────────────────────────────────────────── */
   let scrollProgress   = 0;
@@ -811,6 +988,170 @@
 
   /* ─── Init ───────────────────────────────────────────── */
   applyProgress(0);
+
+  /* ─── Drag-Card Testimonials (vaib215) ──────────────── */
+  var TESTIMONIALS = [
+    {
+      name: 'Sophie M.',
+      role: 'Cliente fidèle depuis 2 ans',
+      quote: 'Un soin visage exceptionnel\u202f! L\u2019\u00e9quipe est \u00e0 l\u2019\u00e9coute, le cadre est apaisant. Je repars toujours ressourc\u00e9e et rayonnante. Je recommande vivement.'
+    },
+    {
+      name: 'Marie-Claire L.',
+      role: 'Abonn\u00e9e mensuelle',
+      quote: 'Mes massages mensuels au Centre Esth\u00e9tique O sont devenus indispensables. Les esth\u00e9ticiennes sont professionnelles et le r\u00e9sultat est toujours au rendez-vous.'
+    },
+    {
+      name: 'Isabelle R.',
+      role: 'D\u00e9couverte via une amie',
+      quote: 'Je suis venue pour une \u00e9pilation et je suis repartie avec une carte fid\u00e9lit\u00e9\u202f! Douceur, efficacit\u00e9, et une ambiance tellement zen. Un vrai coup de c\u0153ur.'
+    },
+    {
+      name: 'Nathalie D.',
+      role: 'Cliente r\u00e9guli\u00e8re',
+      quote: 'La pose gel est parfaite, \u00e7a tient des semaines sans \u00e9clats. Et le nail art propos\u00e9 est vraiment cr\u00e9atif. Je n\u2019irai nulle part ailleurs pour mes ongles.'
+    }
+  ];
+
+  var AVATAR_COLORS = [
+    'linear-gradient(135deg,#bfdbfe,#7dd3fc)',
+    'linear-gradient(135deg,#fde68a,#fca5a5)',
+    'linear-gradient(135deg,#bbf7d0,#6ee7b7)',
+    'linear-gradient(135deg,#e9d5ff,#c4b5fd)'
+  ];
+
+  function testiInitials(name) {
+    return name.split(' ').map(function(p) { return p[0] || ''; }).join('').slice(0, 2).toUpperCase();
+  }
+
+  function populateCard(cardEl, t, colorIdx) {
+    var avatar = document.createElement('div');
+    avatar.className = 'tcard-avatar';
+    if (t.photo) {
+      avatar.innerHTML = '<img src="' + t.photo + '" alt="' + t.name + '">';
+    } else {
+      avatar.textContent = testiInitials(t.name);
+      avatar.style.background = AVATAR_COLORS[colorIdx % AVATAR_COLORS.length];
+    }
+
+    var quote = document.createElement('p');
+    quote.className = 'tcard-quote';
+    quote.textContent = '\u201C' + t.quote + '\u201D';
+
+    var author = document.createElement('div');
+    author.className = 'tcard-author';
+    author.textContent = t.name;
+
+    var role = document.createElement('div');
+    role.className = 'tcard-role';
+    role.textContent = t.role;
+
+    cardEl.innerHTML = '';
+    cardEl.appendChild(avatar);
+    cardEl.appendChild(quote);
+    cardEl.appendChild(author);
+    cardEl.appendChild(role);
+  }
+
+  var tcards       = document.querySelectorAll('.tcard');
+  var maxTestiIdx  = 2; /* highest index assigned so far */
+
+  /* Initial population */
+  tcards.forEach(function(card) {
+    var idx = parseInt(card.getAttribute('data-idx'), 10);
+    populateCard(card, TESTIMONIALS[idx % TESTIMONIALS.length], idx);
+  });
+
+  function getFrontCard() {
+    for (var i = 0; i < tcards.length; i++) {
+      if (tcards[i].getAttribute('data-pos') === 'front') return tcards[i];
+    }
+    return null;
+  }
+
+  /* Rotate positions: front→back, middle→front, back→middle
+     Then repopulate the new back card with the next testimonial */
+  function shuffleCards() {
+    var oldFront = getFrontCard();
+
+    tcards.forEach(function(card) {
+      var pos = card.getAttribute('data-pos');
+      if      (pos === 'front')  card.setAttribute('data-pos', 'back');
+      else if (pos === 'middle') card.setAttribute('data-pos', 'front');
+      else                       card.setAttribute('data-pos', 'middle');
+    });
+
+    if (oldFront) {
+      maxTestiIdx++;
+      var newIdx = maxTestiIdx % TESTIMONIALS.length;
+      oldFront.setAttribute('data-idx', maxTestiIdx);
+      populateCard(oldFront, TESTIMONIALS[newIdx], maxTestiIdx);
+    }
+  }
+
+  /* ── Drag / swipe ── */
+  var dragStartX   = null;
+  var dragCurrentX = null;
+
+  function onDragStart(clientX) {
+    var front = getFrontCard();
+    if (!front) return;
+    dragStartX   = clientX;
+    dragCurrentX = clientX;
+    front.classList.add('is-dragging');
+  }
+
+  function onDragMove(clientX) {
+    if (dragStartX === null) return;
+    dragCurrentX = clientX;
+    var delta = dragStartX - clientX; /* positive = dragged left */
+    var front = getFrontCard();
+    if (!front) return;
+    /* Follow the finger / cursor */
+    var offset = Math.max(-40, Math.min(delta, 220));
+    front.style.transform = 'rotate(-6deg) translateX(calc(0% - ' + offset + 'px))';
+  }
+
+  function onDragEnd() {
+    if (dragStartX === null) return;
+    var delta = dragStartX - dragCurrentX;
+    var front = getFrontCard();
+    if (front) {
+      front.classList.remove('is-dragging');
+      front.style.transform = ''; /* snap back via CSS transition */
+    }
+    if (delta > 150) shuffleCards();
+    dragStartX   = null;
+    dragCurrentX = null;
+  }
+
+  /* Mouse */
+  document.addEventListener('mousedown', function(e) {
+    var front = getFrontCard();
+    if (front && (front === e.target || front.contains(e.target))) {
+      onDragStart(e.clientX);
+    }
+  });
+  document.addEventListener('mousemove', function(e) {
+    if (dragStartX !== null) onDragMove(e.clientX);
+  });
+  document.addEventListener('mouseup', function() {
+    if (dragStartX !== null) onDragEnd();
+  });
+
+  /* Touch (passive — no need to block scroll here) */
+  document.addEventListener('touchstart', function(e) {
+    var front = getFrontCard();
+    if (front && (front === e.target || front.contains(e.target))) {
+      onDragStart(e.touches[0].clientX);
+    }
+  }, { passive: true });
+  document.addEventListener('touchmove', function(e) {
+    if (dragStartX !== null) onDragMove(e.touches[0].clientX);
+  }, { passive: true });
+  document.addEventListener('touchend', function() {
+    if (dragStartX !== null) onDragEnd();
+  });
 
   /* ─── Focus Cards ────────────────────────────────────── */
   const focusGrid  = document.querySelector('.focus-grid');
