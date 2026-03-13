@@ -858,9 +858,88 @@
       .footer-grid { grid-template-columns: 1fr; gap: 2rem; margin-bottom: 36px; }
       .footer-bottom { flex-direction: column; align-items: flex-start; }
     }
+
+    /* ─── STICKY NAV ─────────────────────────────────────────── */
+    #site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      padding: 0 48px;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(10,10,10,.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: opacity .4s ease, transform .4s cubic-bezier(.4,0,.2,1);
+      pointer-events: none;
+    }
+    #site-nav.visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .nav-brand {
+      font-size: .92rem;
+      font-weight: 700;
+      color: #bfdbfe;
+      letter-spacing: .03em;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: .78rem;
+      font-weight: 600;
+      color: #94a3b8;
+      text-decoration: none;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: #e2e8f0; }
+    @media (max-width: 700px) {
+      #site-nav { padding: 0 20px; }
+      .nav-links { gap: 1.2rem; }
+      .nav-links a { font-size: .72rem; }
+    }
+    @media (max-width: 480px) {
+      .nav-brand { display: none; }
+    }
+
+    /* ─── SCROLL-REVEAL ──────────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    .reveal.in-view {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity .65s ease, transform .65s cubic-bezier(.4,0,.2,1);
+    }
   </style>
 </head>
 <body>
+
+<!-- ─── STICKY NAV ──────────────────────────────────────────── -->
+<nav id="site-nav" aria-label="Navigation principale">
+  <a class="nav-brand" href="#hero">Centre Esthétique O</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Galerie</a></li>
+    <li><a href="#testimonials">Avis</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
 <!-- ─── HERO ─────────────────────────────────────────────────── -->
 <section id="hero">
@@ -1243,10 +1322,15 @@
 
 <script>
   /* ─── State ─────────────────────────────────────────── */
-  let scrollProgress   = 0;
+  let scrollProgress   = 0;   /* current (lerped) value */
+  let targetProgress   = 0;   /* destination value      */
   let mediaExpanded    = false;
   let touchStartY      = 0;
   let isMobile         = window.innerWidth < 768;
+  let rafId            = null;
+
+  /* Lock scroll during hero expansion */
+  document.documentElement.style.overflow = 'hidden';
 
   /* ─── DOM refs ───────────────────────────────────────── */
   const heroBg       = document.getElementById('hero-bg');
@@ -1300,32 +1384,44 @@
     }
   }
 
-  /* ─── Update progress ────────────────────────────────── */
-  function updateProgress(delta) {
-    const prev = scrollProgress;
-    scrollProgress = Math.min(Math.max(scrollProgress + delta, 0), 1);
-
-    if (scrollProgress >= 1 && !mediaExpanded) {
-      mediaExpanded = true;
-    } else if (scrollProgress < 1) {
-      mediaExpanded = false;
-    }
-
-    if (scrollProgress !== prev) {
+  /* ─── RAF lerp loop ─────────────────────────────────── */
+  function tick() {
+    const diff = targetProgress - scrollProgress;
+    if (Math.abs(diff) > 0.0004) {
+      scrollProgress += diff * 0.11;
       applyProgress(scrollProgress);
+      rafId = requestAnimationFrame(tick);
+    } else {
+      scrollProgress = targetProgress;
+      applyProgress(scrollProgress);
+      rafId = null;
+      /* Hero fully expanded → unlock native scroll */
+      if (scrollProgress >= 1 && !mediaExpanded) {
+        mediaExpanded = true;
+        document.documentElement.style.overflow = '';
+      }
     }
+  }
+
+  function scheduleRaf() {
+    if (!rafId) rafId = requestAnimationFrame(tick);
   }
 
   /* ─── Wheel (named → removable once hero is done) ────── */
   function heroWheelHandler(e) {
+    /* Scroll back into hero: re-lock + collapse */
     if (mediaExpanded && e.deltaY < 0 && window.scrollY <= 5) {
-      mediaExpanded = false;
       e.preventDefault();
+      mediaExpanded = false;
+      document.documentElement.style.overflow = 'hidden';
+      targetProgress = 0;
+      scheduleRaf();
       return;
     }
     if (!mediaExpanded) {
       e.preventDefault();
-      updateProgress(e.deltaY * 0.0009);
+      targetProgress = Math.min(Math.max(targetProgress + e.deltaY * 0.0009, 0), 1);
+      scheduleRaf();
     }
   }
   window.addEventListener('wheel', heroWheelHandler, { passive: false });
@@ -1335,32 +1431,30 @@
     if (!touchStartY) return;
     const deltaY = touchStartY - e.touches[0].clientY;
     if (mediaExpanded && deltaY < -20 && window.scrollY <= 5) {
-      mediaExpanded = false;
       e.preventDefault();
+      mediaExpanded = false;
+      document.documentElement.style.overflow = 'hidden';
+      targetProgress = 0;
+      scheduleRaf();
       return;
     }
     if (!mediaExpanded) {
       e.preventDefault();
       const factor = deltaY < 0 ? 0.008 : 0.005;
-      updateProgress(deltaY * factor);
+      targetProgress = Math.min(Math.max(targetProgress + deltaY * factor, 0), 1);
+      scheduleRaf();
       touchStartY = e.touches[0].clientY;
     }
   }
   window.addEventListener('touchstart', function(e) {
     touchStartY = e.touches[0].clientY;
-  }, { passive: false });
+  }, { passive: true });
   window.addEventListener('touchmove', heroTouchMoveHandler, { passive: false });
   window.addEventListener('touchend', function() { touchStartY = 0; });
 
-  /* ─── Prevent native scroll during expansion ─────────── */
+  /* ─── Remove hero listeners after scrolling well past ── */
   let heroListenersRemoved = false;
   window.addEventListener('scroll', function() {
-    if (!mediaExpanded) {
-      window.scrollTo(0, 0);
-      return;
-    }
-    /* Once scrolled well past the hero, remove the non-passive listeners
-       so they no longer block scroll performance on other sections */
     if (!heroListenersRemoved && window.scrollY > window.innerHeight * 0.5) {
       window.removeEventListener('wheel',     heroWheelHandler);
       window.removeEventListener('touchmove', heroTouchMoveHandler);
@@ -1564,6 +1658,65 @@
       card.classList.remove('is-hovered');
     });
   });
+
+  /* ─── Sticky nav ─────────────────────────────────────── */
+  var siteNav  = document.getElementById('site-nav');
+  var heroEl   = document.getElementById('hero');
+  var navShown = false;
+
+  window.addEventListener('scroll', function() {
+    var heroBottom = heroEl.getBoundingClientRect().bottom;
+    if (!navShown && heroBottom < 80) {
+      siteNav.classList.add('visible');
+      navShown = true;
+    } else if (navShown && heroBottom >= 80) {
+      siteNav.classList.remove('visible');
+      navShown = false;
+    }
+  }, { passive: true });
+
+  /* Smooth-scroll nav links */
+  document.querySelectorAll('#site-nav a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      var target = document.querySelector(a.getAttribute('href'));
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  /* ─── Scroll-reveal (IntersectionObserver) ───────────── */
+  (function() {
+    /* Selectors + per-item stagger (ms) */
+    var groups = [
+      { sel: '.services-header',  stagger: 0    },
+      { sel: '.bento-card',       stagger: 80   },
+      { sel: '.gallery-header',   stagger: 0    },
+      { sel: '.focus-card',       stagger: 80   },
+      { sel: '.testimonials-header', stagger: 0 },
+      { sel: '.tcard-wrap',       stagger: 0    },
+      { sel: '.contact-header',   stagger: 0    },
+      { sel: '.info-card',        stagger: 80   },
+      { sel: '.contact-map',      stagger: 120  }
+    ];
+
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    groups.forEach(function(g) {
+      document.querySelectorAll(g.sel).forEach(function(el, i) {
+        el.classList.add('reveal');
+        el.style.transitionDelay = (i * g.stagger) + 'ms';
+        io.observe(el);
+      });
+    });
+  })();
 </script>
 </body>
 </html>
