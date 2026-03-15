@@ -760,48 +760,22 @@
       overflow: hidden;
       border: 1px solid rgba(0,0,0,.07);
       box-shadow: 0 8px 30px rgba(0,0,0,.08);
-      min-height: 480px;
-      height: 100%;
+      height: 480px;
     }
     .contact-map iframe {
       width: 100%;
       height: 100%;
-      min-height: 480px;
       border: none;
       display: block;
-      pointer-events: none; /* empêche la carte de voler le scroll */
-    }
-    .contact-map.map-active iframe {
-      pointer-events: auto; /* activé au clic */
-    }
-    /* Overlay "Cliquez pour interagir" */
-    .contact-map {
-      position: relative;
-      cursor: pointer;
-    }
-    .contact-map::after {
-      content: 'Cliquez pour interagir avec la carte';
-      position: absolute;
-      bottom: 1rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(0,0,0,.6);
-      color: #fff;
-      font-size: .8rem;
-      padding: .4rem 1rem;
-      border-radius: 2rem;
-      pointer-events: none;
-      opacity: 1;
-      transition: opacity .3s;
-    }
-    .contact-map.map-active::after {
-      opacity: 0;
+      pointer-events: none; /* carte décorative — bouton Itinéraire pour l'interaction */
     }
 
     @media (max-width: 900px) {
       .contact-grid { grid-template-columns: 1fr; }
-      .contact-map { min-height: 300px; }
-      .contact-map iframe { min-height: 300px; }
+      .contact-map { height: 300px; }
+    }
+    @media (max-width: 480px) {
+      .contact-map { height: 240px; }
     }
     @media (max-width: 600px) {
       #contact { padding: 60px 20px; }
@@ -1673,25 +1647,7 @@
     window.scrollTo(0, 0);
   }
 
-  /* ─── Map interaction toggle ────────────────────────── */
-  (function() {
-    var mapWrap = document.querySelector('.contact-map');
-    if (!mapWrap) return;
-    /* Clic → activer la carte */
-    mapWrap.addEventListener('click', function() {
-      mapWrap.classList.add('map-active');
-    });
-    /* Quand la souris quitte la carte → désactiver */
-    mapWrap.addEventListener('mouseleave', function() {
-      mapWrap.classList.remove('map-active');
-    });
-    /* Désactiver aussi au scroll (fix mobile : empêche la carte de voler le touch) */
-    window.addEventListener('scroll', function() {
-      if (mapWrap.classList.contains('map-active')) {
-        mapWrap.classList.remove('map-active');
-      }
-    }, { passive: true });
-  })();
+  /* Map iframe : pointer-events always none — scroll-safe, interaction via bouton Itinéraire */
 
   /* ─── Init ───────────────────────────────────────────── */
   applyProgress(0);
