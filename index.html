@@ -756,6 +756,7 @@
 
     /* Map */
     .contact-map {
+      position: relative;
       border-radius: 1.25rem;
       overflow: hidden;
       border: 1px solid rgba(0,0,0,.07);
@@ -767,7 +768,12 @@
       height: 100%;
       border: none;
       display: block;
-      pointer-events: none; /* carte décorative — bouton Itinéraire pour l'interaction */
+    }
+    /* Shield transparent : bloque l'interaction iframe, laisse passer le scroll au parent */
+    .map-shield {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
     }
 
     @media (max-width: 900px) {
@@ -1404,6 +1410,7 @@
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
+      <div class="map-shield" aria-hidden="true"></div>
     </div>
 
   </div><!-- /contact-grid -->
