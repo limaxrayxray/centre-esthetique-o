@@ -895,20 +895,19 @@
     }
 
     /* ─── STICKY NAV ─────────────────────────────────────────── */
+    /* ─── NAV ──────────────────────────────────────────────── */
     #site-nav {
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
+      top: 0; left: 0; right: 0;
       z-index: 200;
-      padding: 0 48px;
-      height: 58px;
+      height: 62px;
+      padding: 0 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: rgba(10,10,10,.82);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      background: rgba(10,10,10,.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid rgba(255,255,255,.07);
       opacity: 0;
       transform: translateY(-100%);
@@ -920,35 +919,134 @@
       transform: translateY(0);
       pointer-events: auto;
     }
+    /* Logo */
     .nav-brand {
-      font-size: .92rem;
-      font-weight: 700;
-      color: #bfdbfe;
-      letter-spacing: .03em;
+      display: flex;
+      align-items: center;
+      gap: .55rem;
       text-decoration: none;
+      flex-shrink: 0;
+      z-index: 1;
     }
+    .nav-logo-mark { width: 26px; height: 26px; flex-shrink: 0; }
+    .nav-brand-text {
+      font-size: .88rem;
+      font-weight: 700;
+      color: #e2d5c8;
+      letter-spacing: .04em;
+      white-space: nowrap;
+    }
+    /* Centered links */
     .nav-links {
       display: flex;
-      gap: 2.2rem;
+      gap: 2rem;
       list-style: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
     .nav-links a {
-      font-size: .78rem;
+      font-size: .72rem;
       font-weight: 600;
       color: #94a3b8;
       text-decoration: none;
-      letter-spacing: .1em;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      transition: color .2s;
+      position: relative;
+      padding-bottom: 3px;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 0; height: 1px;
+      background: #c4a882;
+      transition: width .25s ease;
+    }
+    .nav-links a:hover,
+    .nav-links a.active { color: #e2d5c8; }
+    .nav-links a:hover::after,
+    .nav-links a.active::after { width: 100%; }
+    /* CTA */
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: .35rem;
+      padding: .42rem 1.1rem;
+      background: #9b7e6a;
+      color: #fff;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 2rem;
+      transition: background .2s;
+      flex-shrink: 0;
+      z-index: 1;
+    }
+    .nav-cta:hover { background: #b8967e; }
+    .nav-cta svg { width: 12px; height: 12px; }
+    /* Hamburger button */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      color: #e2d5c8;
+      z-index: 1;
+    }
+    .menu-path-top, .menu-path-bot {
+      stroke-dasharray: 12 63;
+      stroke-dashoffset: 0;
+      transition: stroke-dasharray .55s ease, stroke-dashoffset .55s ease;
+    }
+    .nav-toggle.open .menu-path-top {
+      stroke-dasharray: 20 300;
+      stroke-dashoffset: -32.42px;
+    }
+    /* Mobile full-screen overlay */
+    #nav-overlay {
+      position: fixed;
+      inset: 62px 0 0;
+      background: rgba(6,6,6,.97);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      z-index: 199;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2.2rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s ease;
+    }
+    #nav-overlay.open { opacity: 1; pointer-events: auto; }
+    #nav-overlay a {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #64748b;
+      text-decoration: none;
+      letter-spacing: .06em;
       text-transform: uppercase;
       transition: color .2s;
     }
-    .nav-links a:hover { color: #e2e8f0; }
-    @media (max-width: 700px) {
-      #site-nav { padding: 0 20px; }
-      .nav-links { gap: 1.2rem; }
-      .nav-links a { font-size: .72rem; }
+    #nav-overlay a:hover { color: #e2d5c8; }
+    #nav-overlay .nav-cta-mob {
+      margin-top: .8rem;
+      font-size: .85rem;
+      padding: .65rem 2.2rem;
+      background: #9b7e6a;
+      color: #fff;
     }
-    @media (max-width: 480px) {
-      .nav-brand { display: none; }
+    #nav-overlay .nav-cta-mob:hover { background: #b8967e; color: #fff; }
+    @media (max-width: 768px) {
+      #site-nav { padding: 0 20px; }
+      .nav-links, #site-nav .nav-cta { display: none; }
+      .nav-toggle { display: block; }
     }
 
     /* ─── SCROLL-REVEAL ──────────────────────────────────────── */
@@ -967,14 +1065,53 @@
 
 <!-- ─── STICKY NAV ──────────────────────────────────────────── -->
 <nav id="site-nav" aria-label="Navigation principale">
-  <a class="nav-brand" href="#hero">Centre Esthétique O</a>
-  <ul class="nav-links">
-    <li><a href="#services">Services</a></li>
-    <li><a href="#gallery">Galerie</a></li>
-    <li><a href="#testimonials">Avis</a></li>
-    <li><a href="#contact">Contact</a></li>
+  <!-- Logo mark + brand -->
+  <a class="nav-brand" href="#hero">
+    <svg class="nav-logo-mark" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <ellipse cx="14" cy="7.5" rx="3.5" ry="6.5" fill="#c4a882" opacity=".85" transform="rotate(0,14,14)"/>
+      <ellipse cx="14" cy="7.5" rx="3.5" ry="6.5" fill="#c4a882" opacity=".7"  transform="rotate(60,14,14)"/>
+      <ellipse cx="14" cy="7.5" rx="3.5" ry="6.5" fill="#c4a882" opacity=".7"  transform="rotate(120,14,14)"/>
+      <ellipse cx="14" cy="7.5" rx="3.5" ry="6.5" fill="#c4a882" opacity=".7"  transform="rotate(180,14,14)"/>
+      <ellipse cx="14" cy="7.5" rx="3.5" ry="6.5" fill="#c4a882" opacity=".7"  transform="rotate(240,14,14)"/>
+      <ellipse cx="14" cy="7.5" rx="3.5" ry="6.5" fill="#c4a882" opacity=".7"  transform="rotate(300,14,14)"/>
+      <circle cx="14" cy="14" r="3" fill="#e2d5c8"/>
+    </svg>
+    <span class="nav-brand-text">Centre Esthétique O</span>
+  </a>
+
+  <!-- Desktop centered links -->
+  <ul class="nav-links" role="list">
+    <li><a href="#services" data-nav="services">Services</a></li>
+    <li><a href="#gallery"  data-nav="gallery">Galerie</a></li>
+    <li><a href="#testimonials" data-nav="testimonials">Avis</a></li>
+    <li><a href="#contact"  data-nav="contact">Contact</a></li>
   </ul>
+
+  <!-- Desktop CTA -->
+  <a class="nav-cta" href="tel:+14509659773" aria-label="Appeler le salon">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.38 2 2 0 0 1 3.55 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 6.29 6.29l.91-.9a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </svg>
+    Appeler
+  </a>
+
+  <!-- Mobile hamburger -->
+  <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-overlay">
+    <svg stroke-width="2.5" fill="none" stroke="currentColor" viewBox="0 0 32 32" width="28" height="28" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path class="menu-path-top" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"/>
+      <path class="menu-path-bot" d="M7 16 27 16"/>
+    </svg>
+  </button>
 </nav>
+
+<!-- Mobile overlay menu -->
+<div id="nav-overlay" role="dialog" aria-label="Menu" aria-modal="true">
+  <a href="#services" data-nav-mob="services">Services</a>
+  <a href="#gallery"  data-nav-mob="gallery">Galerie</a>
+  <a href="#testimonials" data-nav-mob="testimonials">Avis</a>
+  <a href="#contact"  data-nav-mob="contact">Contact</a>
+  <a href="tel:+14509659773" class="nav-cta nav-cta-mob">Appeler</a>
+</div>
 
 <!-- ─── HERO ─────────────────────────────────────────────────── -->
 <section id="hero">
@@ -1755,11 +1892,15 @@
     });
   });
 
-  /* ─── Sticky nav ─────────────────────────────────────── */
-  var siteNav  = document.getElementById('site-nav');
-  var heroEl   = document.getElementById('hero');
-  var navShown = false;
+  /* ─── Nav: sticky + hamburger + active section ──────── */
+  var siteNav    = document.getElementById('site-nav');
+  var navToggle  = document.getElementById('nav-toggle');
+  var navOverlay = document.getElementById('nav-overlay');
+  var heroEl     = document.getElementById('hero');
+  var navShown   = false;
+  var menuOpen   = false;
 
+  /* Show/hide nav on scroll */
   window.addEventListener('scroll', function() {
     var heroBottom = heroEl.getBoundingClientRect().bottom;
     if (!navShown && heroBottom < 80) {
@@ -1768,18 +1909,55 @@
     } else if (navShown && heroBottom >= 80) {
       siteNav.classList.remove('visible');
       navShown = false;
+      closeMenu();
     }
   }, { passive: true });
 
-  /* Smooth-scroll nav links */
-  document.querySelectorAll('#site-nav a[href^="#"]').forEach(function(a) {
+  /* Hamburger toggle */
+  function closeMenu() {
+    menuOpen = false;
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  navToggle.addEventListener('click', function() {
+    menuOpen = !menuOpen;
+    navToggle.classList.toggle('open', menuOpen);
+    navToggle.setAttribute('aria-expanded', String(menuOpen));
+    navOverlay.classList.toggle('open', menuOpen);
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
+  });
+
+  /* Smooth-scroll — desktop + mobile links */
+  document.querySelectorAll('#site-nav a[href^="#"], #nav-overlay a[href^="#"]').forEach(function(a) {
     a.addEventListener('click', function(e) {
       var target = document.querySelector(a.getAttribute('href'));
       if (!target) return;
       e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      closeMenu();
+      if (lenis) {
+        lenis.scrollTo(target, { offset: -62, duration: 1.1 });
+      } else {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
   });
+
+  /* Active section highlight */
+  var navSections = ['services','gallery','testimonials','contact'];
+  var sectionEls  = navSections.map(function(id) { return document.getElementById(id); });
+  var navLinkEls  = navSections.map(function(id) {
+    return document.querySelector('.nav-links a[data-nav="' + id + '"]');
+  });
+  var ioNav = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      var idx = sectionEls.indexOf(entry.target);
+      if (idx === -1 || !navLinkEls[idx]) return;
+      navLinkEls[idx].classList.toggle('active', entry.isIntersecting);
+    });
+  }, { threshold: 0.35 });
+  sectionEls.forEach(function(el) { if (el) ioNav.observe(el); });
 
   /* ─── Scroll-reveal (IntersectionObserver) ───────────── */
   (function() {
