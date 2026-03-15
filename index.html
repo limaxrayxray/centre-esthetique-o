@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Centre Esthétique O</title>
+  <title>Centre Esthétique O — Soins beauté à Bois-des-Filion</title>
+  <meta name="description" content="Centre Esthétique O — votre espace de beauté et de bien-être à Bois-des-Filion. Soins visage, massages, épilation, manucure et pédicure." />
   <!-- Lenis — smooth scroll -->
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     html, body {
       width: 100%;
-      overflow-x: clip; /* clip ≠ hidden — ne crée pas de scroll container, ne casse pas sticky */
+      overflow-x: hidden; /* fallback vieux Safari */
+      overflow-x: clip;   /* clip ≠ hidden — ne crée pas de scroll container, ne casse pas sticky */
       font-family: 'Segoe UI', system-ui, sans-serif;
       background: #0a0a0a;
       color: #fff;
@@ -763,6 +765,33 @@
       min-height: 480px;
       border: none;
       display: block;
+      pointer-events: none; /* empêche la carte de voler le scroll */
+    }
+    .contact-map.map-active iframe {
+      pointer-events: auto; /* activé au clic */
+    }
+    /* Overlay "Cliquez pour interagir" */
+    .contact-map {
+      position: relative;
+      cursor: pointer;
+    }
+    .contact-map::after {
+      content: 'Cliquez pour interagir avec la carte';
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,.6);
+      color: #fff;
+      font-size: .8rem;
+      padding: .4rem 1rem;
+      border-radius: 2rem;
+      pointer-events: none;
+      opacity: 1;
+      transition: opacity .3s;
+    }
+    .contact-map.map-active::after {
+      opacity: 0;
     }
 
     @media (max-width: 900px) {
@@ -850,7 +879,7 @@
       flex-wrap: wrap;
       gap: .75rem;
     }
-    .footer-copy { font-size: .78rem; color: #1e293b; }
+    .footer-copy { font-size: .78rem; color: #64748b; }
 
     @media (max-width: 900px) {
       .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -968,7 +997,7 @@
 
     <!-- Sub-labels (date + scroll hint) -->
     <div id="hero-labels">
-      <p id="label-date">2025</p>
+      <p id="label-date"></p>
       <p id="label-scroll">↓ Faites défiler</p>
     </div>
 
@@ -1316,7 +1345,7 @@
     </div><!-- /footer-grid -->
 
     <div class="footer-bottom">
-      <p class="footer-copy">© 2025 Centre Esthétique O — Tous droits réservés</p>
+      <p class="footer-copy">© <span id="copy-year"></span> Centre Esthétique O — Tous droits réservés</p>
     </div>
 
   </div><!-- /footer-inner -->
@@ -1401,10 +1430,6 @@
       if (scrollProgress >= 1 && !mediaExpanded) {
         mediaExpanded = true;
         document.documentElement.style.overflow = '';
-        /* Retire immédiatement les handlers hero pour que Lenis prenne le relais */
-        window.removeEventListener('wheel',     heroWheelHandler);
-        window.removeEventListener('touchmove', heroTouchMoveHandler);
-        heroListenersRemoved = true;
         initLenis();
       }
     }
@@ -1414,11 +1439,12 @@
     if (!rafId) rafId = requestAnimationFrame(tick);
   }
 
-  /* ─── Wheel (named → removable once hero is done) ────── */
+  /* ─── Wheel (reste actif en permanence) ─────────────── */
   function heroWheelHandler(e) {
-    /* Scroll back into hero: re-lock + collapse */
+    /* Scroll back into hero: détruire Lenis, re-lock + collapse */
     if (mediaExpanded && e.deltaY < 0 && window.scrollY <= 5) {
       e.preventDefault();
+      destroyLenis();
       mediaExpanded = false;
       document.documentElement.style.overflow = 'hidden';
       targetProgress = 0;
@@ -1433,12 +1459,13 @@
   }
   window.addEventListener('wheel', heroWheelHandler, { passive: false });
 
-  /* ─── Touch ──────────────────────────────────────────── */
+  /* ─── Touch (reste actif en permanence) ──────────────── */
   function heroTouchMoveHandler(e) {
     if (!touchStartY) return;
     const deltaY = touchStartY - e.touches[0].clientY;
     if (mediaExpanded && deltaY < -20 && window.scrollY <= 5) {
       e.preventDefault();
+      destroyLenis();
       mediaExpanded = false;
       document.documentElement.style.overflow = 'hidden';
       targetProgress = 0;
@@ -1459,17 +1486,6 @@
   window.addEventListener('touchmove', heroTouchMoveHandler, { passive: false });
   window.addEventListener('touchend', function() { touchStartY = 0; });
 
-  /* ─── Remove hero listeners (fallback si Lenis n'est pas encore init) ── */
-  let heroListenersRemoved = false;
-  window.addEventListener('scroll', function() {
-    if (!heroListenersRemoved && window.scrollY > window.innerHeight * 0.5) {
-      window.removeEventListener('wheel',     heroWheelHandler);
-      window.removeEventListener('touchmove', heroTouchMoveHandler);
-      heroListenersRemoved = true;
-      initLenis();
-    }
-  });
-
   /* ─── Resize ─────────────────────────────────────────── */
   window.addEventListener('resize', function() {
     isMobile = window.innerWidth < 768;
@@ -1478,6 +1494,8 @@
 
   /* ─── Lenis smooth scroll (activé après le hero) ──────── */
   let lenis = null;
+  let lenisRafId = null;
+
   function initLenis() {
     if (lenis || typeof Lenis === 'undefined') return;
     lenis = new Lenis({
@@ -1489,19 +1507,57 @@
       touchMultiplier : 1.8,
       infinite        : false,
     });
-    /* Propager les events Lenis vers d'autres listeners (ex. nav sticky) */
-    lenis.on('scroll', function(e) {
-      /* facultatif : dispatchEvent si besoin */
-    });
-    /* RAF loop dédié Lenis */
-    (function lenisRaf(time) {
+    /* RAF loop dédié Lenis — s'arrête si lenis est détruit */
+    function lenisRaf(time) {
+      if (!lenis) return;
       lenis.raf(time);
-      requestAnimationFrame(lenisRaf);
-    })(performance.now());
+      lenisRafId = requestAnimationFrame(lenisRaf);
+    }
+    lenisRafId = requestAnimationFrame(lenisRaf);
   }
+
+  function destroyLenis() {
+    if (!lenis) return;
+    lenis.destroy();
+    lenis = null;
+    if (lenisRafId) {
+      cancelAnimationFrame(lenisRafId);
+      lenisRafId = null;
+    }
+    /* Remettre le scroll en haut pour la transition propre vers le hero */
+    window.scrollTo(0, 0);
+  }
+
+  /* ─── Map interaction toggle ────────────────────────── */
+  (function() {
+    var mapWrap = document.querySelector('.contact-map');
+    if (!mapWrap) return;
+    /* Clic → activer la carte */
+    mapWrap.addEventListener('click', function() {
+      mapWrap.classList.add('map-active');
+    });
+    /* Quand la souris quitte la carte → désactiver */
+    mapWrap.addEventListener('mouseleave', function() {
+      mapWrap.classList.remove('map-active');
+    });
+    /* Désactiver aussi au scroll (fix mobile : empêche la carte de voler le touch) */
+    window.addEventListener('scroll', function() {
+      if (mapWrap.classList.contains('map-active')) {
+        mapWrap.classList.remove('map-active');
+      }
+    }, { passive: true });
+  })();
 
   /* ─── Init ───────────────────────────────────────────── */
   applyProgress(0);
+
+  /* Année dynamique */
+  (function() {
+    var yr = new Date().getFullYear();
+    if (labelDate) labelDate.textContent = yr;   /* labelDate déjà déclaré plus haut (hero) */
+    var cpYr = document.getElementById('copy-year');
+    if (cpYr) cpYr.textContent = yr;
+  })();
 
   /* ─── Drag-Card Testimonials (vaib215) ──────────────── */
   var TESTIMONIALS = [
@@ -1726,9 +1782,9 @@
       { sel: '.gallery-header',   stagger: 0    },
       { sel: '.focus-card',       stagger: 80   },
       { sel: '.testimonials-header', stagger: 0 },
-      { sel: '.tcard-wrap',       stagger: 0    },
+      { sel: '.testi-stack-wrap',  stagger: 0    },
       { sel: '.contact-header',   stagger: 0    },
-      { sel: '.info-card',        stagger: 80   },
+      { sel: '.contact-card',     stagger: 80   },
       { sel: '.contact-map',      stagger: 120  }
     ];
 
