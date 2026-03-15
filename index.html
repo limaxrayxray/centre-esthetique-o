@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Centre Esthétique O</title>
+  <!-- Lenis — smooth scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -1395,10 +1397,15 @@
       scrollProgress = targetProgress;
       applyProgress(scrollProgress);
       rafId = null;
-      /* Hero fully expanded → unlock native scroll */
+      /* Hero fully expanded → unlock native scroll + start Lenis */
       if (scrollProgress >= 1 && !mediaExpanded) {
         mediaExpanded = true;
         document.documentElement.style.overflow = '';
+        /* Retire immédiatement les handlers hero pour que Lenis prenne le relais */
+        window.removeEventListener('wheel',     heroWheelHandler);
+        window.removeEventListener('touchmove', heroTouchMoveHandler);
+        heroListenersRemoved = true;
+        initLenis();
       }
     }
   }
@@ -1452,13 +1459,14 @@
   window.addEventListener('touchmove', heroTouchMoveHandler, { passive: false });
   window.addEventListener('touchend', function() { touchStartY = 0; });
 
-  /* ─── Remove hero listeners after scrolling well past ── */
+  /* ─── Remove hero listeners (fallback si Lenis n'est pas encore init) ── */
   let heroListenersRemoved = false;
   window.addEventListener('scroll', function() {
     if (!heroListenersRemoved && window.scrollY > window.innerHeight * 0.5) {
       window.removeEventListener('wheel',     heroWheelHandler);
       window.removeEventListener('touchmove', heroTouchMoveHandler);
       heroListenersRemoved = true;
+      initLenis();
     }
   });
 
@@ -1467,6 +1475,30 @@
     isMobile = window.innerWidth < 768;
     applyProgress(scrollProgress);
   });
+
+  /* ─── Lenis smooth scroll (activé après le hero) ──────── */
+  let lenis = null;
+  function initLenis() {
+    if (lenis || typeof Lenis === 'undefined') return;
+    lenis = new Lenis({
+      duration        : 1.25,
+      easing          : function(t) { return 1 - Math.pow(1 - t, 4); }, /* ease-out quart */
+      orientation     : 'vertical',
+      smoothWheel     : true,
+      wheelMultiplier : 1,
+      touchMultiplier : 1.8,
+      infinite        : false,
+    });
+    /* Propager les events Lenis vers d'autres listeners (ex. nav sticky) */
+    lenis.on('scroll', function(e) {
+      /* facultatif : dispatchEvent si besoin */
+    });
+    /* RAF loop dédié Lenis */
+    (function lenisRaf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(lenisRaf);
+    })(performance.now());
+  }
 
   /* ─── Init ───────────────────────────────────────────── */
   applyProgress(0);
