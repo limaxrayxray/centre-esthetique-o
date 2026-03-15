@@ -173,6 +173,10 @@
     }
     #hero-content.visible { opacity: 1; }
 
+    @media (max-width: 600px) {
+      #hero-content { padding: 40px 20px; }
+    }
+
     /* ─── SERVICES / BENTO GRID ─────────────────────────────── */
     #services {
       background: #0a0a0a;
@@ -979,7 +983,7 @@
   <div id="hero-bg">
     <img
       src="https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?w=1920&q=80"
-      alt="Background"
+      alt="Soin esthétique au Centre Esthétique O"
       loading="eager"
     />
   </div>
@@ -1431,6 +1435,10 @@
         mediaExpanded = true;
         document.documentElement.style.overflow = '';
         initLenis();
+        /* Libérer les couches GPU du hero — plus besoin de will-change */
+        document.querySelectorAll('#hero, #hero-bg, #hero-bg img, #media-frame, #media-overlay, #word-1, #word-2, #label-date, #label-scroll, #hero-content').forEach(function(el) {
+          el.style.willChange = 'auto';
+        });
       }
     }
   }
