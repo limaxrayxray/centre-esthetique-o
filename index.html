@@ -5,18 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Centre Esthétique O — Soins beauté à Bois-des-Filion</title>
   <meta name="description" content="Centre Esthétique O — votre espace de beauté et de bien-être à Bois-des-Filion. Soins visage, massages, épilation, manucure et pédicure." />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
   <!-- Lenis — smooth scroll -->
   <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    /* Cacher la scrollbar */
+    ::-webkit-scrollbar { display: none; }
+    html { scrollbar-width: none; }
 
     html, body {
       width: 100%;
       overflow-x: hidden; /* fallback vieux Safari */
       overflow-x: clip;   /* clip ≠ hidden — ne crée pas de scroll container, ne casse pas sticky */
       font-family: 'Segoe UI', system-ui, sans-serif;
-      background: #0a0a0a;
+      background: #0a0a12;
       color: #fff;
+    }
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
     }
 
     /* ─── HERO ─────────────────────────────────────────────── */
@@ -51,7 +62,7 @@
       background: rgba(0,0,0,.15);
     }
 
-    /* Centred layout */
+    /* Hero inner — left-aligned, offset */
     #hero-inner {
       position: relative;
       z-index: 10;
@@ -59,8 +70,9 @@
       height: 100dvh;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 0 0 12vh 5.5%;
     }
 
     /* ── Expanding media ── */
@@ -91,50 +103,45 @@
       will-change: opacity;
     }
 
-    /* ── Title ── */
+    /* ── Title — large, left-aligned, editorial ── */
     #hero-title {
       position: relative;
       z-index: 10;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      text-align: center;
+      align-items: flex-start;
+      gap: 0;
+      text-align: left;
       pointer-events: none;
       will-change: transform;
+      mix-blend-mode: difference;
     }
     #hero-title .word {
-      font-size: clamp(2.5rem, 6vw, 5rem);
-      font-weight: 700;
-      color: #bfdbfe; /* blue-200 */
-      letter-spacing: -.01em;
-      line-height: 1.1;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(4.5rem, 13vw, 11rem);
+      font-weight: 300;
+      color: #fff;
+      letter-spacing: -.04em;
+      line-height: .85;
       will-change: transform;
+    }
+    #hero-title .word:last-child {
+      font-style: italic;
     }
 
-    /* ── Sub-labels ── */
+    /* ── Sub-label (scroll hint only) ── */
     #hero-labels {
-      position: absolute;
-      bottom: calc(50% - 230px);
-      left: 50%;
-      transform: translateX(-50%);
+      position: relative;
       z-index: 10;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 4px;
+      margin-top: 2.5rem;
       pointer-events: none;
     }
-    #label-date {
-      font-size: 1.4rem;
-      color: #bfdbfe;
-      will-change: transform;
-    }
     #label-scroll {
-      font-size: .95rem;
-      font-weight: 500;
-      color: #bfdbfe;
-      will-change: transform;
+      font-size: .75rem;
+      font-weight: 600;
+      color: rgba(255,255,255,.45);
+      letter-spacing: .2em;
+      text-transform: uppercase;
     }
 
     /* Scroll arrow pulse */
@@ -148,7 +155,7 @@
       flex-direction: column;
       align-items: center;
       gap: 6px;
-      color: #bfdbfe;
+      color: rgba(255,255,255,.4);
       font-size: .85rem;
       letter-spacing: .08em;
       text-transform: uppercase;
@@ -161,20 +168,54 @@
       50%       { transform: translateX(-50%) translateY(6px); }
     }
 
-    /* ─── CONTENT SECTION ──────────────────────────────────── */
+    /* ─── CONTENT SECTION (post-hero intro) ─────────────────── */
     #hero-content {
       position: relative;
       z-index: 10;
       width: 100%;
-      padding: 80px 64px;
+      padding: 100px 64px;
       opacity: 0;
       will-change: opacity;
       transition: opacity .7s ease;
+      display: flex;
+      justify-content: center;
     }
     #hero-content.visible { opacity: 1; }
+    .hero-intro {
+      max-width: 680px;
+      text-align: center;
+    }
+    .hero-intro-line {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      font-weight: 300;
+      font-style: italic;
+      color: #94a3b8;
+      line-height: 1.7;
+      letter-spacing: .01em;
+    }
+    .hero-intro-line em {
+      font-style: normal;
+      color: #e2e8f0;
+    }
+    .hero-intro-divider {
+      display: block;
+      width: 48px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #4fc4f0, transparent);
+      margin: 1.5rem auto;
+    }
+    .hero-intro-sub {
+      font-size: .82rem;
+      font-weight: 600;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: #4fc4f0;
+    }
 
     @media (max-width: 600px) {
-      #hero-content { padding: 40px 20px; }
+      #hero-content { padding: 60px 20px; }
     }
 
     /* ─── SERVICES / BENTO GRID ─────────────────────────────── */
@@ -193,9 +234,9 @@
       font-weight: 600;
       letter-spacing: .15em;
       text-transform: uppercase;
-      color: #bfdbfe;
-      background: rgba(191,219,254,.08);
-      border: 1px solid rgba(191,219,254,.2);
+      color: #4fc4f0;
+      background: rgba(79,196,240,.08);
+      border: 1px solid rgba(79,196,240,.2);
       padding: 5px 14px;
       border-radius: 999px;
       margin-bottom: 18px;
@@ -308,11 +349,11 @@
       width: 2.4rem;
       height: 2.4rem;
       border-radius: .6rem;
-      background: rgba(191,219,254,.1);
-      border: 1px solid rgba(191,219,254,.15);
+      background: rgba(79,196,240,.1);
+      border: 1px solid rgba(79,196,240,.15);
       margin-bottom: .85rem;
       transition: transform .35s ease;
-      color: #bfdbfe;
+      color: #4fc4f0;
     }
     .bento-card:hover .bento-icon {
       transform: scale(.78);
@@ -343,7 +384,7 @@
       gap: .4rem;
       font-size: .82rem;
       font-weight: 600;
-      color: #bfdbfe;
+      color: #4fc4f0;
       letter-spacing: .04em;
       text-transform: uppercase;
       opacity: 0;
@@ -372,7 +413,7 @@
 
     /* ─── GALLERY / FOCUS CARDS ─────────────────────────────── */
     #gallery {
-      background: #faf8f5;
+      background: #f4f2fa;
       padding: 100px 40px;
     }
 
@@ -386,17 +427,17 @@
       font-weight: 600;
       letter-spacing: .15em;
       text-transform: uppercase;
-      color: #9b7e6a;
-      background: rgba(155,126,106,.1);
-      border: 1px solid rgba(155,126,106,.25);
+      color: #3a2d9e;
+      background: rgba(58,45,158,.08);
+      border: 1px solid rgba(58,45,158,.2);
       padding: 5px 14px;
       border-radius: 999px;
       margin-bottom: 18px;
     }
     .gallery-header h2 {
       font-size: clamp(2rem, 4vw, 3.2rem);
-      font-weight: 700;
-      color: #1c1917;
+      font-weight: 300;
+      color: #1a1a2e;
       letter-spacing: -.02em;
       line-height: 1.15;
     }
@@ -494,9 +535,9 @@
       font-weight: 600;
       letter-spacing: .15em;
       text-transform: uppercase;
-      color: #bfdbfe;
-      background: rgba(191,219,254,.08);
-      border: 1px solid rgba(191,219,254,.2);
+      color: #4fc4f0;
+      background: rgba(79,196,240,.08);
+      border: 1px solid rgba(79,196,240,.2);
       padding: 5px 14px;
       border-radius: 999px;
       margin-bottom: 18px;
@@ -596,7 +637,7 @@
     .tcard-author {
       font-size: .875rem;
       font-weight: 600;
-      color: #818cf8;
+      color: #4fc4f0;
       text-align: center;
     }
     .tcard-role {
@@ -624,7 +665,7 @@
 
     /* ─── CONTACT / NOUS TROUVER ─────────────────────────── */
     #contact {
-      background: #faf8f5;
+      background: #f4f2fa;
       padding: 100px 40px;
     }
 
@@ -638,17 +679,17 @@
       font-weight: 600;
       letter-spacing: .15em;
       text-transform: uppercase;
-      color: #9b7e6a;
-      background: rgba(155,126,106,.1);
-      border: 1px solid rgba(155,126,106,.25);
+      color: #3a2d9e;
+      background: rgba(58,45,158,.08);
+      border: 1px solid rgba(58,45,158,.2);
       padding: 5px 14px;
       border-radius: 999px;
       margin-bottom: 18px;
     }
     .contact-header h2 {
       font-size: clamp(2rem, 4vw, 3.2rem);
-      font-weight: 700;
-      color: #1c1917;
+      font-weight: 300;
+      color: #1a1a2e;
       letter-spacing: -.02em;
       line-height: 1.15;
     }
@@ -687,13 +728,13 @@
       width: 2.4rem;
       height: 2.4rem;
       border-radius: .6rem;
-      background: rgba(155,126,106,.1);
-      border: 1px solid rgba(155,126,106,.2);
+      background: rgba(58,45,158,.08);
+      border: 1px solid rgba(58,45,158,.18);
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
-      color: #9b7e6a;
+      color: #3a2d9e;
     }
     .contact-card-icon svg { width: 1.1rem; height: 1.1rem; }
     .contact-card-body { flex: 1; }
@@ -702,16 +743,16 @@
       font-weight: 600;
       letter-spacing: .12em;
       text-transform: uppercase;
-      color: #9b7e6a;
+      color: #3a2d9e;
       margin-bottom: .45rem;
     }
     .contact-card-text {
       font-size: .925rem;
-      color: #1c1917;
+      color: #1a1a2e;
       line-height: 1.65;
     }
-    .contact-card-text a { color: #1c1917; text-decoration: none; }
-    .contact-card-text a:hover { color: #9b7e6a; }
+    .contact-card-text a { color: #1a1a2e; text-decoration: none; }
+    .contact-card-text a:hover { color: #3a2d9e; }
 
     /* Hours list */
     .hours-list { list-style: none; margin-top: .2rem; }
@@ -724,10 +765,10 @@
       border-bottom: 1px solid rgba(0,0,0,.05);
     }
     .hours-list li:last-child { border-bottom: none; }
-    .hours-list li.today { font-weight: 700; color: #1c1917; }
+    .hours-list li.today { font-weight: 700; color: #1a1a2e; }
     .hours-list li.today .hours-day::before {
       content: '▸ ';
-      color: #9b7e6a;
+      color: #3a2d9e;
     }
     .hours-closed { color: #a8a29e; }
 
@@ -745,14 +786,14 @@
       transition: all .2s ease;
     }
     .btn-call svg, .btn-directions svg { width: 14px; height: 14px; }
-    .btn-call { background: #9b7e6a; color: #fff; }
-    .btn-call:hover { background: #7c6254; }
+    .btn-call { background: #3a2d9e; color: #fff; }
+    .btn-call:hover { background: #2e2380; }
     .btn-directions {
       background: transparent;
-      color: #9b7e6a;
-      border: 1.5px solid rgba(155,126,106,.35);
+      color: #3a2d9e;
+      border: 1.5px solid rgba(58,45,158,.35);
     }
-    .btn-directions:hover { background: rgba(155,126,106,.08); }
+    .btn-directions:hover { background: rgba(58,45,158,.08); }
 
     /* Map */
     .contact-map {
@@ -803,8 +844,9 @@
     }
 
     .footer-brand {
-      font-size: 1.05rem;
-      font-weight: 700;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 400;
       color: #f1f5f9;
       letter-spacing: -.01em;
       margin-bottom: .5rem;
@@ -908,11 +950,13 @@
       flex-shrink: 0;
       z-index: 1;
     }
-    .nav-logo-mark { width: 26px; height: 26px; flex-shrink: 0; }
+    /* .nav-logo-mark removed — using .nav-logo-img instead */
+    .nav-logo-img { width: 26px; height: 26px; object-fit: contain; flex-shrink: 0; }
     .nav-brand-text {
-      font-size: .88rem;
-      font-weight: 700;
-      color: #e2d5c8;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: .95rem;
+      font-weight: 400;
+      color: #c8d8f5;
       letter-spacing: .04em;
       white-space: nowrap;
     }
@@ -941,11 +985,11 @@
       position: absolute;
       bottom: 0; left: 0;
       width: 0; height: 1px;
-      background: #c4a882;
+      background: #4fc4f0;
       transition: width .25s ease;
     }
     .nav-links a:hover,
-    .nav-links a.active { color: #e2d5c8; }
+    .nav-links a.active { color: #c8d8f5; }
     .nav-links a:hover::after,
     .nav-links a.active::after { width: 100%; }
     /* CTA */
@@ -954,7 +998,7 @@
       align-items: center;
       gap: .35rem;
       padding: .42rem 1.1rem;
-      background: #9b7e6a;
+      background: linear-gradient(135deg, #3a2d9e, #5540cc);
       color: #fff;
       font-size: .72rem;
       font-weight: 700;
@@ -962,11 +1006,11 @@
       text-transform: uppercase;
       text-decoration: none;
       border-radius: 2rem;
-      transition: background .2s;
+      transition: opacity .2s;
       flex-shrink: 0;
       z-index: 1;
     }
-    .nav-cta:hover { background: #b8967e; }
+    .nav-cta:hover { opacity: .85; }
     .nav-cta svg { width: 12px; height: 12px; }
     /* Hamburger button */
     .nav-toggle {
@@ -975,7 +1019,7 @@
       border: none;
       cursor: pointer;
       padding: 4px;
-      color: #e2d5c8;
+      color: #c8d8f5;
       z-index: 1;
     }
     .menu-path-top, .menu-path-bot {
@@ -1014,15 +1058,16 @@
       text-transform: uppercase;
       transition: color .2s;
     }
-    #nav-overlay a:hover { color: #e2d5c8; }
+    #nav-overlay a:hover { color: #4fc4f0; }
     #nav-overlay .nav-cta-mob {
       margin-top: .8rem;
       font-size: .85rem;
       padding: .65rem 2.2rem;
-      background: #9b7e6a;
+      background: linear-gradient(135deg, #3a2d9e, #5540cc);
       color: #fff;
+      border-radius: 2rem;
     }
-    #nav-overlay .nav-cta-mob:hover { background: #b8967e; color: #fff; }
+    #nav-overlay .nav-cta-mob:hover { opacity: .85; color: #fff; }
     @media (max-width: 768px) {
       #site-nav { padding: 0 20px; }
       .nav-links, #site-nav .nav-cta { display: none; }
@@ -1047,15 +1092,7 @@
 <nav id="site-nav" aria-label="Navigation principale">
   <!-- Logo mark + brand -->
   <a class="nav-brand" href="#hero">
-    <svg class="nav-logo-mark" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <ellipse cx="14" cy="7.5" rx="3.5" ry="6.5" fill="#c4a882" opacity=".85" transform="rotate(0,14,14)"/>
-      <ellipse cx="14" cy="7.5" rx="3.5" ry="6.5" fill="#c4a882" opacity=".7"  transform="rotate(60,14,14)"/>
-      <ellipse cx="14" cy="7.5" rx="3.5" ry="6.5" fill="#c4a882" opacity=".7"  transform="rotate(120,14,14)"/>
-      <ellipse cx="14" cy="7.5" rx="3.5" ry="6.5" fill="#c4a882" opacity=".7"  transform="rotate(180,14,14)"/>
-      <ellipse cx="14" cy="7.5" rx="3.5" ry="6.5" fill="#c4a882" opacity=".7"  transform="rotate(240,14,14)"/>
-      <ellipse cx="14" cy="7.5" rx="3.5" ry="6.5" fill="#c4a882" opacity=".7"  transform="rotate(300,14,14)"/>
-      <circle cx="14" cy="14" r="3" fill="#e2d5c8"/>
-    </svg>
+    <img class="nav-logo-img" src="logo.avif" alt="Centre Esthétique O" />
     <span class="nav-brand-text">Centre Esthétique O</span>
   </a>
 
@@ -1116,16 +1153,15 @@
       <div id="media-overlay"></div>
     </div>
 
-    <!-- Sub-labels (date + scroll hint) -->
-    <div id="hero-labels">
-      <p id="label-date"></p>
-      <p id="label-scroll">↓ Faites défiler</p>
-    </div>
-
-    <!-- Split title -->
+    <!-- Split title — large, left-aligned -->
     <div id="hero-title">
       <span class="word" id="word-1">Centre</span>
       <span class="word" id="word-2">Esthétique O</span>
+    </div>
+
+    <!-- Scroll hint -->
+    <div id="hero-labels">
+      <p id="label-scroll">Défiler pour découvrir</p>
     </div>
 
   </div><!-- /hero-inner -->
@@ -1139,10 +1175,12 @@
 
   <!-- Content revealed after expansion -->
   <div id="hero-content">
-    <p style="color:#94a3b8; text-align:center; font-size:1.1rem; max-width:700px; margin:0 auto; line-height:1.8;">
-      Bienvenue dans votre espace de bien-être et de beauté. Découvrez nos soins personnalisés,
-      conçus pour révéler votre éclat naturel.
-    </p>
+    <div class="hero-intro">
+      <span class="hero-intro-line">Votre espace de <em>bien-être</em></span>
+      <span class="hero-intro-line">et de <em>beauté</em>, à Bois-des-Filion.</span>
+      <span class="hero-intro-divider"></span>
+      <span class="hero-intro-sub">Soins personnalisés depuis 2019</span>
+    </div>
   </div>
 
 </section>
@@ -1151,7 +1189,7 @@
 <section id="services">
 
   <div class="services-header">
-    <span class="label">Nos Prestations</span>
+    <span class="label">Nos Services</span>
     <h2>Prenez soin de vous,<br>de la tête aux pieds</h2>
     <p>Des soins personnalisés, dispensés par nos expertes esthéticiennes dans un cadre apaisant.</p>
   </div>
@@ -1447,7 +1485,7 @@
       <div>
         <div class="footer-col-title">Navigation</div>
         <ul class="footer-links">
-          <li><a href="#services">Nos Prestations</a></li>
+          <li><a href="#services">Nos Services</a></li>
           <li><a href="#gallery">Notre Univers</a></li>
           <li><a href="#testimonials">Témoignages</a></li>
           <li><a href="#contact">Nous Trouver</a></li>
@@ -1491,7 +1529,6 @@
   const mediaOverlay = document.getElementById('media-overlay');
   const word1        = document.getElementById('word-1');
   const word2        = document.getElementById('word-2');
-  const labelDate    = document.getElementById('label-date');
   const labelScroll  = document.getElementById('label-scroll');
   const heroContent  = document.getElementById('hero-content');
   const scrollArrow  = document.getElementById('scroll-arrow');
@@ -1522,9 +1559,8 @@
     word1.style.transform = `translateX(-${tx}vw)`;
     word2.style.transform = `translateX(${tx}vw)`;
 
-    /* Label split */
-    labelDate.style.transform   = `translateX(-${tx}vw)`;
-    labelScroll.style.transform = `translateX(${tx}vw)`;
+    /* Label fade out */
+    if (labelScroll) labelScroll.style.opacity = Math.max(1 - p * 3, 0);
 
     /* Scroll arrow hide */
     scrollArrow.style.opacity = Math.max(1 - p * 4, 0);
@@ -1554,7 +1590,7 @@
         document.documentElement.style.overflow = '';
         initLenis();
         /* Libérer les couches GPU du hero — plus besoin de will-change */
-        document.querySelectorAll('#hero, #hero-bg, #hero-bg img, #media-frame, #media-overlay, #word-1, #word-2, #label-date, #label-scroll, #hero-content').forEach(function(el) {
+        document.querySelectorAll('#hero, #hero-bg, #hero-bg img, #media-frame, #media-overlay, #word-1, #word-2, #label-scroll, #hero-content').forEach(function(el) {
           el.style.willChange = 'auto';
         });
       }
@@ -1659,10 +1695,9 @@
   /* ─── Init ───────────────────────────────────────────── */
   applyProgress(0);
 
-  /* Année dynamique */
+  /* Année dynamique (footer copyright) */
   (function() {
     var yr = new Date().getFullYear();
-    if (labelDate) labelDate.textContent = yr;   /* labelDate déjà déclaré plus haut (hero) */
     var cpYr = document.getElementById('copy-year');
     if (cpYr) cpYr.textContent = yr;
   })();
