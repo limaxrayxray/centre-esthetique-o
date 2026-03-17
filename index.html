@@ -25,10 +25,10 @@
     "telephone": "+14509659773",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "110 Bd Adolphe-Chapleau",
+      "streetAddress": "682 Bd Adolphe-Chapleau",
       "addressLocality": "Bois-des-Filion",
       "addressRegion": "QC",
-      "postalCode": "J6Z 1J5",
+      "postalCode": "J6Z 1L4",
       "addressCountry": "CA"
     },
     "geo": {
@@ -46,6 +46,9 @@
     "image": "logo.avif"
   }
   </script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/avif" href="logo.avif" />
+  <link rel="apple-touch-icon" href="logo.avif" />
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1183,7 +1186,7 @@
 
     <!-- Expanding media -->
     <div id="media-wrap">
-      <video autoplay muted loop playsinline>
+      <video autoplay muted loop playsinline poster="backgroud lilas.avif">
         <source src="2femmes.mp4" type="video/mp4">
       </video>
       <div id="media-overlay"></div>
@@ -1643,7 +1646,7 @@
         document.documentElement.style.overflow = '';
         initLenis();
         /* Libérer les couches GPU du hero — plus besoin de will-change */
-        document.querySelectorAll('#hero, #hero-bg, #hero-bg img, #media-frame, #media-overlay, #word-1, #word-2, #label-scroll, #hero-content').forEach(function(el) {
+        document.querySelectorAll('#hero, #hero-bg, #hero-bg img, #media-wrap, #media-overlay, #word-1, #word-2, #label-scroll, #hero-content').forEach(function(el) {
           el.style.willChange = 'auto';
         });
       }
