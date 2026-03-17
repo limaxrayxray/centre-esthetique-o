@@ -512,9 +512,10 @@
       cursor: pointer;
     }
 
-    /* Dim + shrink non-hovered cards (opacity instead of blur for performance) */
+    /* Blur + shrink non-hovered cards (light blur — images are now AVIF so much lighter on GPU) */
     .focus-grid.has-hover .focus-card:not(.is-hovered) {
-      opacity: 0.5;
+      filter: blur(2px);
+      opacity: 0.7;
       transform: scale(0.98);
     }
 
