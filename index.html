@@ -859,6 +859,10 @@
       position: absolute;
       inset: 0;
       z-index: 1;
+      cursor: pointer;
+    }
+    .map-shield.active {
+      pointer-events: none;
     }
 
     @media (max-width: 900px) {
@@ -1902,7 +1906,26 @@
     window.scrollTo(0, 0);
   }
 
-  /* Map iframe : pointer-events always none — scroll-safe, interaction via bouton Itinéraire */
+  /* Map shield : click to interact, auto-deactivate on scroll/mouseleave */
+  (function() {
+    var shield = document.querySelector('.map-shield');
+    var contactMap = document.querySelector('.contact-map');
+    if (!shield || !contactMap) return;
+
+    shield.addEventListener('click', function() {
+      shield.classList.add('active');
+    });
+
+    contactMap.addEventListener('mouseleave', function() {
+      shield.classList.remove('active');
+    });
+
+    window.addEventListener('scroll', function() {
+      if (shield.classList.contains('active')) {
+        shield.classList.remove('active');
+      }
+    }, { passive: true });
+  })();
 
   /* ─── Init ───────────────────────────────────────────── */
   applyProgress(0);
