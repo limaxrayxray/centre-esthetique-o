@@ -1114,6 +1114,162 @@
       .nav-toggle { display: block; }
     }
 
+    /* ─── SERVICE MODAL ─────────────────────────────────────── */
+    .svc-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 9998;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .4s ease, visibility .4s ease;
+    }
+    .svc-modal-backdrop.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    /* Progressive blur layers */
+    .svc-modal-blur {
+      position: absolute;
+      inset: 0;
+    }
+    .svc-modal-blur-1 {
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      mask-image: linear-gradient(to top, transparent 0%, black 50%);
+      -webkit-mask-image: linear-gradient(to top, transparent 0%, black 50%);
+    }
+    .svc-modal-blur-2 {
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      mask-image: linear-gradient(to top, transparent 20%, black 70%);
+      -webkit-mask-image: linear-gradient(to top, transparent 20%, black 70%);
+    }
+    .svc-modal-blur-3 {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      mask-image: linear-gradient(to top, transparent 40%, black 100%);
+      -webkit-mask-image: linear-gradient(to top, transparent 40%, black 100%);
+    }
+    .svc-modal-tint {
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 10, 18, .55);
+    }
+
+    /* Modal card */
+    .svc-modal-card {
+      position: relative;
+      z-index: 1;
+      width: min(540px, 90vw);
+      max-height: 85vh;
+      overflow-y: auto;
+      background: rgba(18, 18, 30, .92);
+      border: 1px solid rgba(79, 196, 240, .15);
+      border-radius: 1.25rem;
+      padding: 0;
+      transform: translateY(30px) scale(.96);
+      transition: transform .4s cubic-bezier(.4,0,.2,1);
+    }
+    .svc-modal-backdrop.active .svc-modal-card {
+      transform: translateY(0) scale(1);
+    }
+
+    .svc-modal-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 1.25rem 1.25rem 0 0;
+      display: block;
+    }
+
+    .svc-modal-body {
+      padding: 2rem 2rem 1.6rem;
+    }
+
+    .svc-modal-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.75rem;
+      font-weight: 400;
+      color: #f1f5f9;
+      margin-bottom: .6rem;
+    }
+
+    .svc-modal-desc {
+      font-size: .95rem;
+      color: #94a3b8;
+      line-height: 1.7;
+      margin-bottom: 1.4rem;
+    }
+
+    .svc-modal-list {
+      list-style: none;
+      margin-bottom: 1.6rem;
+    }
+    .svc-modal-list li {
+      font-size: .875rem;
+      color: #cbd5e1;
+      padding: .5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+    }
+    .svc-modal-list li:last-child { border-bottom: none; }
+    .svc-modal-list li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #4fc4f0;
+      flex-shrink: 0;
+    }
+
+    .svc-modal-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .75rem 1.8rem;
+      background: linear-gradient(135deg, #3a2d9e, #5540cc);
+      color: #fff;
+      border: none;
+      border-radius: 2rem;
+      font-size: .9rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+    .svc-modal-cta:hover { opacity: .85; }
+
+    .svc-modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.45);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 2;
+      transition: background .2s;
+    }
+    .svc-modal-close:hover { background: rgba(255,255,255,.15); }
+    .svc-modal-close svg { width: 14px; height: 14px; }
+
+    @media (max-width: 600px) {
+      .svc-modal-card { width: 95vw; }
+      .svc-modal-img { height: 180px; }
+      .svc-modal-body { padding: 1.4rem 1.4rem 1.2rem; }
+      .svc-modal-title { font-size: 1.4rem; }
+    }
+
     /* ─── SCROLL-REVEAL ──────────────────────────────────────── */
     .reveal {
       opacity: 0;
@@ -2010,6 +2166,126 @@
     });
   }, { threshold: 0.35 });
   sectionEls.forEach(function(el) { if (el) ioNav.observe(el); });
+
+  /* ─── Service Modal ─────────────────────────────────── */
+  (function() {
+    var SERVICES = {
+      'Soins Visage': {
+        img: 'Mains esthéticienne massage visage gros plan.avif',
+        desc: 'Offrez à votre peau un moment de soin et de douceur. Nos protocoles personnalisés ciblent vos besoins spécifiques pour un teint éclatant et une peau revitalisée.',
+        items: [
+          'Nettoyage en profondeur',
+          'Hydratation intense',
+          'Soin anti-âge sur mesure',
+          'Traitement éclat du teint',
+          'Massage facial relaxant',
+          'Masque revitalisant'
+        ]
+      },
+      'Épilation': {
+        img: 'epilation cire.avif',
+        desc: 'Une peau douce et soyeuse grâce à nos techniques d\'épilation adaptées à chaque zone et type de peau. Confort et précision à chaque séance.',
+        items: [
+          'Épilation à la cire tiède',
+          'Épilation au fil',
+          'Sourcils, lèvre, menton',
+          'Jambes complètes ou demi-jambes',
+          'Aisselles',
+          'Maillot classique ou brésilien'
+        ]
+      },
+      'Manucure & Nail Art': {
+        img: 'nail art debut carré.avif',
+        desc: 'Des mains impeccables et des ongles qui reflètent votre style. Nos techniciennes créent des designs uniques ou des looks classiques selon vos envies.',
+        items: [
+          'Manucure classique',
+          'Pose de gel',
+          'Pose d\'acrylique',
+          'Nail art personnalisé',
+          'French manucure',
+          'Remplissage et réparation'
+        ]
+      },
+      'Pédicure': {
+        img: 'bain pieds.avif',
+        desc: 'Un soin complet pour vos pieds qui allie détente et beauté. Repartez sur de beaux pieds, doux et soignés.',
+        items: [
+          'Bain relaxant',
+          'Exfoliation et gommage',
+          'Soin des cuticules',
+          'Coupe et limage',
+          'Pose de vernis classique ou gel',
+          'Massage hydratant des pieds'
+        ]
+      }
+    };
+
+    /* Build modal DOM */
+    var backdrop = document.createElement('div');
+    backdrop.className = 'svc-modal-backdrop';
+    backdrop.innerHTML =
+      '<div class="svc-modal-blur svc-modal-blur-1"></div>' +
+      '<div class="svc-modal-blur svc-modal-blur-2"></div>' +
+      '<div class="svc-modal-blur svc-modal-blur-3"></div>' +
+      '<div class="svc-modal-tint"></div>' +
+      '<div class="svc-modal-card">' +
+        '<button class="svc-modal-close" aria-label="Fermer">' +
+          '<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>' +
+        '</button>' +
+        '<img class="svc-modal-img" src="" alt="" />' +
+        '<div class="svc-modal-body">' +
+          '<h3 class="svc-modal-title"></h3>' +
+          '<p class="svc-modal-desc"></p>' +
+          '<ul class="svc-modal-list"></ul>' +
+          '<a class="svc-modal-cta" href="tel:+14509659773">' +
+            'Prendre rendez-vous' +
+            '<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="width:16px;height:16px"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>' +
+          '</a>' +
+        '</div>' +
+      '</div>';
+    document.body.appendChild(backdrop);
+
+    var modalImg   = backdrop.querySelector('.svc-modal-img');
+    var modalTitle = backdrop.querySelector('.svc-modal-title');
+    var modalDesc  = backdrop.querySelector('.svc-modal-desc');
+    var modalList  = backdrop.querySelector('.svc-modal-list');
+
+    function openModal(serviceName) {
+      var svc = SERVICES[serviceName];
+      if (!svc) return;
+      modalImg.src = svc.img;
+      modalImg.alt = serviceName;
+      modalTitle.textContent = serviceName;
+      modalDesc.textContent = svc.desc;
+      modalList.innerHTML = svc.items.map(function(item) {
+        return '<li>' + item + '</li>';
+      }).join('');
+      backdrop.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      if (typeof lenis !== 'undefined' && lenis) lenis.stop();
+    }
+
+    function closeModal() {
+      backdrop.classList.remove('active');
+      document.body.style.overflow = '';
+      if (typeof lenis !== 'undefined' && lenis) lenis.start();
+    }
+
+    /* Click handlers on bento cards */
+    document.querySelectorAll('.bento-card').forEach(function(card) {
+      card.addEventListener('click', function() {
+        var title = card.querySelector('.bento-title');
+        if (title) openModal(title.textContent);
+      });
+    });
+
+    /* Close modal */
+    backdrop.querySelector('.svc-modal-close').addEventListener('click', closeModal);
+    backdrop.querySelector('.svc-modal-tint').addEventListener('click', closeModal);
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && backdrop.classList.contains('active')) closeModal();
+    });
+  })();
 
   /* ─── Scroll-reveal (IntersectionObserver) ───────────── */
   (function() {
