@@ -1736,8 +1736,15 @@
   let isMobile         = window.innerWidth < 768;
   let rafId            = null;
 
-  /* Lock scroll during hero expansion */
-  document.documentElement.style.overflow = 'hidden';
+  /* Lock scroll during hero expansion — but skip if user landed on an anchor */
+  if (window.location.hash && window.location.hash !== '#hero') {
+    mediaExpanded = true;
+    scrollProgress = 1;
+    targetProgress = 1;
+    /* Don't lock — let user scroll freely */
+  } else {
+    document.documentElement.style.overflow = 'hidden';
+  }
 
   /* ─── DOM refs ───────────────────────────────────────── */
   const heroBg       = document.getElementById('hero-bg');
@@ -1928,7 +1935,8 @@
   })();
 
   /* ─── Init ───────────────────────────────────────────── */
-  applyProgress(0);
+  applyProgress(mediaExpanded ? 1 : 0);
+  if (mediaExpanded) initLenis();
 
   /* Année dynamique (footer copyright) */
   (function() {
