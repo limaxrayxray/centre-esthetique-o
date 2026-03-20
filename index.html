@@ -1936,7 +1936,10 @@
 
   /* ─── Init ───────────────────────────────────────────── */
   applyProgress(mediaExpanded ? 1 : 0);
-  if (mediaExpanded) initLenis();
+  if (mediaExpanded) {
+    /* Lenis is loaded via defer — wait for it */
+    window.addEventListener('load', function() { initLenis(); });
+  }
 
   /* Année dynamique (footer copyright) */
   (function() {
