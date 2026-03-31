@@ -2919,6 +2919,13 @@
     var modalDesc  = backdrop.querySelector('.svc-modal-desc');
     var modalList  = backdrop.querySelector('.svc-modal-list');
 
+    /* Block Lenis wheel events while modal is open so the card scrolls natively */
+    var modalCard = backdrop.querySelector('.svc-modal-card');
+    function trapWheel(e) {
+      // Let the modal card scroll; stop Lenis from hijacking
+      e.stopPropagation();
+    }
+
     function openModal(serviceName) {
       var svc = SERVICES[serviceName];
       if (!svc) return;
@@ -2929,15 +2936,20 @@
       modalList.innerHTML = svc.items.map(function(item) {
         return '<li>' + item + '</li>';
       }).join('');
+      modalCard.scrollTop = 0;
       backdrop.classList.add('active');
       document.body.style.overflow = 'hidden';
       if (typeof lenis !== 'undefined' && lenis) lenis.stop();
+      backdrop.addEventListener('wheel', trapWheel, true);
+      backdrop.addEventListener('touchmove', trapWheel, true);
     }
 
     function closeModal() {
       backdrop.classList.remove('active');
       document.body.style.overflow = '';
       if (typeof lenis !== 'undefined' && lenis) lenis.start();
+      backdrop.removeEventListener('wheel', trapWheel, true);
+      backdrop.removeEventListener('touchmove', trapWheel, true);
     }
 
     /* Click handlers on bento cards */
