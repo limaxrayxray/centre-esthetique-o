@@ -496,36 +496,22 @@
       0%   { transform: translateX(0); }
       100% { transform: translateX(-50%); }
     }
-    /* ── Progressive blur edges ── */
-    .partners-blur {
+    /* ── Fade edges ── */
+    .partners-fade {
       position: absolute;
       top: 0; bottom: 0;
-      width: 160px;
+      width: 200px;
       z-index: 2;
       pointer-events: none;
-      display: flex;
     }
-    .partners-blur--left  { left: 0;  flex-direction: row; }
-    .partners-blur--right { right: 0; flex-direction: row-reverse; }
-    .partners-blur > div {
-      flex: 1;
-      backdrop-filter: blur(var(--bl));
-      -webkit-backdrop-filter: blur(var(--bl));
+    .partners-fade--left {
+      left: 0;
+      background: linear-gradient(to right, #0e0e1a 0%, #0e0e1a 10%, transparent 100%);
     }
-    /* 6 layered strips with increasing blur + opacity mask */
-    .partners-blur > div:nth-child(1) { --bl: 0.5px; mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)); }
-    .partners-blur > div:nth-child(2) { --bl: 1px;   mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)); }
-    .partners-blur > div:nth-child(3) { --bl: 2px;   mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)); }
-    .partners-blur > div:nth-child(4) { --bl: 4px;   mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)); }
-    .partners-blur > div:nth-child(5) { --bl: 8px;   mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)); }
-    .partners-blur > div:nth-child(6) { --bl: 16px;  mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)); }
-    /* Right side mirrors the mask direction */
-    .partners-blur--right > div:nth-child(1) { mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); }
-    .partners-blur--right > div:nth-child(2) { mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); }
-    .partners-blur--right > div:nth-child(3) { mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); }
-    .partners-blur--right > div:nth-child(4) { mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); }
-    .partners-blur--right > div:nth-child(5) { mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); }
-    .partners-blur--right > div:nth-child(6) { mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); }
+    .partners-fade--right {
+      right: 0;
+      background: linear-gradient(to left, #0e0e1a 0%, #0e0e1a 10%, transparent 100%);
+    }
 
     .partner-logo {
       display: flex;
@@ -590,7 +576,7 @@
     @media (max-width: 600px) {
       #partners { padding: 35px 0; }
       .partners-set { gap: 2.5rem; }
-      .partners-blur { width: 80px; }
+      .partners-fade { width: 80px; }
       .partner-wordmark { font-size: 1.2rem; }
       .partner-wordmark.pw-anesi,
       .partner-wordmark.pw-depileve { font-size: 1.1rem; }
@@ -1871,9 +1857,9 @@
         <div class="partner-dot"></div>
       </div>
     </div>
-    <!-- Progressive blur edges -->
-    <div class="partners-blur partners-blur--left"><div></div><div></div><div></div><div></div><div></div><div></div></div>
-    <div class="partners-blur partners-blur--right"><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    <!-- Fade edges -->
+    <div class="partners-fade partners-fade--left"></div>
+    <div class="partners-fade partners-fade--right"></div>
   </div>
 </section>
 
