@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+	
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<meta name='robots' content='noindex, follow' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v24.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Página no encontrada | Belleza 24 com</title>
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:title" content="Página no encontrada | Belleza 24 com" />
+	<meta property="og:site_name" content="Belleza 24 com" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://belleza24.com/#website","url":"https://belleza24.com/","name":"Belleza 24 horas","description":"Blog, Tips Belleza 24 Tips de felleza, Mejores  prouctos, Mejjoes tratamientos, Mejores Precios y Maquinad medicas","publisher":{"@id":"https://belleza24.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://belleza24.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"es"},{"@type":"Organization","@id":"https://belleza24.com/#organization","name":"Belleza24.com","url":"https://belleza24.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://belleza24.com/#/schema/logo/image/","url":"https://belleza24.com/wp-content/uploads/2014/12/cropped-logo-belleza24.png","contentUrl":"https://belleza24.com/wp-content/uploads/2014/12/cropped-logo-belleza24.png","width":512,"height":512,"caption":"Belleza24.com"},"image":{"@id":"https://belleza24.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/Belleza24","https://es.pinterest.com/clinicasvicario/belleza-24-tips/"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//platform-api.sharethis.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Belleza 24 com &raquo; Feed" href="https://belleza24.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Belleza 24 com &raquo; Feed de los comentarios" href="https://belleza24.com/comments/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/belleza24.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.5"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://belleza24.com/wp-includes/css/dist/block-library/style.min.css?ver=6.7.5' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://belleza24.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='valenti-fonts-css' href='https://fonts.googleapis.com/css?family=Oswald%3A400%2C700%7COpen+Sans%3A400%2C700&#038;subset=greek%2Cgreek-ext&#038;display=swap' type='text/css' media='all' />
+<!--[if IE]>
+<link rel='stylesheet' id='valenti-ie9-css' href='https://belleza24.com/wp-content/themes/valenti/assets/css/ie.css?ver=5.6.3.9' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='swipebox-css' href='https://belleza24.com/wp-content/themes/valenti/assets/css/swipebox.min.css?ver=1.4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='valenti-style-css' href='https://belleza24.com/wp-content/themes/valenti/assets/css/style.min.css?ver=5.6.3.9' type='text/css' media='all' />
+<style id='valenti-style-inline-css' type='text/css'>
+body{ color:#808080}.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6{ color:#333333}.link-color-wrap a, .block-wrap-code .block a{ color:#3aa0ff}.link-color-wrap a:hover, .block-wrap-code .block a:hover{ color:#1a75ca}body{font-family:'Open Sans',sans-serif;font-size:14px;font-weight:400;line-height:1.666;text-transform:none;}.excerpt{font-family:'Open Sans',sans-serif;font-size:14px;font-weight:400;line-height:1.666;text-transform:none;}.preview-thumbnail .title, .preview-review .title{font-family:'Oswald',sans-serif;font-size:14px;font-weight:700;line-height:1.3;text-transform:none;}.byline{font-family:'Oswald',sans-serif;font-size:11px;font-weight:400;letter-spacing:0.1em;line-height:1.3;text-transform:none;}.hero-meta .byline{font-family:'Oswald',sans-serif;font-size:11px;font-weight:400;letter-spacing:0.05em;line-height:1.3;text-transform:none;}.tipi-button{font-family:'Oswald',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;}.secondary-menu-wrap, .secondary-menu-wrap .sub-menu a:not(.tipi-button){font-family:'Oswald',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1;text-transform:uppercase;}.footer-menu{font-family:'Oswald',sans-serif;font-size:12px;font-weight:400;line-height:1;text-transform:none;}.site-footer .textwidget{font-family:'Open Sans',sans-serif;font-size:14px;font-weight:400;line-height:1.666;text-transform:none;}.copyright{font-family:'Open Sans',sans-serif;font-size:12px;font-weight:400;line-height:1;text-transform:none;}.preview-slider.title-s .title{font-family:'Oswald',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.04em;line-height:1.4;text-transform:uppercase;}.preview-slider.title-m .title{font-family:'Oswald',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.04em;line-height:1.4;text-transform:uppercase;}.preview-slider.title-l .title{font-family:'Oswald',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.04em;line-height:1.4;text-transform:uppercase;}.preview-slider.title-xl .title{font-family:'Oswald',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.04em;line-height:1.4;text-transform:uppercase;}.preview-grid.title-xs .title{font-family:'Oswald',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.04em;line-height:1.4;text-transform:uppercase;}.preview-grid.title-s .title{font-family:'Oswald',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.04em;line-height:1.4;text-transform:uppercase;}.preview-grid.title-m .title{font-family:'Oswald',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.04em;line-height:1.4;text-transform:uppercase;}.preview-grid.title-l .title{font-family:'Oswald',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.04em;line-height:1.4;text-transform:uppercase;}.preview-classic .title{font-family:'Oswald',sans-serif;font-size:14px;font-weight:400;letter-spacing:0.05em;line-height:1.3;text-transform:none;}.preview-2 .title{font-family:'Oswald',sans-serif;font-size:14px;font-weight:400;letter-spacing:0.05em;line-height:1.3;text-transform:none;}.entry-content blockquote, .entry-content blockquote p{font-family:'Oswald',sans-serif;font-size:18px;font-weight:400;line-height:1.5;text-transform:none;}.hero-wrap .caption, .gallery-block__wrap .caption, figcaption{font-family:'Open Sans',sans-serif;font-size:10px;font-weight:400;line-height:1.2;text-transform:none;}.main-navigation .horizontal-menu > li > a{font-family:'Oswald',sans-serif;font-size:14px;font-weight:400;letter-spacing:0.15em;line-height:1;text-transform:uppercase;}.sub-menu a:not(.tipi-button){font-family:'Oswald',sans-serif;font-size:14px;font-weight:400;letter-spacing:0.13em;line-height:1.6;text-transform:uppercase;}.hero-meta.tipi-s-typo .title{font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;line-height:1.3;text-transform:none;}.hero-meta.tipi-m-typo .title{font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;line-height:1.3;text-transform:uppercase;}.hero-meta.tipi-l-typo .title{font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;line-height:1.3;text-transform:uppercase;}.entry-content h2{font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.entry-content h3{font-family:'Oswald',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.entry-content h4{font-family:'Oswald',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.entry-content h5{font-family:'Oswald',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.widget-title{font-family:'Oswald',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.block-title-wrap .title{font-family:'Oswald',sans-serif;font-size:16px;font-weight:700;letter-spacing:0.16em;line-height:1.8;text-transform:uppercase;}.block-subtitle{font-family:'Open Sans',sans-serif;font-size:15px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:none;}.preview-classic { padding-bottom: 30px; }.block-wrap-classic .block ~ .block { padding-top: 30px; }.preview-thumbnail { padding-bottom: 20px; }.valenti-widget .preview-thumbnail { padding-bottom: 15px; }.block-title-inner{ border-bottom:3px solid #161616;}.site-footer > .bg-area{ border-top:20px solid #333333;}.footer-widget-wrap{ border-right:1px solid #333333;}.split-1:not(.preview-thumbnail) .mask {
+		-webkit-flex: 0 0 40%;
+		-ms-flex: 0 0 40%;
+		flex: 0 0 40%;
+		width: 40%;
+	}.footer-lower {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}.footer-widget-wrap {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}.main-menu > li > a {
+		padding-top: 17px;
+		padding-bottom: 17px;
+	}.main-navigation .main-nav-wrap > .menu-icons a{padding-left:10px;}.main-navigation .main-nav-wrap > .menu-icons a{padding-right:10px;}.main-navigation .main-nav-wrap > .menu-icons {margin-right:-10px;}.main-navigation .main-nav-wrap .menu-icons > li > a {font-size:18px;}.secondary-menu-wrap .menu-icons a{padding-left:10px;}.secondary-menu-wrap .menu-icons a{padding-right:10px;}.secondary-menu-wrap .menu-icons {margin-right:-10px;}.secondary-menu-wrap .menu-icons > li > a {font-size:20px;}.accent--color, .bbp-submit-wrapper button, .bbp-submit-wrapper button:visited, .buddypress .cb-cat-header .title a, .woocommerce .star-rating:before, .woocommerce-page .star-rating:before, .woocommerce .star-rating span, .woocommerce-page .star-rating span, .woocommerce .stars a {
+		color:#eb9812;
+	}.bbp-submit-wrapper button, #buddypress button:hover, #buddypress a.button:hover, #buddypress a.button:focus, #buddypress input[type=submit]:hover, #buddypress input[type=button]:hover, #buddypress input[type=reset]:hover, #buddypress ul.button-nav li a:hover, #buddypress ul.button-nav li.current a, #buddypress div.generic-button a:hover, #buddypress .comment-reply-link:hover, #buddypress .activity-list li.load-more:hover, #buddypress #groups-list .generic-button a:hover {
+		border-color: #eb9812;
+	}.sidebar-widget .widget-title, .cb-cat-header, .site-footer .footer-widget-area .widget-title span, #wp-calendar caption, #buddypress #members-list .cb-member-list-box .item .item-title, #buddypress div.item-list-tabs ul li.selected, #buddypress div.item-list-tabs ul li.current, #buddypress .item-list-tabs ul li:hover, .woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+	.author-page-box {
+		border-bottom-color: #eb9812 ;
+	}.cb-highlight, #buddypress button:hover, #buddypress a.button:hover, #buddypress a.button:focus, #buddypress input[type=submit]:hover, #buddypress input[type=button]:hover, #buddypress input[type=reset]:hover, #buddypress ul.button-nav li a:hover, #buddypress ul.button-nav li.current a, #buddypress div.generic-button a:hover, #buddypress .comment-reply-link:hover, #buddypress .activity-list li.load-more:hover, #buddypress #groups-list .generic-button a:hover {
+		background-color: #eb9812;
+	}.font-b { font-family: 'Open Sans',sans-serif; }h1, h2, h3, h4, h5, h6, .font-h, #bbp-user-navigation, .product_meta, .price, .woocommerce-review-link, .cart_item, .cart-collaterals .cart_totals th { font-family: 'Oswald',sans-serif }.site-mob-header:not(.site-mob-header-11) .header-padding .logo-main-wrap, .site-mob-header:not(.site-mob-header-11) .header-padding .icons-wrap a, .site-mob-header-11 .header-padding {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}.site-header .header-padding {
+		padding-top: 11px;
+		padding-bottom: 10px;
+	}.site-footer .bg-area{background-color: #1c1d1e;}.site-footer .background{background-position: center center;}.site-footer,.site-footer a{color: #e5e5e5;}.footer-widget-area{background-color: #272727;}.footer-widget-area{background-position: center center;}.footer-widget-area,.footer-widget-area a{color: #e5e5e5;}.grid-spacing { border-top-width: 3px; }.preview-slider.tile-overlay--1:after, .preview-slider.tile-overlay--2 .meta:after { opacity: 0.25; }.preview-grid.tile-overlay--1:after, .preview-grid.tile-overlay--2 .meta:after { opacity: 0.2; }.main-navigation-border { border-bottom-color: #161616; }@media only screen and (min-width: 481px) {.slider-spacing { margin-right: 3px;}.block-wrap-slider .slider { padding-top: 3px;}.grid-spacing { border-right-width: 3px; }.block-wrap-grid:not(.block-wrap-81) .block { width: calc( 100% + 3px ); }}@media only screen and (min-width: 768px) {.grid-spacing { border-right-width: 3px; }.block-wrap-55 .slide { margin-right: 3px!important; }.block-wrap-grid:not(.block-wrap-81) .block { width: calc( 100% + 3px ); }.preview-slider.tile-overlay--1:hover:after, .preview-slider.tile-overlay--2.tile-overlay--gradient:hover:after, .preview-slider.tile-overlay--2:hover .meta:after { opacity: 0.75 ; }.preview-grid.tile-overlay--1:hover:after, .preview-grid.tile-overlay--2.tile-overlay--gradient:hover:after, .preview-grid.tile-overlay--2:hover .meta:after { opacity: 0.3 ; }}@media only screen and (min-width: 1020px) {body{font-size:16px;}.hero-meta .byline{font-size:14px;}.tipi-button{font-size:12px;}.secondary-menu-wrap, .secondary-menu-wrap .sub-menu a:not(.tipi-button){font-size:12px;}.site-footer .textwidget{font-size:16px;}.preview-slider.title-s .title{font-size:16px;}.preview-slider.title-m .title{font-size:20px;}.preview-slider.title-l .title{font-size:30px;}.preview-slider.title-xl .title{font-size:40px;}.preview-grid.title-xs .title{font-size:16px;}.preview-grid.title-s .title{font-size:20px;}.preview-grid.title-m .title{font-size:32px;}.preview-grid.title-l .title{font-size:38px;}.preview-classic .title{font-size:22px;}.preview-2 .title{font-size:26px;}.entry-content blockquote, .entry-content blockquote p{font-size:26px;}.main-navigation .horizontal-menu > li > a{font-size:16px;}.hero-meta.tipi-s-typo .title{font-size:28px;}.hero-meta.tipi-m-typo .title{font-size:40px;}.hero-meta.tipi-l-typo .title{font-size:50px;}.entry-content h2{font-size:30px;}.entry-content h3{font-size:24px;}.entry-content h4{font-size:20px;}.entry-content h5{font-size:18px;}.widget-title{font-size:20px;}.block-title-wrap .title{font-size:22px;}}@media only screen and (min-width: 1200px) {.site {}}
+</style>
+<script type="text/javascript" src="https://belleza24.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://belleza24.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#source=googleanalytics-wordpress#product=ga&amp;property=5ff91a05d6f99f0018f9a961" id="googleanalytics-platform-sharethis-js"></script>
+<link rel="https://api.w.org/" href="https://belleza24.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://belleza24.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.7.5" />
+<link rel="preload" type="font/woff2" as="font" href="https://belleza24.com/wp-content/themes/valenti/assets/css/valenti/valenti.woff2?o9cfvj" crossorigin><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="icon" href="https://belleza24.com/wp-content/uploads/2023/02/cropped-Captura-de-Pantalla-2023-02-04-a-las-0.26.18-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://belleza24.com/wp-content/uploads/2023/02/cropped-Captura-de-Pantalla-2023-02-04-a-las-0.26.18-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://belleza24.com/wp-content/uploads/2023/02/cropped-Captura-de-Pantalla-2023-02-04-a-las-0.26.18-180x180.png" />
+<meta name="msapplication-TileImage" content="https://belleza24.com/wp-content/uploads/2023/02/cropped-Captura-de-Pantalla-2023-02-04-a-las-0.26.18-270x270.png" />
+</head>
+<body class="error404 body-mob-header-1 site-mob-menu-a-4 site-mob-menu-1 sticky-sbs mob-fi-tall header--style-3 with--bg mm-ani-3 modal-skin-2">
+			<div id="cb-outer-container" class="site">
+		<header id="mobhead" class="site-header-block site-mob-header tipi-l-0 site-mob-header-1 sticky-menu-1 sticky-top site-skin-2 site-img-1"><div class="bg-area header-padding tipi-row side-spacing tipi-vertical-c">
+	<ul class="menu-left icons-wrap tipi-vertical-c">
+			</ul>
+	<div class="logo-main-wrap logo-mob-wrap">
+			</div>
+	<ul class="menu-right icons-wrap tipi-vertical-c">
+					</ul>
+	<div class="background"></div></div>
+</header><!-- .site-mob-header --><div id="mob-line" class="tipi-m-0"></div>		<div id="cb-container" class="site-inner container clearfix">
+		<header id="masthead" class="site-header-block site-header clearfix site-header-3 header-skin-1 site-img-3 mm-skin-2 main-menu-skin-1 main-menu-width-3 main-menu-bar-color-2 wrap logo-only-when-stuck main-menu-c"><div class="bg-area">
+			<div class="logo-main-wrap tipi-flex-lcr header-padding tipi-vertical-c tipi-flex-eq-height logo-main-wrap-center side-spacing">
+			<div class="logo-main-wrap header-padding tipi-all-c"><div class="logo logo-main"><a href="https://belleza24.com" data-pin-nopin="true"><img src="https://belleza24.com/wp-content/uploads/2014/12/logo-belleza24-1.png" srcset="https://belleza24.com/wp-content/uploads/2014/12/Captura-de-Pantalla-2024-06-22-a-las-20.10.43.png 2x" width="150" height="117"></a></div></div>					</div>
+		<div class="background"></div></div>
+</header><!-- .site-header --><div id="header-line"></div><nav id="cb-nav-bar" class="main-navigation cb-nav-bar-wrap nav-bar tipi-m-0-down clearfix mm-ani-3 mm-skin-2 main-menu-bar-color-1 wrap sticky-top sticky-menu sticky-menu-1 logo-only-when-stuck main-menu-c">	<div class="site-skin-2 menu-bg-area">
+		<div id="main-menu-wrap" class="main-menu-wrap cb-nav-bar-wrap clearfix font-h main-nav-wrap vertical-c  wrap">
+			<div class="logo-menu-wrap logo-menu-wrap-placeholder"></div>			<ul id="menu-main-menu" class="main-menu nav cb-main main-nav main-nav clearfix tipi-flex horizontal-menu">
+				<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy current_page_parent dropper standard-drop mm-color menu-item-42"><a href="https://belleza24.com/blog/">Belleza 24 horas</a></li>
+<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-color mm-art mm-wrap-31 mm-wrap mm-sb-left menu-item-10"><a href="https://belleza24.com/category/belleza/" data-ppp="7" data-tid="6"  data-term="category">BELLEZA</a><div class="menu mm-31 tipi-row" data-mm="31"><div class="menu-wrap menu-wrap-more-10 tipi-flex"><div id="block-wrap-10" class="block-wrap block-wrap-22 block-to-see block-wrap-classic clearfix ppl-m-2 ppl-s-2 block-css-10 side-spacing--boxed " data-id="10"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header block-title-2 block-title-border-2"><div class="block-title-inner"><div class="block-title"><h2 class="title" style="border-bottom-color:#eb9812;">BELLEZA</h2></div><p class="block-subtitle"></p></div></div><div class="block">		<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2738 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cuidados category-facial category-nariz category-rostros tag-rinomodelacion">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/diferencias-entre-rinomodelacion-y-rinoplastia/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2021/09/Rinomodelacion-rinoplastia-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2021/09/Rinomodelacion-rinoplastia-150x150.png 150w, https://belleza24.com/wp-content/uploads/2021/09/Rinomodelacion-rinoplastia-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/diferencias-entre-rinomodelacion-y-rinoplastia/">Diferencias entre Rinomodelación y Rinoplastia</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a><a href="https://belleza24.com/category/belleza/cuidados/" class="cat">CUIDADOS</a><a href="https://belleza24.com/category/facial/" class="cat">FACIAL</a><a href="https://belleza24.com/category/facial/nariz/" class="cat">NARIZ</a><a href="https://belleza24.com/category/facial/rostros/" class="cat">ROSTRO</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-09-25T01:33:45+02:00">25/09/2021</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2736 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cuidados category-facial category-rostros">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/ventajas-de-la-medicina-estetica-en-invierno/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2014/12/medicina-estetica-en-invierno-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2014/12/medicina-estetica-en-invierno-150x150.png 150w, https://belleza24.com/wp-content/uploads/2014/12/medicina-estetica-en-invierno-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/ventajas-de-la-medicina-estetica-en-invierno/">Ventajas de la medicina estética en invierno</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a><a href="https://belleza24.com/category/belleza/cuidados/" class="cat">CUIDADOS</a><a href="https://belleza24.com/category/facial/" class="cat">FACIAL</a><a href="https://belleza24.com/category/facial/rostros/" class="cat">ROSTRO</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-09-24T11:45:12+02:00">24/09/2021</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2734 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cuidados category-facial tag-eliminar-papada">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/papada-enzimatica-como-podemos-eliminarla/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2014/12/papada-tratamiento-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2014/12/papada-tratamiento-150x150.png 150w, https://belleza24.com/wp-content/uploads/2014/12/papada-tratamiento-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/papada-enzimatica-como-podemos-eliminarla/">Papada enzimática como podemos eliminarla</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a><a href="https://belleza24.com/category/belleza/cuidados/" class="cat">CUIDADOS</a><a href="https://belleza24.com/category/facial/" class="cat">FACIAL</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-09-23T14:25:17+02:00">23/09/2021</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2730 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-corporal category-cuidados category-facial tag-estetica-no-invasiva">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/tratamientos-esteticos-top-no-invasivos/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2014/12/estetica-no-invasiva-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2014/12/estetica-no-invasiva-150x150.png 150w, https://belleza24.com/wp-content/uploads/2014/12/estetica-no-invasiva-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/tratamientos-esteticos-top-no-invasivos/">Tratamientos estéticos top no invasivos</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a><a href="https://belleza24.com/category/corporal/" class="cat">CORPORAL</a><a href="https://belleza24.com/category/belleza/cuidados/" class="cat">CUIDADOS</a><a href="https://belleza24.com/category/facial/" class="cat">FACIAL</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-09-21T15:06:14+02:00">21/09/2021</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2728 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cuidados tag-retencion-de-liquidos">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/alimentos-para-reducir-la-retencion-de-liquidos/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2014/12/alimentos-para-la-retencion-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2014/12/alimentos-para-la-retencion-150x150.png 150w, https://belleza24.com/wp-content/uploads/2014/12/alimentos-para-la-retencion-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/alimentos-para-reducir-la-retencion-de-liquidos/">Alimentos para reducir la retención de líquidos</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a><a href="https://belleza24.com/category/belleza/cuidados/" class="cat">CUIDADOS</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-09-20T12:21:26+02:00">20/09/2021</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2726 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cuidados category-facial category-nutricion-2 category-piel category-rostros tag-antienvejecimiento">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/combate-el-envejecimiento-con-estos-trucos/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2014/12/trucos-antienvejecimiento-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2014/12/trucos-antienvejecimiento-150x150.png 150w, https://belleza24.com/wp-content/uploads/2014/12/trucos-antienvejecimiento-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/combate-el-envejecimiento-con-estos-trucos/">Combate el envejecimiento con estos trucos</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a><a href="https://belleza24.com/category/belleza/cuidados/" class="cat">CUIDADOS</a><a href="https://belleza24.com/category/facial/" class="cat">FACIAL</a><a href="https://belleza24.com/category/nutricion-2/" class="cat">NUTRICIÓN</a><a href="https://belleza24.com/category/piel/" class="cat">PIEL</a><a href="https://belleza24.com/category/facial/rostros/" class="cat">ROSTRO</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-09-20T11:58:18+02:00">20/09/2021</time></span></div>				</div>
+							</div>
+		</article>
+		</div></div></div></div><div id="block-wrap-110" class="block-wrap block-wrap-g-81 block-to-see block-wrap-classic clearfix block-css-110 side-spacing--boxed " data-id="110"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header block-title-2 block-title-border-2"><div class="block-title-inner"><div class="block-title"><h2 class="title" style="border-bottom-color:#eb9812;">Artículo Al Azar</h2></div><p class="block-subtitle"></p></div></div><div class="block">		<article class=" preview-grid title-s tile-design tile-design-1 stack ani-base tipi-xs-12 preview-81 post-1755 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-corporal category-cuidados category-facial category-piel tag-belleza tag-cuidados tag-mujer tag-piel tag-rostro tag-tipo-de-piel">
+			<div class="preview-mini-wrap clearfix">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/funciones-estructura-la-piel/" class="mask-img">
+				<img width="480" height="276" src="https://belleza24.com/wp-content/uploads/2017/10/piel.jpg" class="attachment-valenti-480-320 size-valenti-480-320 wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://belleza24.com/wp-content/uploads/2017/10/piel.jpg 700w, https://belleza24.com/wp-content/uploads/2017/10/piel-300x173.jpg 300w" sizes="(max-width: 480px) 100vw, 480px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/funciones-estructura-la-piel/">Qué Funciones y Estructura tiene la Piel?</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><span class="byline-part author"><a class="url fn n" href="https://belleza24.com/author/ricardo/"><i class="valenti-i-user" aria-hidden="true"></i> Ricardo</a></span><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a><a href="https://belleza24.com/category/corporal/" class="cat">CORPORAL</a><a href="https://belleza24.com/category/belleza/cuidados/" class="cat">CUIDADOS</a><a href="https://belleza24.com/category/facial/" class="cat">FACIAL</a><a href="https://belleza24.com/category/piel/" class="cat">PIEL</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2017-10-09T15:42:01+02:00">09/10/2017</time></span></div>				</div>
+							</div>
+		</article>
+		</div></div></div></div></div></div></li>
+<li id="menu-item-11" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-color mm-art mm-wrap-31 mm-wrap mm-sb-left menu-item-11"><a href="https://belleza24.com/category/cabello/" data-ppp="7" data-tid="3"  data-term="category">CABELLO</a><div class="menu mm-31 tipi-row" data-mm="31"><div class="menu-wrap menu-wrap-more-10 tipi-flex"><div id="block-wrap-11" class="block-wrap block-wrap-22 block-to-see block-wrap-classic clearfix ppl-m-2 ppl-s-2 block-css-11 side-spacing--boxed " data-id="11"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header block-title-2 block-title-border-2"><div class="block-title-inner"><div class="block-title"><h2 class="title" style="border-bottom-color:#eb9812;">CABELLO</h2></div><p class="block-subtitle"></p></div></div><div class="block">		<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2678 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cabello category-cuidados">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/los-mitos-sobre-la-caida-del-pelo/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2021/09/alopecia-diagnostico-2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2021/09/alopecia-diagnostico-2-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2021/09/alopecia-diagnostico-2-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/los-mitos-sobre-la-caida-del-pelo/">Los Mitos sobre la Caída del Pelo</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a><a href="https://belleza24.com/category/cabello/" class="cat">CABELLO</a><a href="https://belleza24.com/category/belleza/cuidados/" class="cat">CUIDADOS</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-09-03T11:51:05+02:00">03/09/2021</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2599 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cabello category-cuidados category-encrespamiento category-mejores-tratamientos tag-botox tag-cabello tag-cuero-capilar tag-toxina-botulinica">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/toxina-botulinica-para-el-cuero-capilar/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/10/22beneficios-del-botox-capilar-sientete-guapa-belleza-cabello22-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/10/22beneficios-del-botox-capilar-sientete-guapa-belleza-cabello22-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/10/22beneficios-del-botox-capilar-sientete-guapa-belleza-cabello22-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/toxina-botulinica-para-el-cuero-capilar/">Toxina Botulínica para el Cuero Capilar</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-10-30T13:15:17+01:00">30/10/2018</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2535 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cabello category-corporal category-cuello category-cuidados category-facial category-labios category-nariz tag-arrugas tag-arrugas-faciales tag-hilos-tensores tag-lifting-sin-cirugia tag-lineas-de-expresion tag-medicina-antiedad tag-mejor-clinica-estetica tag-mejor-tratamiento-facial">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/cuidados-faciales-para-este-otono/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/10/como-cuidar-la-piel-en-otono-777856_w1000-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/10/como-cuidar-la-piel-en-otono-777856_w1000-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/10/como-cuidar-la-piel-en-otono-777856_w1000-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/cuidados-faciales-para-este-otono/">Cuidados Faciales para este Otoño</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-10-14T15:04:52+02:00">14/10/2018</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2466 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cabello category-corporal category-cuidados category-dietas category-facial category-mejores-tratamientos category-nutricion-2 category-piel category-rostros tag-alimentos-antiedad tag-antiaging tag-combatir-la-celulitis tag-mejor-tratamiento-arrugas tag-nutricion tag-piel">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/mejores-alimentos-que-nutren-tu-piel/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/07/Pflanzensäfte20fokus20rechts-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/07/Pflanzensäfte20fokus20rechts-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/07/Pflanzensäfte20fokus20rechts-400x400.jpg 400w, https://belleza24.com/wp-content/uploads/2018/07/Pflanzensäfte20fokus20rechts-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/mejores-alimentos-que-nutren-tu-piel/">Mejores Alimentos que Nutren tu Piel</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-07-11T17:39:29+02:00">11/07/2018</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2455 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cabello category-corporal category-cuidados category-facial tag-belleza-en-verano tag-belleza-natural tag-cuerpo-sano tag-cuidados-para-cuerpo tag-piel tag-verano">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/mejores-cuidados-beauty-para-tu-verano/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/07/untitled-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/07/untitled-150x150.png 150w, https://belleza24.com/wp-content/uploads/2018/07/untitled-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/mejores-cuidados-beauty-para-tu-verano/">Mejores Cuidados Beauty para tu Verano</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-07-11T13:46:45+02:00">11/07/2018</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2451 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cabello category-cuidados tag-belleza tag-cabello-fuerte tag-cuidados-en-verano tag-cuidar-el-cabello tag-estar-guapa tag-pelo-brillante">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/mejores-trucos-para-el-cuidado-del-cabello-en-verano/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/07/cabello-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/07/cabello-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/07/cabello-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/mejores-trucos-para-el-cuidado-del-cabello-en-verano/">Mejores Trucos para el Cuidado del Cabello en Verano</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-07-11T12:28:58+02:00">11/07/2018</time></span></div>				</div>
+							</div>
+		</article>
+		</div></div></div></div><div id="block-wrap-111" class="block-wrap block-wrap-g-81 block-to-see block-wrap-classic clearfix block-css-111 side-spacing--boxed " data-id="111"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header block-title-2 block-title-border-2"><div class="block-title-inner"><div class="block-title"><h2 class="title" style="border-bottom-color:#eb9812;">Artículo Al Azar</h2></div><p class="block-subtitle"></p></div></div><div class="block">		<article class=" preview-grid title-s tile-design tile-design-1 stack ani-base tipi-xs-12 preview-81 post-1026 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cabello category-cuidados tag-belleza tag-brillo tag-cabello-fuerte tag-cabello-sano tag-colageno tag-extensiones tag-fuerte tag-pelo tag-pelo-largo">
+			<div class="preview-mini-wrap clearfix">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/el-colageno-para-tu-cabello/" class="mask-img">
+				<img width="480" height="175" src="https://belleza24.com/wp-content/uploads/2017/02/COLAGENO-EN-TU-CABELLO.jpg" class="attachment-valenti-480-320 size-valenti-480-320 wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2017/02/COLAGENO-EN-TU-CABELLO.jpg 960w, https://belleza24.com/wp-content/uploads/2017/02/COLAGENO-EN-TU-CABELLO-300x109.jpg 300w, https://belleza24.com/wp-content/uploads/2017/02/COLAGENO-EN-TU-CABELLO-768x280.jpg 768w" sizes="(max-width: 480px) 100vw, 480px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/el-colageno-para-tu-cabello/">EL COLÁGENO PARA TU CABELLO</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><span class="byline-part author"><a class="url fn n" href="https://belleza24.com/author/ricardo/"><i class="valenti-i-user" aria-hidden="true"></i> Ricardo</a></span><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2017-02-13T13:50:39+01:00">13/02/2017</time></span></div>				</div>
+							</div>
+		</article>
+		</div></div></div></div></div></div></li>
+<li id="menu-item-12" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-color mm-art mm-wrap-31 mm-wrap mm-sb-left menu-item-12"><a href="https://belleza24.com/category/corporal/" data-ppp="7" data-tid="4"  data-term="category">CORPORAL</a><div class="menu mm-31 tipi-row" data-mm="31"><div class="menu-wrap menu-wrap-more-10 tipi-flex"><div id="block-wrap-12" class="block-wrap block-wrap-22 block-to-see block-wrap-classic clearfix ppl-m-2 ppl-s-2 block-css-12 side-spacing--boxed " data-id="12"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header block-title-2 block-title-border-2"><div class="block-title-inner"><div class="block-title"><h2 class="title" style="border-bottom-color:#eb9812;">CORPORAL</h2></div><p class="block-subtitle"></p></div></div><div class="block">		<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2730 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-corporal category-cuidados category-facial tag-estetica-no-invasiva">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/tratamientos-esteticos-top-no-invasivos/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2014/12/estetica-no-invasiva-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2014/12/estetica-no-invasiva-150x150.png 150w, https://belleza24.com/wp-content/uploads/2014/12/estetica-no-invasiva-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/tratamientos-esteticos-top-no-invasivos/">Tratamientos estéticos top no invasivos</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a><a href="https://belleza24.com/category/corporal/" class="cat">CORPORAL</a><a href="https://belleza24.com/category/belleza/cuidados/" class="cat">CUIDADOS</a><a href="https://belleza24.com/category/facial/" class="cat">FACIAL</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-09-21T15:06:14+02:00">21/09/2021</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2714 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-corporal category-cuidados">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/como-eliminar-la-celulitis-en-gluteos-y-piernas/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2014/12/celutis-piernas-belleza-24-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2014/12/celutis-piernas-belleza-24-150x150.png 150w, https://belleza24.com/wp-content/uploads/2014/12/celutis-piernas-belleza-24-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/como-eliminar-la-celulitis-en-gluteos-y-piernas/">Cómo eliminar la celulitis en Glúteos y Piernas?</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a><a href="https://belleza24.com/category/corporal/" class="cat">CORPORAL</a><a href="https://belleza24.com/category/belleza/cuidados/" class="cat">CUIDADOS</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-09-18T11:25:26+02:00">18/09/2021</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2700 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-corporal category-facial">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/tratamientos-para-cicatrices-y-estrias/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/10/a-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/10/a-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/10/a-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/tratamientos-para-cicatrices-y-estrias/">Tratamientos para Cicatrices y Estrias</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-09-07T12:48:28+02:00">07/09/2021</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2670 post type-post status-publish format-standard has-post-thumbnail hentry category-corporal category-facial tag-acido-polilactico">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/el-acido-polilactico/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2021/08/elevación-glúteos-lanluma-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2021/08/elevación-glúteos-lanluma-150x150.png 150w, https://belleza24.com/wp-content/uploads/2021/08/elevación-glúteos-lanluma-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/el-acido-polilactico/">El Ácido Poliláctico</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/corporal/" class="cat">CORPORAL</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-08-30T00:12:57+02:00">30/08/2021</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2588 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-brazos category-corporal category-cuello category-cuidados category-facial category-mejores-tratamientos category-peso category-rostros category-tratamiento-esteticos tag-adelgazar tag-lipoescultura tag-liposuccion tag-perder-peso">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/liposuccion-o-lipoescultura-que-es/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/10/lipoescultura-laser-4k-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/10/lipoescultura-laser-4k-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/10/lipoescultura-laser-4k-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/liposuccion-o-lipoescultura-que-es/">Liposucción o Lipoescultura que es?</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-10-24T19:30:28+02:00">24/10/2018</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2577 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-corporal category-cuidados category-mejores-tratamientos category-perder-peso category-peso category-tratamiento-esteticos category-tratamientos-corporales tag-adelgazar tag-belleza tag-kilos tag-perder-peso tag-peso">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/tecnicas-para-deshacerte-de-la-grasa-abdominal/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/10/grasa-abdominal-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/10/grasa-abdominal-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/10/grasa-abdominal-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/tecnicas-para-deshacerte-de-la-grasa-abdominal/">Técnicas para Deshacerte de la Grasa Abdominal</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-10-24T18:41:17+02:00">24/10/2018</time></span></div>				</div>
+							</div>
+		</article>
+		</div></div></div></div><div id="block-wrap-112" class="block-wrap block-wrap-g-81 block-to-see block-wrap-classic clearfix block-css-112 side-spacing--boxed " data-id="112"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header block-title-2 block-title-border-2"><div class="block-title-inner"><div class="block-title"><h2 class="title" style="border-bottom-color:#eb9812;">Artículo Al Azar</h2></div><p class="block-subtitle"></p></div></div><div class="block">		<article class=" preview-grid title-s tile-design tile-design-1 stack ani-base tipi-xs-12 preview-81 post-24 post type-post status-publish format-standard has-post-thumbnail hentry category-corporal tag-mujeres tag-sindrome-premenstrual">
+			<div class="preview-mini-wrap clearfix">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/sindrome-premenstrual/" class="mask-img">
+				<img width="320" height="320" src="https://belleza24.com/wp-content/uploads/2014/12/7006317_ml.jpg" class="attachment-valenti-480-320 size-valenti-480-320 wp-post-image" alt="Belleza24.com" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2014/12/7006317_ml.jpg 1370w, https://belleza24.com/wp-content/uploads/2014/12/7006317_ml-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2014/12/7006317_ml-300x300.jpg 300w, https://belleza24.com/wp-content/uploads/2014/12/7006317_ml-1024x1024.jpg 1024w, https://belleza24.com/wp-content/uploads/2014/12/7006317_ml-125x125.jpg 125w" sizes="(max-width: 320px) 100vw, 320px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/sindrome-premenstrual/">Cómo reducir el síndrome premenstrual</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><span class="byline-part author"><a class="url fn n" href="https://belleza24.com/author/ricardo/"><i class="valenti-i-user" aria-hidden="true"></i> Ricardo</a></span><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/corporal/" class="cat">CORPORAL</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2014-12-17T19:19:11+01:00">17/12/2014</time></span></div>				</div>
+							</div>
+		</article>
+		</div></div></div></div></div></div></li>
+<li id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children dropper drop-it mm-color mm-art mm-wrap-31 mm-wrap mm-sb-left menu-item-13"><a href="https://belleza24.com/category/facial/" data-ppp="4" data-tid="2"  data-term="category">FACIAL</a><div class="menu mm-31 tipi-row" data-mm="31"><div class="menu-wrap menu-wrap-more-10 tipi-flex"><div id="block-wrap-13" class="block-wrap block-wrap-22 block-to-see block-wrap-classic clearfix block-css-13 side-spacing--boxed " data-id="13"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header block-title-2 block-title-border-2"><div class="block-title-inner"><div class="block-title"><h2 class="title" style="border-bottom-color:#eb9812;">FACIAL</h2></div><p class="block-subtitle"></p></div></div><div class="block">		<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2738 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cuidados category-facial category-nariz category-rostros tag-rinomodelacion">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/diferencias-entre-rinomodelacion-y-rinoplastia/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2021/09/Rinomodelacion-rinoplastia-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2021/09/Rinomodelacion-rinoplastia-150x150.png 150w, https://belleza24.com/wp-content/uploads/2021/09/Rinomodelacion-rinoplastia-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/diferencias-entre-rinomodelacion-y-rinoplastia/">Diferencias entre Rinomodelación y Rinoplastia</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a><a href="https://belleza24.com/category/belleza/cuidados/" class="cat">CUIDADOS</a><a href="https://belleza24.com/category/facial/" class="cat">FACIAL</a><a href="https://belleza24.com/category/facial/nariz/" class="cat">NARIZ</a><a href="https://belleza24.com/category/facial/rostros/" class="cat">ROSTRO</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-09-25T01:33:45+02:00">25/09/2021</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2736 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cuidados category-facial category-rostros">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/ventajas-de-la-medicina-estetica-en-invierno/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2014/12/medicina-estetica-en-invierno-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2014/12/medicina-estetica-en-invierno-150x150.png 150w, https://belleza24.com/wp-content/uploads/2014/12/medicina-estetica-en-invierno-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/ventajas-de-la-medicina-estetica-en-invierno/">Ventajas de la medicina estética en invierno</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a><a href="https://belleza24.com/category/belleza/cuidados/" class="cat">CUIDADOS</a><a href="https://belleza24.com/category/facial/" class="cat">FACIAL</a><a href="https://belleza24.com/category/facial/rostros/" class="cat">ROSTRO</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-09-24T11:45:12+02:00">24/09/2021</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2734 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cuidados category-facial tag-eliminar-papada">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/papada-enzimatica-como-podemos-eliminarla/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2014/12/papada-tratamiento-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2014/12/papada-tratamiento-150x150.png 150w, https://belleza24.com/wp-content/uploads/2014/12/papada-tratamiento-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/papada-enzimatica-como-podemos-eliminarla/">Papada enzimática como podemos eliminarla</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a><a href="https://belleza24.com/category/belleza/cuidados/" class="cat">CUIDADOS</a><a href="https://belleza24.com/category/facial/" class="cat">FACIAL</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-09-23T14:25:17+02:00">23/09/2021</time></span></div>				</div>
+							</div>
+		</article>
+		</div></div></div></div><div id="block-wrap-113" class="block-wrap block-wrap-g-81 block-to-see block-wrap-classic clearfix block-css-113 side-spacing--boxed " data-id="113"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header block-title-2 block-title-border-2"><div class="block-title-inner"><div class="block-title"><h2 class="title" style="border-bottom-color:#eb9812;">Artículo Al Azar</h2></div><p class="block-subtitle"></p></div></div><div class="block">		<article class=" preview-grid title-s tile-design tile-design-1 stack ani-base tipi-xs-12 preview-81 post-2670 post type-post status-publish format-standard has-post-thumbnail hentry category-corporal category-facial tag-acido-polilactico">
+			<div class="preview-mini-wrap clearfix">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/el-acido-polilactico/" class="mask-img">
+				<img width="324" height="320" src="https://belleza24.com/wp-content/uploads/2021/08/elevación-glúteos-lanluma-e1630275039121.png" class="attachment-valenti-480-320 size-valenti-480-320 wp-post-image" alt="" decoding="async" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/el-acido-polilactico/">El Ácido Poliláctico</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><span class="byline-part author"><a class="url fn n" href="https://belleza24.com/author/ricardo/"><i class="valenti-i-user" aria-hidden="true"></i> Ricardo</a></span><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/corporal/" class="cat">CORPORAL</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-08-30T00:12:57+02:00">30/08/2021</time></span></div>				</div>
+							</div>
+		</article>
+		</div></div></div></div>
+<ul class="sub-menu">
+	<li id="menu-item-14" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-color menu-item-14"><a href="https://belleza24.com/category/facial/labios/" class="block-more block-mm-init block-changer block-mm-changer" data-title="LABIOS" data-url="https://belleza24.com/category/facial/labios/" data-count="17" data-tid="12"  data-term="category">LABIOS</a></li>
+	<li id="menu-item-15" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-color menu-item-15"><a href="https://belleza24.com/category/facial/nariz/" class="block-more block-mm-init block-changer block-mm-changer" data-title="NARIZ" data-url="https://belleza24.com/category/facial/nariz/" data-count="14" data-tid="10"  data-term="category">NARIZ</a></li>
+	<li id="menu-item-16" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-color menu-item-16"><a href="https://belleza24.com/category/facial/ojos/" class="block-more block-mm-init block-changer block-mm-changer" data-title="OJOS" data-url="https://belleza24.com/category/facial/ojos/" data-count="20" data-tid="9"  data-term="category">OJOS</a></li>
+	<li id="menu-item-17" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-color menu-item-17"><a href="https://belleza24.com/category/facial/orejas/" class="block-more block-mm-init block-changer block-mm-changer" data-title="OREJAS" data-url="https://belleza24.com/category/facial/orejas/" data-count="2" data-tid="11"  data-term="category">OREJAS</a></li>
+	<li id="menu-item-18" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-color menu-item-18"><a href="https://belleza24.com/category/facial/rostros/" class="block-more block-mm-init block-changer block-mm-changer" data-title="ROSTRO" data-url="https://belleza24.com/category/facial/rostros/" data-count="76" data-tid="8"  data-term="category">ROSTRO</a></li>
+</ul></div></div>
+</li>
+<li id="menu-item-19" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-color mm-art mm-wrap-31 mm-wrap mm-sb-left menu-item-19"><a href="https://belleza24.com/category/piel/" data-ppp="7" data-tid="5"  data-term="category">PIEL</a><div class="menu mm-31 tipi-row" data-mm="31"><div class="menu-wrap menu-wrap-more-10 tipi-flex"><div id="block-wrap-19" class="block-wrap block-wrap-22 block-to-see block-wrap-classic clearfix ppl-m-2 ppl-s-2 block-css-19 side-spacing--boxed " data-id="19"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header block-title-2 block-title-border-2"><div class="block-title-inner"><div class="block-title"><h2 class="title" style="border-bottom-color:#eb9812;">PIEL</h2></div><p class="block-subtitle"></p></div></div><div class="block">		<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2726 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cuidados category-facial category-nutricion-2 category-piel category-rostros tag-antienvejecimiento">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/combate-el-envejecimiento-con-estos-trucos/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2014/12/trucos-antienvejecimiento-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2014/12/trucos-antienvejecimiento-150x150.png 150w, https://belleza24.com/wp-content/uploads/2014/12/trucos-antienvejecimiento-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/combate-el-envejecimiento-con-estos-trucos/">Combate el envejecimiento con estos trucos</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a><a href="https://belleza24.com/category/belleza/cuidados/" class="cat">CUIDADOS</a><a href="https://belleza24.com/category/facial/" class="cat">FACIAL</a><a href="https://belleza24.com/category/nutricion-2/" class="cat">NUTRICIÓN</a><a href="https://belleza24.com/category/piel/" class="cat">PIEL</a><a href="https://belleza24.com/category/facial/rostros/" class="cat">ROSTRO</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-09-20T11:58:18+02:00">20/09/2021</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2692 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-facial category-mujer category-piel category-salud category-tratamientos-faciales">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/mesoterapia-facial-con-vitaminas/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/06/CURSO_micronutrientes2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/06/CURSO_micronutrientes2-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/06/CURSO_micronutrientes2-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/mesoterapia-facial-con-vitaminas/">Mesoterapia Facial con Vitaminas</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-09-06T20:47:29+02:00">06/09/2021</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2582 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cuello category-cuidados category-facial category-mejores-tratamientos category-piel category-rostros category-salud category-tratamiento-esteticos category-tratamientos-faciales tag-abrasion tag-arrugas tag-celulas-muertas tag-peeling tag-peeling-facial tag-piling-facial tag-punta-de-diamante">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/peeling-facial-con-punta-de-diamante/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/10/thM58PBFUP-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/10/thM58PBFUP-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/10/thM58PBFUP-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/peeling-facial-con-punta-de-diamante/">Peeling Facial con Punta de Diamante</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-10-24T19:04:26+02:00">24/10/2018</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2570 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-corporal category-cuidados category-facial category-mejores-tratamientos category-ojos category-piel category-rostros category-tratamiento-esteticos category-tratamientos-faciales tag-botox tag-toxina-botulinica">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/consejos-para-aplicar-el-botox/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/10/Untitled-design-9-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/10/Untitled-design-9-150x150.png 150w, https://belleza24.com/wp-content/uploads/2018/10/Untitled-design-9-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/consejos-para-aplicar-el-botox/">Consejos para Aplicar el Botox</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-10-19T22:02:44+02:00">19/10/2018</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2556 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cuello category-cuidados category-facial category-mejores-tratamientos category-piel category-rostros category-salud category-tratamiento-esteticos category-tratamientos-faciales tag-antiaging tag-antiedad tag-arrugas tag-arrugas-faciales tag-botox tag-lineas-de-expresion tag-mejor-crema tag-piel tag-radiesse tag-restyline">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/lineas-de-expresion-como-puedo-eliminarlas/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/10/smiling-lady-579a25f65f9b589aa90711de-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/10/smiling-lady-579a25f65f9b589aa90711de-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/10/smiling-lady-579a25f65f9b589aa90711de-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/lineas-de-expresion-como-puedo-eliminarlas/">Líneas de Expresión, Cómo puedo eliminarlas?</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-10-17T14:05:09+02:00">17/10/2018</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2542 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cuello-cuello category-cuidados category-facial category-labios category-mejores-tratamientos category-nariz category-ojos category-piel category-rostros category-tratamiento-esteticos category-tratamientos-corporales category-tratamientos-faciales tag-acido-hialuronico tag-medicina-estetica tag-relelno-facial">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/rellenos-faciales-para-que-sirven/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/10/restylanemodel-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/10/restylanemodel-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/10/restylanemodel-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/rellenos-faciales-para-que-sirven/">Rellenos Faciales, para que sirven?</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-10-15T13:22:40+02:00">15/10/2018</time></span></div>				</div>
+							</div>
+		</article>
+		</div></div></div></div><div id="block-wrap-119" class="block-wrap block-wrap-g-81 block-to-see block-wrap-classic clearfix block-css-119 side-spacing--boxed " data-id="119"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header block-title-2 block-title-border-2"><div class="block-title-inner"><div class="block-title"><h2 class="title" style="border-bottom-color:#eb9812;">Artículo Al Azar</h2></div><p class="block-subtitle"></p></div></div><div class="block">		<article class=" preview-grid title-s tile-design tile-design-1 stack ani-base tipi-xs-12 preview-81 post-2466 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cabello category-corporal category-cuidados category-dietas category-facial category-mejores-tratamientos category-nutricion-2 category-piel category-rostros tag-alimentos-antiedad tag-antiaging tag-combatir-la-celulitis tag-mejor-tratamiento-arrugas tag-nutricion tag-piel">
+			<div class="preview-mini-wrap clearfix">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/mejores-alimentos-que-nutren-tu-piel/" class="mask-img">
+				<img width="275" height="320" src="https://belleza24.com/wp-content/uploads/2018/07/Pflanzensäfte20fokus20rechts.jpg" class="attachment-valenti-480-320 size-valenti-480-320 wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/07/Pflanzensäfte20fokus20rechts.jpg 400w, https://belleza24.com/wp-content/uploads/2018/07/Pflanzensäfte20fokus20rechts-258x300.jpg 258w" sizes="(max-width: 275px) 100vw, 275px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/mejores-alimentos-que-nutren-tu-piel/">Mejores Alimentos que Nutren tu Piel</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><span class="byline-part author"><a class="url fn n" href="https://belleza24.com/author/ricardo/"><i class="valenti-i-user" aria-hidden="true"></i> Ricardo</a></span><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-07-11T17:39:29+02:00">11/07/2018</time></span></div>				</div>
+							</div>
+		</article>
+		</div></div></div></div></div></div></li>
+<li id="menu-item-20" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-color mm-art mm-wrap-31 mm-wrap mm-sb-left menu-item-20"><a href="https://belleza24.com/category/salud/" data-ppp="7" data-tid="7"  data-term="category">CON SALUD</a><div class="menu mm-31 tipi-row" data-mm="31"><div class="menu-wrap menu-wrap-more-10 tipi-flex"><div id="block-wrap-20" class="block-wrap block-wrap-22 block-to-see block-wrap-classic clearfix ppl-m-2 ppl-s-2 block-css-20 side-spacing--boxed " data-id="20"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header block-title-2 block-title-border-2"><div class="block-title-inner"><div class="block-title"><h2 class="title" style="border-bottom-color:#eb9812;">CON SALUD</h2></div><p class="block-subtitle"></p></div></div><div class="block">		<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2753 post type-post status-publish format-standard has-post-thumbnail hentry category-psicologia category-salud tag-sonreir">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/la-expresion-de-sonreir/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2021/11/LA-Expresion-facial-botox-2-nunca-dejemos-de-reir-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2021/11/LA-Expresion-facial-botox-2-nunca-dejemos-de-reir-150x150.png 150w, https://belleza24.com/wp-content/uploads/2021/11/LA-Expresion-facial-botox-2-nunca-dejemos-de-reir-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/la-expresion-de-sonreir/">La Expresion de Sonreir</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/salud/" class="cat">SALUD</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-11-27T00:34:27+01:00">27/11/2021</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2692 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-facial category-mujer category-piel category-salud category-tratamientos-faciales">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/mesoterapia-facial-con-vitaminas/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/06/CURSO_micronutrientes2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/06/CURSO_micronutrientes2-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/06/CURSO_micronutrientes2-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/mesoterapia-facial-con-vitaminas/">Mesoterapia Facial con Vitaminas</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2021-09-06T20:47:29+02:00">06/09/2021</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2582 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cuello category-cuidados category-facial category-mejores-tratamientos category-piel category-rostros category-salud category-tratamiento-esteticos category-tratamientos-faciales tag-abrasion tag-arrugas tag-celulas-muertas tag-peeling tag-peeling-facial tag-piling-facial tag-punta-de-diamante">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/peeling-facial-con-punta-de-diamante/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/10/thM58PBFUP-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/10/thM58PBFUP-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/10/thM58PBFUP-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/peeling-facial-con-punta-de-diamante/">Peeling Facial con Punta de Diamante</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-10-24T19:04:26+02:00">24/10/2018</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2556 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cuello category-cuidados category-facial category-mejores-tratamientos category-piel category-rostros category-salud category-tratamiento-esteticos category-tratamientos-faciales tag-antiaging tag-antiedad tag-arrugas tag-arrugas-faciales tag-botox tag-lineas-de-expresion tag-mejor-crema tag-piel tag-radiesse tag-restyline">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/lineas-de-expresion-como-puedo-eliminarlas/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/10/smiling-lady-579a25f65f9b589aa90711de-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/10/smiling-lady-579a25f65f9b589aa90711de-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/10/smiling-lady-579a25f65f9b589aa90711de-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/lineas-de-expresion-como-puedo-eliminarlas/">Líneas de Expresión, Cómo puedo eliminarlas?</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-10-17T14:05:09+02:00">17/10/2018</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2549 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-cuidados category-facial category-labios category-mejores-tratamientos category-mujer category-salud category-tratamiento-esteticos category-tratamientos-faciales tag-aumento-labial tag-labios tag-labios-sensuales tag-mejor-tratamiento-estetico tag-piel-brillante tag-piel-mixta">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/aumento-de-labios-con-acido-hialuronico/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/10/maquillaje-tonos-pastel-1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/10/maquillaje-tonos-pastel-1-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/10/maquillaje-tonos-pastel-1-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/aumento-de-labios-con-acido-hialuronico/">Aumento de Labios con Ácido Hialurónico</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-10-17T13:15:04+02:00">17/10/2018</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2433 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-corporal category-cuidados category-curiosidades category-mejores-tratamientos category-mujer category-nutricion-2 category-piel category-salud category-tratamiento-esteticos category-tratamientos-corporales tag-alydia tag-aualix tag-aualyx tag-celulitis tag-tabaco">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/como-tratar-la-celulitis-en-personas-fumadoras/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/06/img_22889_ins_103653_orig-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/06/img_22889_ins_103653_orig-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/06/img_22889_ins_103653_orig-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/como-tratar-la-celulitis-en-personas-fumadoras/">Cómo Tratar la Celulitis en personas Fumadoras?</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-06-29T09:05:27+02:00">29/06/2018</time></span></div>				</div>
+							</div>
+		</article>
+		</div></div></div></div><div id="block-wrap-120" class="block-wrap block-wrap-g-81 block-to-see block-wrap-classic clearfix block-css-120 side-spacing--boxed " data-id="120"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header block-title-2 block-title-border-2"><div class="block-title-inner"><div class="block-title"><h2 class="title" style="border-bottom-color:#eb9812;">Artículo Al Azar</h2></div><p class="block-subtitle"></p></div></div><div class="block">		<article class=" preview-grid title-s tile-design tile-design-1 stack ani-base tipi-xs-12 preview-81 post-1739 post type-post status-publish format-standard has-post-thumbnail hentry category-corporal category-cuidados category-nutricion category-salud tag-cuerpo tag-curiosidades tag-nutricion tag-saliud">
+			<div class="preview-mini-wrap clearfix">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/la-leche-arroz-la-mas-digestiva/" class="mask-img">
+				<img width="480" height="317" src="https://belleza24.com/wp-content/uploads/2017/10/leche-de-arroz.jpg" class="attachment-valenti-480-320 size-valenti-480-320 wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2017/10/leche-de-arroz.jpg 700w, https://belleza24.com/wp-content/uploads/2017/10/leche-de-arroz-300x198.jpg 300w" sizes="(max-width: 480px) 100vw, 480px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/la-leche-arroz-la-mas-digestiva/">La Leche de Arroz la más digestiva</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><span class="byline-part author"><a class="url fn n" href="https://belleza24.com/author/ricardo/"><i class="valenti-i-user" aria-hidden="true"></i> Ricardo</a></span><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/cuidados/" class="cat">CUIDADOS</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2017-10-08T01:31:48+02:00">08/10/2017</time></span></div>				</div>
+							</div>
+		</article>
+		</div></div></div></div></div></div></li>
+<li id="menu-item-114" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-color mm-art mm-wrap-31 mm-wrap mm-sb-left menu-item-114"><a href="https://belleza24.com/category/redes-sociales/" data-ppp="7" data-tid="14"  data-term="category">FAMILIA</a><div class="menu mm-31 tipi-row" data-mm="31"><div class="menu-wrap menu-wrap-more-10 tipi-flex"><div id="block-wrap-114" class="block-wrap block-wrap-22 block-to-see block-wrap-classic clearfix ppl-m-2 ppl-s-2 block-css-114 side-spacing--boxed " data-id="114"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header block-title-2 block-title-border-2"><div class="block-title-inner"><div class="block-title"><h2 class="title" style="border-bottom-color:#eb9812;">FAMILIA</h2></div><p class="block-subtitle"></p></div></div><div class="block">		<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2433 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-corporal category-cuidados category-curiosidades category-mejores-tratamientos category-mujer category-nutricion-2 category-piel category-salud category-tratamiento-esteticos category-tratamientos-corporales tag-alydia tag-aualix tag-aualyx tag-celulitis tag-tabaco">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/como-tratar-la-celulitis-en-personas-fumadoras/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/06/img_22889_ins_103653_orig-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/06/img_22889_ins_103653_orig-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/06/img_22889_ins_103653_orig-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/como-tratar-la-celulitis-en-personas-fumadoras/">Cómo Tratar la Celulitis en personas Fumadoras?</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-06-29T09:05:27+02:00">29/06/2018</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2425 post type-post status-publish format-standard has-post-thumbnail hentry category-actualidad category-belleza category-corporal category-cuidados category-curiosidades category-dietas category-mejores-tratamientos category-nutricion category-piel category-salud tag-adelgazar tag-comer-sano tag-comida-light tag-como-adelgazar-facil tag-dieta-efectiva tag-ejores-dietas tag-suplementos-alimenticios">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/los-micronutrientes-que-finalidad-tienen/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/06/CURSO_micronutrientes2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/06/CURSO_micronutrientes2-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/06/CURSO_micronutrientes2-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/los-micronutrientes-que-finalidad-tienen/">Los Micronutrientes que finalidad tienen?</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-06-27T19:37:27+02:00">27/06/2018</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2345 post type-post status-publish format-standard has-post-thumbnail hentry category-actualidad category-belleza category-corporal category-cuidados category-mejores-tratamientos category-mujer category-tendencias category-tratamientos-corporales tag-arrugas tag-belleza-mujer tag-clinicas-esteticas tag-cuerpo-mujer tag-estetica tag-liposuccion tag-medicina-estetica tag-mejor-tratamiento-facial">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/rejuvenecimiento-intimo-con-desirial/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/04/depi11-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/04/depi11-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/04/depi11-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/rejuvenecimiento-intimo-con-desirial/">Rejuvenecimiento Intimo con Desirial</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-04-14T07:26:30+02:00">14/04/2018</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2280 post type-post status-publish format-standard has-post-thumbnail hentry category-actualidad category-belleza category-cabello category-cuidados category-curiosidades category-encrespamiento category-mejores-tratamientos category-rostros category-salud category-tendencias category-tratamiento-esteticos category-tratamientos-corporales category-tratamientos-faciales tag-aclarar-la-piel tag-bioestimulacion tag-botox tag-caida-de-pelo tag-mesoterapia tag-nutrientes tag-piel tag-plasma tag-relleno-capilar tag-vitaminas">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/la-bioestimulacion-con-plasma-para-frenar-la-caida-del-cabello/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/03/th4OQ2A3V7-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/03/th4OQ2A3V7-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/03/th4OQ2A3V7-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/la-bioestimulacion-con-plasma-para-frenar-la-caida-del-cabello/">La Bioestimulación con Plasma para Frenar la Caída del cabello</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-04-06T08:32:00+02:00">06/04/2018</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-2264 post type-post status-publish format-standard has-post-thumbnail hentry category-belleza category-brazos category-corporal category-cuidados category-curiosidades category-mejores-tratamientos category-perder-peso category-piel category-salud category-tendencias tag-abdominales tag-adelgazar tag-aqualix tag-aqualyx tag-criolipolisis tag-lipolaser tag-mesoterapia-corporal tag-perder-cintura tag-perder-volumen tag-piernas-delgadas">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/la-tecnica-del-lipolaser-para-remodelar-el-cuerpo/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2018/03/lipoaspiracao-masculina-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2018/03/lipoaspiracao-masculina-150x150.jpg 150w, https://belleza24.com/wp-content/uploads/2018/03/lipoaspiracao-masculina-125x125.jpg 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/la-tecnica-del-lipolaser-para-remodelar-el-cuerpo/">La Técnica del Lipoláser para Remodelar el Cuerpo</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2018-04-03T07:22:29+02:00">03/04/2018</time></span></div>				</div>
+							</div>
+		</article>
+				<article class="preview-thumbnail split ani-base split-1 split-design-1 tipi-xs-12 preview-22 post-1998 post type-post status-publish format-standard has-post-thumbnail hentry category-animales-curiosidades category-belleza category-cuidados category-curiosidades tag-acido-hialuronico tag-botox tag-cabello tag-densidad-de-cabello tag-estetica-y-belleza tag-foliculo-piloso tag-inyecciones-de-acido tag-toxina-botulinica">
+			<div class="preview-mini-wrap clearfix tipi-flex">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/acido-hialuronico-las-peluquerias-caninas/" class="mask-img">
+				<img width="150" height="150" src="https://belleza24.com/wp-content/uploads/2017/12/peluqueria-canina-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2017/12/peluqueria-canina-150x150.png 150w, https://belleza24.com/wp-content/uploads/2017/12/peluqueria-canina-125x125.png 125w" sizes="(max-width: 150px) 100vw, 150px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/acido-hialuronico-las-peluquerias-caninas/">Ácido Hialurónico en las Peluquerias Caninas</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/belleza/" class="cat">BELLEZA</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2017-12-27T07:59:09+01:00">27/12/2017</time></span></div>				</div>
+							</div>
+		</article>
+		</div></div></div></div><div id="block-wrap-1114" class="block-wrap block-wrap-g-81 block-to-see block-wrap-classic clearfix block-css-1114 side-spacing--boxed " data-id="1114"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header block-title-2 block-title-border-2"><div class="block-title-inner"><div class="block-title"><h2 class="title" style="border-bottom-color:#eb9812;">Artículo Al Azar</h2></div><p class="block-subtitle"></p></div></div><div class="block">		<article class=" preview-grid title-s tile-design tile-design-1 stack ani-base tipi-xs-12 preview-81 post-488 post type-post status-publish format-standard has-post-thumbnail hentry category-redes-sociales tag-personalidad tag-piel tag-tatuaje">
+			<div class="preview-mini-wrap clearfix">
+				<div class="cb-mask mask" style="background:#eb9812">			<a href="https://belleza24.com/los-tatuajes-y-la-personalidad/" class="mask-img">
+				<img width="254" height="320" src="https://belleza24.com/wp-content/uploads/2016/10/belleza24-2.jpg" class="attachment-valenti-480-320 size-valenti-480-320 wp-post-image" alt="" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2016/10/belleza24-2.jpg 501w, https://belleza24.com/wp-content/uploads/2016/10/belleza24-2-239x300.jpg 239w" sizes="(max-width: 254px) 100vw, 254px" />			</a>
+		</div>
+							<div class="cb-meta cb-article-meta meta">
+					<div class="title-wrap"><h2 class="title"><a href="https://belleza24.com/los-tatuajes-y-la-personalidad/">TATUAJES Y LA PERSONALIDAD</a></h2></div><div class="cb-byline byline byline-3 byline-cats-design-1"><span class="byline-part author"><a class="url fn n" href="https://belleza24.com/author/ricardo/"><i class="valenti-i-user" aria-hidden="true"></i> Ricardo</a></span><div class="byline-part cats"><i class="valenti-i-folder" aria-hidden="true"></i> <a href="https://belleza24.com/category/redes-sociales/" class="cat">SOCIAL</a></div><span class="byline-part cb-date date"><i class="valenti-i-clock" aria-hidden="true"></i> <time class="entry-date published dateCreated flipboard-date" datetime="2016-10-13T22:05:35+02:00">13/10/2016</time></span></div>				</div>
+							</div>
+		</article>
+		</div></div></div></div></div></div></li>
+			</ul>
+			<ul class="menu-icons horizontal-menu tipi-flex-eq-height">
+							</ul>
+		</div>
+	</div>
+</nav>
+<div id="cb-top-menu" class="secondary-menu-wrap tipi-m-0-down clearfix cb-dark-menu wrap">		<div class="menu-bg-area">
+			<div class="cb-top-menu-wrap tipi-flex side-spacing">
+				<div class="cb-breaking-news font-h tipi-vertical-c"><span>Destacado <i class="valenti-i-long-arrow-right"></i></span><ul id="cb-ticker"><li><a href="https://belleza24.com/la-expresion-de-sonreir/" title="La Expresion de Sonreir">La Expresion de Sonreir</a></li><li><a href="https://belleza24.com/diferencias-entre-rinomodelacion-y-rinoplastia/" title="Diferencias entre Rinomodelación y Rinoplastia">Diferencias entre Rinomodelación y Rinoplastia</a></li><li><a href="https://belleza24.com/ventajas-de-la-medicina-estetica-en-invierno/" title="Ventajas de la medicina estética en invierno">Ventajas de la medicina estética en invierno</a></li><li><a href="https://belleza24.com/papada-enzimatica-como-podemos-eliminarla/" title="Papada enzimática como podemos eliminarla">Papada enzimática como podemos eliminarla</a></li></ul></div>				<ul class="menu-icons tipi-flex-eq-height"></ul>			</div>
+		</div>
+	</div>
+	<div class="block-title-wrap archive-block-title cb-section-header wrap"><div class="block-title-inner side-spacing" style="border-bottom-color:#eb9812"><div class="block-title">		<h1 class="title">Página no encontrada.</h1>
+		</div></div></div><div id="cb-content" class="site-content clearfix wrap side-spacing content-bg">
+	<div class="tipi-cols clearfix">
+		<div id="main" class="cb-main main tipi-col tipi-xs-12 clearfix site-main main-block-wrap tipi-m-8">
+					<section class="entry-content">
+			<h1>Oops! The page you requested was not found.</h1>
+			<img src="https://belleza24.com/wp-content/themes/valenti/assets/img/404.png" srcset="https://belleza24.com/wp-content/themes/valenti/assets/img/404@2x.png 2x" class="cloud-404" alt="Belleza 24 com 404"/>
+		</section>
+		<footer class="article-footer"><p><form method="get" class="search tipi-flex" action="https://belleza24.com/">
+	<input type="search" class="search-field font-h" placeholder="Buscar" value="" name="s" autocomplete="off" aria-label="search form">
+	<button class="tipi-i-search-thin search-submit" type="submit" value="" aria-label="search"><i class="valenti-i-search"></i></button>
+</form>
+</p></footer>		</div>
+	</div>
+	</div>
+<footer id="cb-footer" class="site-footer wrap">
+	<div class="bg-area">
+		<div id="cb-widgets" class="cb-footer-wrap clearfix footer-widget-area footer-widget-area-3 footer-widgets-skin-3 site-img-1 widgets-area-bg--dark wrap">
+			<div class="footer-widget-bg-area-inner tipi-flex">
+									<div class="tipi-xs-12 footer-widget-wrap footer-widget-wrap-1 clearfix">
+						<div id="tag_cloud-3" class="footer-widget cb-footer-widget valenti-widget widget_tag_cloud"><h3 class="widget-title title"><span>Nube de Etiquetas</span></h3><div class="tagcloud"><a href="https://belleza24.com/tag/adelgazar/" class="tag-cloud-link tag-link-103 tag-link-position-1" style="font-size: 13.970588235294pt;" aria-label="adelgazar (30 elementos)">adelgazar</a>
+<a href="https://belleza24.com/tag/arrugas/" class="tag-cloud-link tag-link-742 tag-link-position-2" style="font-size: 13.147058823529pt;" aria-label="arrugas (27 elementos)">arrugas</a>
+<a href="https://belleza24.com/tag/belleza/" class="tag-cloud-link tag-link-119 tag-link-position-3" style="font-size: 22pt;" aria-label="belleza (74 elementos)">belleza</a>
+<a href="https://belleza24.com/tag/botox/" class="tag-cloud-link tag-link-878 tag-link-position-4" style="font-size: 10.058823529412pt;" aria-label="botox (19 elementos)">botox</a>
+<a href="https://belleza24.com/tag/cabello/" class="tag-cloud-link tag-link-232 tag-link-position-5" style="font-size: 8.6176470588235pt;" aria-label="cabello (16 elementos)">cabello</a>
+<a href="https://belleza24.com/tag/celulitis/" class="tag-cloud-link tag-link-43 tag-link-position-6" style="font-size: 8.6176470588235pt;" aria-label="celulitis (16 elementos)">celulitis</a>
+<a href="https://belleza24.com/tag/criolipolisis/" class="tag-cloud-link tag-link-55 tag-link-position-7" style="font-size: 8pt;" aria-label="criolipólisis (15 elementos)">criolipólisis</a>
+<a href="https://belleza24.com/tag/cuerpo/" class="tag-cloud-link tag-link-104 tag-link-position-8" style="font-size: 16.029411764706pt;" aria-label="cuerpo (38 elementos)">cuerpo</a>
+<a href="https://belleza24.com/tag/cuerpo-sano/" class="tag-cloud-link tag-link-466 tag-link-position-9" style="font-size: 8.6176470588235pt;" aria-label="cuerpo sano (16 elementos)">cuerpo sano</a>
+<a href="https://belleza24.com/tag/cuidados/" class="tag-cloud-link tag-link-117 tag-link-position-10" style="font-size: 16.441176470588pt;" aria-label="cuidados (40 elementos)">cuidados</a>
+<a href="https://belleza24.com/tag/estar-guapa/" class="tag-cloud-link tag-link-97 tag-link-position-11" style="font-size: 8.6176470588235pt;" aria-label="estar guapa (16 elementos)">estar guapa</a>
+<a href="https://belleza24.com/tag/hilos-tensores/" class="tag-cloud-link tag-link-15 tag-link-position-12" style="font-size: 9.6470588235294pt;" aria-label="hilos tensores (18 elementos)">hilos tensores</a>
+<a href="https://belleza24.com/tag/medicina-estetica/" class="tag-cloud-link tag-link-881 tag-link-position-13" style="font-size: 9.6470588235294pt;" aria-label="medicina estética (18 elementos)">medicina estética</a>
+<a href="https://belleza24.com/tag/mujer/" class="tag-cloud-link tag-link-139 tag-link-position-14" style="font-size: 8pt;" aria-label="mujer (15 elementos)">mujer</a>
+<a href="https://belleza24.com/tag/nutricion/" class="tag-cloud-link tag-link-57 tag-link-position-15" style="font-size: 11.705882352941pt;" aria-label="nutrición (23 elementos)">nutrición</a>
+<a href="https://belleza24.com/tag/perder-peso/" class="tag-cloud-link tag-link-820 tag-link-position-16" style="font-size: 10.058823529412pt;" aria-label="perder peso (19 elementos)">perder peso</a>
+<a href="https://belleza24.com/tag/piel/" class="tag-cloud-link tag-link-110 tag-link-position-17" style="font-size: 18.705882352941pt;" aria-label="piel (52 elementos)">piel</a>
+<a href="https://belleza24.com/tag/rostro/" class="tag-cloud-link tag-link-143 tag-link-position-18" style="font-size: 17.058823529412pt;" aria-label="ROSTRO (43 elementos)">ROSTRO</a>
+<a href="https://belleza24.com/tag/salud/" class="tag-cloud-link tag-link-65 tag-link-position-19" style="font-size: 19.735294117647pt;" aria-label="salud (58 elementos)">salud</a>
+<a href="https://belleza24.com/tag/acido-hialuronico/" class="tag-cloud-link tag-link-1048 tag-link-position-20" style="font-size: 11.705882352941pt;" aria-label="ácido hialurónico (23 elementos)">ácido hialurónico</a></div>
+</div>					</div>
+													<div class="tipi-xs-12 footer-widget-wrap footer-widget-wrap-2 clearfix">
+						<div id="media_image-2" class="footer-widget cb-footer-widget valenti-widget widget_media_image"><h3 class="widget-title title"><span>4 OCEAN</span></h3><a href="https://clinicasvicario.es/4ocean/"><img width="300" height="293" src="https://belleza24.com/wp-content/uploads/2014/12/4OCEANs-300x293.png" class="image wp-image-2646  attachment-medium size-medium" alt="" style="max-width: 100%; height: auto;" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2014/12/4OCEANs-300x293.png 300w, https://belleza24.com/wp-content/uploads/2014/12/4OCEANs.png 327w" sizes="(max-width: 300px) 100vw, 300px" /></a></div><div id="custom_html-3" class="widget_text footer-widget cb-footer-widget valenti-widget widget_custom_html"><div class="textwidget custom-html-widget"><h3 style="text-align: center;"><span style="color:#33cccc;"><a href="http://www.clinicaesteticabarcelona.es">Clínica Vicario</a></span></h3>
+</div></div>					</div>
+													<div class="tipi-xs-12 footer-widget-wrap footer-widget-wrap-3 clearfix footer-widget-wrap-last">
+						<div id="media_image-3" class="footer-widget cb-footer-widget valenti-widget widget_media_image"><h3 class="widget-title title"><span>VIVIR SIN PLASTICO</span></h3><a href="https://clinicasvicario.es/vivir-sin-plastico"><img width="300" height="294" src="https://belleza24.com/wp-content/uploads/2014/12/vivir-sin-plastic-04.57.45-300x294.png" class="image wp-image-2647  attachment-medium size-medium" alt="" style="max-width: 100%; height: auto;" decoding="async" srcset="https://belleza24.com/wp-content/uploads/2014/12/vivir-sin-plastic-04.57.45-300x294.png 300w, https://belleza24.com/wp-content/uploads/2014/12/vivir-sin-plastic-04.57.45.png 579w" sizes="(max-width: 300px) 100vw, 300px" /></a></div><div id="custom_html-4" class="widget_text footer-widget cb-footer-widget valenti-widget widget_custom_html"><div class="textwidget custom-html-widget"><h3 style="text-align: center;"><span style="color:#33cccc;"><a href="http://www.creditosalinstante.es">Mejor Credito al Instante</a></span></h3>
+</div></div>					</div>
+												<div class="background"></div>			</div>
+		</div>
+							<div class="footer-lower cb-footer-lower clearfix site-skin-3">
+				<div class="tipi-row tipi-flex flex-wrap wrap side-spacing clearfix">
+					<div class="logo-copyright-block">
+						<div class="cb-copyright copyright"></div>
+					</div>
+											<div class="tipi-flex-right tipi-vertical-c">
+													<nav id="footer-navigation" class="footer-navigation clearfix">
+								<ul id="menu-menu-footer" class="footer-menu horizontal-menu"><li id="menu-item-204" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy current_page_parent dropper standard-drop mm-color menu-item-204"><a rel="privacy-policy" href="https://belleza24.com/blog/">Blog</a></li>
+<li id="menu-item-203" class="menu-item menu-item-type-post_type menu-item-object-page dropper standard-drop mm-color menu-item-203"><a href="https://belleza24.com/contacto/">Contacto</a></li>
+<li id="menu-item-209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home dropper standard-drop mm-color menu-item-209"><a href="https://belleza24.com/quienes-somos/">Quiénes somos</a></li>
+</ul>							</nav><!-- .footer-navigation -->
+																								</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+<span class="shadow__sides wrap"></span></div>
+<div id="mob-menu-wrap" class="mob-menu-wrap mobile-navigation-dd tipi-l-0 site-skin-2 site-img-1">
+	<div class="bg-area">
+		<div class="content-wrap">
+			<div class="content">
+				<div class="logo-x-wrap tipi-flex vertical-c">
+										<a href="#" class="mob-tr-close tipi-close-icon"><i class="valenti-i-x" aria-hidden="true"></i></a>
+				</div>
+								<ul class="menu-icons horizontal-menu">
+									</ul>
+			</div>
+		</div>
+		<div class="background"></div>	</div>
+</div>
+<div id="modal" class="modal-wrap inactive dark-overlay">
+	<span class="tipi-overlay tipi-overlay-modal"></span>
+	<div class="content tipi-vertical-c wrap">
+		<div class="content-search search-form-wrap content-block tipi-xs-12 tipi-m-8">
+			<form method="get" class="search tipi-flex" action="https://belleza24.com/">
+	<input type="search" class="search-field font-h" placeholder="Buscar" value="" name="s" autocomplete="off" aria-label="search form">
+	<button class="tipi-i-search-thin search-submit" type="submit" value="" aria-label="search"><i class="valenti-i-search"></i></button>
+</form>
+			<div class="search-hints">
+				<span class="search-hint">
+					Type to search or hit ESC to close				</span>
+			</div>
+			<div class="content-found-wrap"><div class="content-found"></div><div class="button-wrap"><a class="search-all-results button-arrow-r button-arrow tipi-button" href="#"><span class="button-title">See all results</span><i class="valenti-i-chevron-right"></i></a></div></div>		</div>
+		<div class="content-lwa content-block site-img-1 site-skin-2">
+				</div>
+		<div class="content-custom content-block">
+		</div>
+	</div>
+	<a href="#" class="close tipi-x-wrap tipi-x-outer"><i class="valenti-i-x"></i></a>
+
+</div>
+<span id="tipi-overlay" class="tipi-overlay tipi-overlay-base tipi-overlay-dark"><a href="#" class="close tipi-x-wrap"><i class="valenti-i-x"></i></a></span>
+	<script type="application/ld+json">{"@context": "http://schema.org",
+	"@type": "WebPage",
+	"name": "Belleza 24 com",
+	"description": "Blog, Tips Belleza 24 Tips de felleza, Mejores  prouctos, Mejjoes tratamientos, Mejores Precios y Maquinad medicas",
+	"url": "https://belleza24.com/","potentialAction": {
+		"@type": "SearchAction",
+		"target": "https://belleza24.com/?s=&#123;search_term&#125;",
+		"query-input": "required name=search_term"}}</script><div id="to-top-wrap" class="to-top accent--color tipi-xs-0"><a href="#" id="to-top-a"><i class="valenti-i-long-arrow-up"></i></a></div><style id='valenti-logo-inline-css' type='text/css'>
+@media only screen and (min-width: 1200px) {.logo-main img{ display:inline-block; width:150px; height:117px;}}
+</style>
+<style id='valenti-mm-style-inline-css' type='text/css'>
+.main-menu .mm-color.menu-item-42 .block-title-wrap.block-title-border-2 .title, .main-menu .mm-color.menu-item-42 .mm-51 .menu-wrap > .sub-menu > li > a
+		{ border-color: #eb9812!important; }
+			.main-menu-bar-color-1 .main-menu .mm-color.menu-item-42.active > a,
+			.main-menu-bar-color-1.mm-ani-0 .main-menu .mm-color.menu-item-42:hover > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-item.menu-item-42 > a,
+			.main-menu-bar-color-1 .main-menu .current-post-ancestor.menu-item-42 > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-ancestor.menu-item-42 > a
+			{ background: #eb9812; }.main-navigation .mm-color.menu-item-42.mm-sb-left .sub-menu { background: #eb9812;}
+.main-menu .mm-color.menu-item-10 .block-title-wrap.block-title-border-2 .title, .main-menu .mm-color.menu-item-10 .mm-51 .menu-wrap > .sub-menu > li > a
+		{ border-color: #eb9812!important; }
+			.main-menu-bar-color-1 .main-menu .mm-color.menu-item-10.active > a,
+			.main-menu-bar-color-1.mm-ani-0 .main-menu .mm-color.menu-item-10:hover > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-item.menu-item-10 > a,
+			.main-menu-bar-color-1 .main-menu .current-post-ancestor.menu-item-10 > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-ancestor.menu-item-10 > a
+			{ background: #eb9812; }.main-navigation .mm-color.menu-item-10.mm-sb-left .sub-menu { background: #eb9812;}
+.main-menu .mm-color.menu-item-11 .block-title-wrap.block-title-border-2 .title, .main-menu .mm-color.menu-item-11 .mm-51 .menu-wrap > .sub-menu > li > a
+		{ border-color: #eb9812!important; }
+			.main-menu-bar-color-1 .main-menu .mm-color.menu-item-11.active > a,
+			.main-menu-bar-color-1.mm-ani-0 .main-menu .mm-color.menu-item-11:hover > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-item.menu-item-11 > a,
+			.main-menu-bar-color-1 .main-menu .current-post-ancestor.menu-item-11 > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-ancestor.menu-item-11 > a
+			{ background: #eb9812; }.main-navigation .mm-color.menu-item-11.mm-sb-left .sub-menu { background: #eb9812;}
+.main-menu .mm-color.menu-item-12 .block-title-wrap.block-title-border-2 .title, .main-menu .mm-color.menu-item-12 .mm-51 .menu-wrap > .sub-menu > li > a
+		{ border-color: #eb9812!important; }
+			.main-menu-bar-color-1 .main-menu .mm-color.menu-item-12.active > a,
+			.main-menu-bar-color-1.mm-ani-0 .main-menu .mm-color.menu-item-12:hover > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-item.menu-item-12 > a,
+			.main-menu-bar-color-1 .main-menu .current-post-ancestor.menu-item-12 > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-ancestor.menu-item-12 > a
+			{ background: #eb9812; }.main-navigation .mm-color.menu-item-12.mm-sb-left .sub-menu { background: #eb9812;}
+.main-menu .mm-color.menu-item-13 .block-title-wrap.block-title-border-2 .title, .main-menu .mm-color.menu-item-13 .mm-51 .menu-wrap > .sub-menu > li > a
+		{ border-color: #eb9812!important; }
+			.main-menu-bar-color-1 .main-menu .mm-color.menu-item-13.active > a,
+			.main-menu-bar-color-1.mm-ani-0 .main-menu .mm-color.menu-item-13:hover > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-item.menu-item-13 > a,
+			.main-menu-bar-color-1 .main-menu .current-post-ancestor.menu-item-13 > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-ancestor.menu-item-13 > a
+			{ background: #eb9812; }.main-navigation .mm-color.menu-item-13.mm-sb-left .sub-menu { background: #eb9812;}
+.main-menu .mm-color.menu-item-19 .block-title-wrap.block-title-border-2 .title, .main-menu .mm-color.menu-item-19 .mm-51 .menu-wrap > .sub-menu > li > a
+		{ border-color: #eb9812!important; }
+			.main-menu-bar-color-1 .main-menu .mm-color.menu-item-19.active > a,
+			.main-menu-bar-color-1.mm-ani-0 .main-menu .mm-color.menu-item-19:hover > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-item.menu-item-19 > a,
+			.main-menu-bar-color-1 .main-menu .current-post-ancestor.menu-item-19 > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-ancestor.menu-item-19 > a
+			{ background: #eb9812; }.main-navigation .mm-color.menu-item-19.mm-sb-left .sub-menu { background: #eb9812;}
+.main-menu .mm-color.menu-item-20 .block-title-wrap.block-title-border-2 .title, .main-menu .mm-color.menu-item-20 .mm-51 .menu-wrap > .sub-menu > li > a
+		{ border-color: #eb9812!important; }
+			.main-menu-bar-color-1 .main-menu .mm-color.menu-item-20.active > a,
+			.main-menu-bar-color-1.mm-ani-0 .main-menu .mm-color.menu-item-20:hover > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-item.menu-item-20 > a,
+			.main-menu-bar-color-1 .main-menu .current-post-ancestor.menu-item-20 > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-ancestor.menu-item-20 > a
+			{ background: #eb9812; }.main-navigation .mm-color.menu-item-20.mm-sb-left .sub-menu { background: #eb9812;}
+.main-menu .mm-color.menu-item-114 .block-title-wrap.block-title-border-2 .title, .main-menu .mm-color.menu-item-114 .mm-51 .menu-wrap > .sub-menu > li > a
+		{ border-color: #eb9812!important; }
+			.main-menu-bar-color-1 .main-menu .mm-color.menu-item-114.active > a,
+			.main-menu-bar-color-1.mm-ani-0 .main-menu .mm-color.menu-item-114:hover > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-item.menu-item-114 > a,
+			.main-menu-bar-color-1 .main-menu .current-post-ancestor.menu-item-114 > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-ancestor.menu-item-114 > a
+			{ background: #eb9812; }.main-navigation .mm-color.menu-item-114.mm-sb-left .sub-menu { background: #eb9812;}
+</style>
+<script type="text/javascript" src="https://belleza24.com/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://belleza24.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://belleza24.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.0.3" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-translations">
+/* <![CDATA[ */
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "contact-form-7", {"translation-revision-date":"2025-01-14 08:02:48+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"es"},"This contact form is placed in the wrong place.":["Este formulario de contacto est\u00e1 situado en el lugar incorrecto."],"Error:":["Error:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+/* ]]> */
+</script>
+<script type="text/javascript" id="contact-form-7-js-before">
+/* <![CDATA[ */
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/belleza24.com\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    },
+    "cached": 1
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://belleza24.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.0.3" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://belleza24.com/wp-content/themes/valenti/assets/js/swipebox.min.js?ver=1.4.4.1" id="swipebox-js"></script>
+<script type="text/javascript" src="https://belleza24.com/wp-content/themes/valenti/assets/js/gsap/TweenLite.min.js?ver=1.20.5" id="tween-lite-js"></script>
+<script type="text/javascript" src="https://belleza24.com/wp-content/themes/valenti/assets/js/gsap/CSSPlugin.min.js?ver=1.20.5" id="css-plugin-js"></script>
+<script type="text/javascript" src="https://belleza24.com/wp-content/themes/valenti/assets/js/scrollmagic.min.js?ver=2.0.5" id="scroll-magic-js"></script>
+<script type="text/javascript" src="https://belleza24.com/wp-content/themes/valenti/assets/js/sticky-kit.min.js?ver=2.2.3" id="sticky-kit-js"></script>
+<script type="text/javascript" src="https://belleza24.com/wp-content/themes/valenti/assets/js/flickity.pkgd.min.js?ver=2.1.2" id="flickity-js"></script>
+<script type="text/javascript" src="https://belleza24.com/wp-content/themes/valenti/assets/js/flickity-full-screen.min.js?ver=1.1.0" id="flickity-full-screen-js"></script>
+<script type="text/javascript" src="https://belleza24.com/wp-content/themes/valenti/assets/js/flickity-fade.min.js?ver=1.0.0" id="flickity-fade-js"></script>
+<script type="text/javascript" src="https://belleza24.com/wp-content/themes/valenti/assets/js/menu-aim.min.js?ver=1.9.0" id="menu-aim-js"></script>
+<script type="text/javascript" id="valenti-dep-js-extra">
+/* <![CDATA[ */
+var cbExt = {"cbLb":"on"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://belleza24.com/wp-content/themes/valenti/assets/js/jquery.ext.js?ver=5.6.3.9" id="valenti-dep-js"></script>
+<script type="text/javascript" src="https://belleza24.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://belleza24.com/wp-includes/js/jquery/ui/tabs.min.js?ver=1.13.3" id="jquery-ui-tabs-js"></script>
+<script type="text/javascript" id="valenti-functions-js-extra">
+/* <![CDATA[ */
+var valentiJS = {"cbUrl":"https:\/\/belleza24.com\/wp-admin\/admin-ajax.php","cbPostID":"","args":{"path":"\/","slider":"7000","disqus":false,"iplCached":true,"iplMob":true,"lazy":false,"lightbox":true,"pluginsUrl":"https:\/\/belleza24.com\/wp-content\/plugins","cookieDuration":90,"frontpage":false,"ipl":[]},"root":"https:\/\/belleza24.com\/wp-json\/codetipi-valenti\/v1\/","nonce":"3b104b38a3","i18n":{"embedError":"There was a problem with your embed code. Please refer to the documentation for help.","loadMore":"Ver Mas","noMore":"No More Content"},"qry":{"error":"404","m":"","p":0,"post_parent":"","subpost":"","subpost_id":"","attachment":"","attachment_id":0,"name":"","pagename":"","page_id":0,"second":"","minute":"","hour":"","day":0,"monthnum":0,"year":0,"w":0,"category_name":"","tag":"","cat":"","tag_id":"","author":"","author_name":"","feed":"","tb":"","paged":0,"meta_key":"","meta_value":"","preview":"","s":"","sentence":"","title":"","fields":"","menu_order":"","embed":"","category__in":[],"category__not_in":[],"category__and":[],"post__in":[],"post__not_in":[],"post_name__in":[],"tag__in":[],"tag__not_in":[],"tag__and":[],"tag_slug__in":[],"tag_slug__and":[],"post_parent__in":[],"post_parent__not_in":[],"author__in":[],"author__not_in":[],"search_columns":[],"ignore_sticky_posts":false,"suppress_filters":false,"cache_results":true,"update_post_term_cache":true,"update_menu_item_cache":false,"lazy_load_term_meta":true,"update_post_meta_cache":true,"post_type":"","posts_per_page":10,"nopaging":false,"comments_per_page":"50","no_found_rows":false,"order":"DESC"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://belleza24.com/wp-content/themes/valenti/assets/js/functions.min.js?ver=5.6.3.9" id="valenti-functions-js"></script>
+<script type="text/javascript" id="valenti-functions-js-after">
+/* <![CDATA[ */
+	var valenti_10 = {
+		id: 10,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 22,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 5,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 6,
+		args: {"cat":"6","post_type":{"post":"post"},"posts_per_page":6,"ignore_sticky_posts":1}	};
+	
+	var valenti_110 = {
+		id: 110,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 81,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 4,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 1,
+		args: {"cat":"6","post_type":{"post":"post"},"posts_per_page":1,"ignore_sticky_posts":1,"meta_key":"cb_featured_post_menu","meta_value":"featured"}	};
+	
+	var valenti_110 = {
+		id: 110,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 81,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 4,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 1,
+		args: {"cat":"6","post_type":{"post":"post"},"posts_per_page":1,"ignore_sticky_posts":1,"orderby":"rand"}	};
+	
+	var valenti_11 = {
+		id: 11,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 22,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 5,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 6,
+		args: {"cat":"3","post_type":{"post":"post"},"posts_per_page":6,"ignore_sticky_posts":1}	};
+	
+	var valenti_111 = {
+		id: 111,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 81,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 4,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 1,
+		args: {"cat":"3","post_type":{"post":"post"},"posts_per_page":1,"ignore_sticky_posts":1,"meta_key":"cb_featured_post_menu","meta_value":"featured"}	};
+	
+	var valenti_111 = {
+		id: 111,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 81,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 4,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 1,
+		args: {"cat":"3","post_type":{"post":"post"},"posts_per_page":1,"ignore_sticky_posts":1,"orderby":"rand"}	};
+	
+	var valenti_12 = {
+		id: 12,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 22,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 5,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 6,
+		args: {"cat":"4","post_type":{"post":"post"},"posts_per_page":6,"ignore_sticky_posts":1}	};
+	
+	var valenti_112 = {
+		id: 112,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 81,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 4,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 1,
+		args: {"cat":"4","post_type":{"post":"post"},"posts_per_page":1,"ignore_sticky_posts":1,"meta_key":"cb_featured_post_menu","meta_value":"featured"}	};
+	
+	var valenti_112 = {
+		id: 112,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 81,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 4,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 1,
+		args: {"cat":"4","post_type":{"post":"post"},"posts_per_page":1,"ignore_sticky_posts":1,"orderby":"rand"}	};
+	
+	var valenti_13 = {
+		id: 13,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 22,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 5,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 3,
+		args: {"cat":"2","post_type":{"post":"post"},"posts_per_page":3,"ignore_sticky_posts":1}	};
+	
+	var valenti_113 = {
+		id: 113,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 81,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 4,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 1,
+		args: {"cat":"2","post_type":{"post":"post"},"posts_per_page":1,"ignore_sticky_posts":1,"meta_key":"cb_featured_post_menu","meta_value":"featured"}	};
+	
+	var valenti_113 = {
+		id: 113,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 81,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 4,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 1,
+		args: {"cat":"2","post_type":{"post":"post"},"posts_per_page":1,"ignore_sticky_posts":1,"orderby":"rand"}	};
+	
+	var valenti_19 = {
+		id: 19,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 22,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 5,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 6,
+		args: {"cat":"5","post_type":{"post":"post"},"posts_per_page":6,"ignore_sticky_posts":1}	};
+	
+	var valenti_119 = {
+		id: 119,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 81,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 4,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 1,
+		args: {"cat":"5","post_type":{"post":"post"},"posts_per_page":1,"ignore_sticky_posts":1,"meta_key":"cb_featured_post_menu","meta_value":"featured"}	};
+	
+	var valenti_119 = {
+		id: 119,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 81,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 4,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 1,
+		args: {"cat":"5","post_type":{"post":"post"},"posts_per_page":1,"ignore_sticky_posts":1,"orderby":"rand"}	};
+	
+	var valenti_20 = {
+		id: 20,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 22,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 5,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 6,
+		args: {"cat":"7","post_type":{"post":"post"},"posts_per_page":6,"ignore_sticky_posts":1}	};
+	
+	var valenti_120 = {
+		id: 120,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 81,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 4,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 1,
+		args: {"cat":"7","post_type":{"post":"post"},"posts_per_page":1,"ignore_sticky_posts":1,"meta_key":"cb_featured_post_menu","meta_value":"featured"}	};
+	
+	var valenti_120 = {
+		id: 120,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 81,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 4,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 1,
+		args: {"cat":"7","post_type":{"post":"post"},"posts_per_page":1,"ignore_sticky_posts":1,"orderby":"rand"}	};
+	
+	var valenti_114 = {
+		id: 114,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 22,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 5,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 6,
+		args: {"cat":"14","post_type":{"post":"post"},"posts_per_page":6,"ignore_sticky_posts":1}	};
+	
+	var valenti_1114 = {
+		id: 1114,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 81,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 4,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 1,
+		args: {"cat":"14","post_type":{"post":"post"},"posts_per_page":1,"ignore_sticky_posts":1,"meta_key":"cb_featured_post_menu","meta_value":"featured"}	};
+	
+	var valenti_1114 = {
+		id: 1114,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 81,
+		is110: 0,
+		counter: 0,
+		counter_class: "",
+		post_subtitle: "off",
+		excerpt_off: 1,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 4,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 1,
+		args: {"cat":"14","post_type":{"post":"post"},"posts_per_page":1,"ignore_sticky_posts":1,"orderby":"rand"}	};
+	
+/* ]]> */
+</script>
+</body>
+</html><!-- The End. what a ride! -->

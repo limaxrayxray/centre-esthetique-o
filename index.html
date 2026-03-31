@@ -456,6 +456,128 @@
       .bento-card.wide { grid-column: span 1; }
     }
 
+    /* ─── LOGO CLOUD / PARTNERS ──────────────────────────────── */
+    #partners {
+      background: #0e0e1a;
+      padding: 50px 0;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,.04);
+      overflow: hidden;
+    }
+    .partners-label {
+      font-size: .8rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.45);
+      margin-bottom: 32px;
+    }
+    /* Marquee track */
+    .partners-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 20s linear infinite;
+    }
+    .partners-marquee:hover { animation-play-state: paused; }
+    .partners-set {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      padding: 0 2rem;
+    }
+    @keyframes marquee {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    /* Fade edges */
+    .partners-track {
+      position: relative;
+    }
+    .partners-track::before,
+    .partners-track::after {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 100px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .partners-track::before {
+      left: 0;
+      background: linear-gradient(to right, #0e0e1a, transparent);
+    }
+    .partners-track::after {
+      right: 0;
+      background: linear-gradient(to left, #0e0e1a, transparent);
+    }
+    .partner-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: .7;
+      transition: opacity .3s ease;
+    }
+    .partner-logo:hover {
+      opacity: 1;
+    }
+    .partner-logo img {
+      height: 40px;
+      width: auto;
+      object-fit: contain;
+    }
+    .partner-wordmark {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: rgba(255,255,255,.85);
+      letter-spacing: .06em;
+      white-space: nowrap;
+    }
+    .partner-wordmark.pw-anesi {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-weight: 300;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+    }
+    .partner-wordmark.pw-depileve {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      color: rgba(255,255,255,.85);
+    }
+    .partner-wordmark.pw-levissime {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+    }
+    .partner-wordmark.pw-hnt {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 1.5rem;
+      letter-spacing: .02em;
+    }
+    /* Separator dot between logos */
+    .partner-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: rgba(79,196,240,.35);
+      flex-shrink: 0;
+    }
+    @media (max-width: 600px) {
+      #partners { padding: 35px 0; }
+      .partners-set { gap: 2.5rem; }
+      .partner-wordmark { font-size: 1.2rem; }
+      .partner-wordmark.pw-anesi,
+      .partner-wordmark.pw-depileve { font-size: 1.1rem; }
+    }
+
     /* ─── GALLERY / FOCUS CARDS ─────────────────────────────── */
     #gallery {
       background: #f4f2fa;
@@ -563,6 +685,164 @@
       #gallery { padding: 60px 20px; }
       .focus-grid { grid-template-columns: 1fr; }
       .focus-card { height: 18rem; }
+    }
+
+    /* ─── PRICING / TARIFS ──────────────────────────────────── */
+    #tarifs {
+      background: #0a0a12;
+      padding: 100px 40px;
+    }
+    .tarifs-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .tarifs-header .label {
+      display: inline-block;
+      font-size: .8rem;
+      font-weight: 600;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: #4fc4f0;
+      background: rgba(79,196,240,.08);
+      border: 1px solid rgba(79,196,240,.2);
+      padding: 5px 14px;
+      border-radius: 999px;
+    }
+    .tarifs-header h2 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-top: 18px;
+      color: #f8fafc;
+    }
+    .tarifs-header p {
+      color: rgba(255,255,255,.55);
+      font-size: .95rem;
+      margin-top: 12px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    /* Tabs */
+    .tarifs-tabs {
+      display: flex;
+      justify-content: center;
+      gap: .5rem;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .tarifs-tab {
+      font-family: inherit;
+      font-size: .82rem;
+      font-weight: 500;
+      letter-spacing: .04em;
+      padding: 8px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color: rgba(255,255,255,.55);
+      cursor: pointer;
+      transition: all .3s ease;
+    }
+    .tarifs-tab:hover {
+      border-color: rgba(79,196,240,.3);
+      color: rgba(255,255,255,.8);
+    }
+    .tarifs-tab.active {
+      background: linear-gradient(135deg, #4fc4f0, #3a2d9e);
+      border-color: transparent;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* Price panel */
+    .tarifs-panels {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .tarifs-panel {
+      display: none;
+    }
+    .tarifs-panel.active {
+      display: block;
+      animation: fadeInUp .35s ease;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .tarifs-card {
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+    .tarifs-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 14px 24px;
+      border-bottom: 1px solid rgba(255,255,255,.05);
+      transition: background .2s ease;
+    }
+    .tarifs-row:last-child { border-bottom: none; }
+    .tarifs-row:hover {
+      background: rgba(79,196,240,.04);
+    }
+    .tarifs-row .name {
+      font-size: .92rem;
+      color: rgba(255,255,255,.82);
+      flex: 1;
+      padding-right: 1rem;
+    }
+    .tarifs-row .price {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #4fc4f0;
+      white-space: nowrap;
+    }
+    .tarifs-row.sub {
+      padding-left: 44px;
+    }
+    .tarifs-row.sub .name {
+      font-size: .85rem;
+      color: rgba(255,255,255,.55);
+    }
+    .tarifs-row.sub .price {
+      font-size: .95rem;
+      color: rgba(79,196,240,.7);
+    }
+    .tarifs-row.heading-row {
+      background: rgba(79,196,240,.06);
+      padding: 10px 24px;
+    }
+    .tarifs-row.heading-row .name {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #4fc4f0;
+    }
+    .tarifs-note {
+      text-align: center;
+      color: rgba(255,255,255,.35);
+      font-size: .8rem;
+      font-style: italic;
+      padding: 12px 24px;
+    }
+
+    @media (max-width: 600px) {
+      #tarifs { padding: 60px 16px; }
+      .tarifs-tabs { gap: .35rem; }
+      .tarifs-tab { font-size: .75rem; padding: 6px 12px; }
+      .tarifs-row { padding: 12px 16px; }
+      .tarifs-row .name { font-size: .85rem; }
+      .tarifs-row .price { font-size: .95rem; }
+      .tarifs-row.sub { padding-left: 32px; }
     }
 
     /* ─── TESTIMONIALS / DRAG CARDS ─────────────────────────── */
@@ -1126,9 +1406,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
       opacity: 0;
       visibility: hidden;
       transition: opacity .4s ease, visibility .4s ease;
+    }
+    @media (max-width: 768px) {
+      .svc-modal-backdrop {
+        align-items: flex-start;
+        padding: 2rem 0;
+      }
     }
     .svc-modal-backdrop.active {
       opacity: 1;
@@ -1176,6 +1464,12 @@
       padding: 0;
       transform: translateY(30px) scale(.96);
       transition: transform .4s cubic-bezier(.4,0,.2,1);
+    }
+    @media (max-width: 768px) {
+      .svc-modal-card {
+        max-height: none;
+        overflow-y: visible;
+      }
     }
     .svc-modal-backdrop.active .svc-modal-card {
       transform: translateY(0) scale(1);
@@ -1299,6 +1593,7 @@
   <!-- Desktop centered links -->
   <ul class="nav-links" role="list">
     <li><a href="#services" data-nav="services">Services</a></li>
+    <li><a href="#tarifs"   data-nav="tarifs">Tarifs</a></li>
     <li><a href="#gallery"  data-nav="gallery">Galerie</a></li>
     <li><a href="#testimonials" data-nav="testimonials">Avis</a></li>
     <li><a href="#contact"  data-nav="contact">Contact</a></li>
@@ -1324,6 +1619,7 @@
 <!-- Mobile overlay menu -->
 <div id="nav-overlay" role="dialog" aria-label="Menu" aria-modal="true">
   <a href="#services" data-nav-mob="services">Services</a>
+  <a href="#tarifs"   data-nav-mob="tarifs">Tarifs</a>
   <a href="#gallery"  data-nav-mob="gallery">Galerie</a>
   <a href="#testimonials" data-nav-mob="testimonials">Avis</a>
   <a href="#contact"  data-nav-mob="contact">Contact</a>
@@ -1405,7 +1701,7 @@
           <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg>
         </div>
         <div class="bento-title">Soins Visage</div>
-        <div class="bento-desc">Nettoyage en profondeur, hydratation intense et protocoles anti-âge sur mesure pour révéler votre éclat naturel.</div>
+        <div class="bento-desc">Nettoyage en profondeur, hydratation, photorajeunissement, microdermabrasion et peeling pour révéler votre éclat naturel.</div>
       </div>
       <div class="bento-cta">
         Découvrir
@@ -1423,7 +1719,7 @@
           <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
         </div>
         <div class="bento-title">Épilation</div>
-        <div class="bento-desc">Cire tiède, cire froide ou épilation au fil. Douceur et précision garanties.</div>
+        <div class="bento-desc">Cire chaude, pâte de sucre, électrolyse et IPL. Homme et femme.</div>
       </div>
       <div class="bento-cta">
         Découvrir
@@ -1468,6 +1764,35 @@
     </div>
 
   </div><!-- /bento-grid -->
+</section>
+
+<!-- ─── PARTNERS / LOGO CLOUD ──────────────────────────────── -->
+<section id="partners">
+  <div class="partners-label">Nos marques partenaires</div>
+  <div class="partners-track">
+    <div class="partners-marquee">
+      <div class="partners-set">
+        <div class="partner-logo"><span class="partner-wordmark pw-anesi">ANESI</span></div>
+        <div class="partner-dot"></div>
+        <div class="partner-logo"><span class="partner-wordmark pw-depileve">Depileve</span></div>
+        <div class="partner-dot"></div>
+        <div class="partner-logo"><span class="partner-wordmark pw-levissime">Levissime</span></div>
+        <div class="partner-dot"></div>
+        <div class="partner-logo"><span class="partner-wordmark pw-hnt">Herb 'n Tallow</span></div>
+        <div class="partner-dot"></div>
+      </div>
+      <div class="partners-set" aria-hidden="true">
+        <div class="partner-logo"><span class="partner-wordmark pw-anesi">ANESI</span></div>
+        <div class="partner-dot"></div>
+        <div class="partner-logo"><span class="partner-wordmark pw-depileve">Depileve</span></div>
+        <div class="partner-dot"></div>
+        <div class="partner-logo"><span class="partner-wordmark pw-levissime">Levissime</span></div>
+        <div class="partner-dot"></div>
+        <div class="partner-logo"><span class="partner-wordmark pw-hnt">Herb 'n Tallow</span></div>
+        <div class="partner-dot"></div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ─── GALLERY / FOCUS CARDS ───────────────────────────────── -->
@@ -1547,6 +1872,134 @@
     </div>
 
   </div>
+
+</section>
+
+<!-- ─── TARIFS ─────────────────────────────────────────────── -->
+<section id="tarifs">
+
+  <div class="tarifs-header">
+    <span class="label">Nos Tarifs</span>
+    <h2>Grille de prix</h2>
+    <p>Des soins de qualité à prix accessible. Contactez-nous pour toute question.</p>
+  </div>
+
+  <div class="tarifs-tabs" id="tarifs-tabs">
+    <button class="tarifs-tab active" data-tab="visage">Soins Visage</button>
+    <button class="tarifs-tab" data-tab="mains">Mains</button>
+    <button class="tarifs-tab" data-tab="pieds">Pieds</button>
+    <button class="tarifs-tab" data-tab="lashlift">Lashlift &amp; Teintures</button>
+    <button class="tarifs-tab" data-tab="epilation">Épilations</button>
+    <button class="tarifs-tab" data-tab="electrolyse">Électrolyse</button>
+  </div>
+
+  <div class="tarifs-panels" id="tarifs-panels">
+
+    <!-- Soins Visage -->
+    <div class="tarifs-panel active" data-panel="visage">
+      <div class="tarifs-card">
+        <div class="tarifs-row heading-row"><span class="name">ANESI</span></div>
+        <div class="tarifs-row"><span class="name">Hydratant</span><span class="price">80$ / de luxe 85$</span></div>
+        <div class="tarifs-row"><span class="name">Purifiant</span><span class="price">90$</span></div>
+        <div class="tarifs-row"><span class="name">Sensible</span><span class="price">80$ / 90$</span></div>
+        <div class="tarifs-row"><span class="name">Éclaircissant</span><span class="price">125$</span></div>
+        <div class="tarifs-row"><span class="name">Épigenesse</span><span class="price">70$</span></div>
+        <div class="tarifs-row"><span class="name">Cellulaire 3</span><span class="price">125$</span></div>
+        <div class="tarifs-row"><span class="name">Vitamine C</span><span class="price">95$</span></div>
+        <div class="tarifs-row"><span class="name">Lumière bleue</span><span class="price">95$</span></div>
+        <div class="tarifs-row"><span class="name">Contour yeux / lèvres</span><span class="price">120$</span></div>
+        <div class="tarifs-row"><span class="name">Microdermabrasion</span><span class="price">120$</span></div>
+        <div class="tarifs-row"><span class="name">Facial étudiant</span><span class="price">60$</span></div>
+        <div class="tarifs-row"><span class="name">Q peeling</span><span class="price">60$</span></div>
+        <div class="tarifs-row sub"><span class="name">En ajout</span><span class="price">40$</span></div>
+        <div class="tarifs-row"><span class="name">Dermopeel</span><span class="price">90$</span></div>
+      </div>
+    </div>
+
+    <!-- Mains -->
+    <div class="tarifs-panel" data-panel="mains">
+      <div class="tarifs-card">
+        <div class="tarifs-row"><span class="name">Manucure vernis</span><span class="price">37$</span></div>
+        <div class="tarifs-row"><span class="name">Vernis semi permanent</span><span class="price">42$</span></div>
+        <div class="tarifs-row"><span class="name">Recouvrement de résine</span><span class="price">44$</span></div>
+        <div class="tarifs-row"><span class="name">Pose de pointe et résine</span><span class="price">55$</span></div>
+        <div class="tarifs-row"><span class="name">Capsules et vernis gel</span><span class="price">55$</span></div>
+        <div class="tarifs-row"><span class="name">Fantaisie</span><span class="price">7$ / 15 min</span></div>
+        <div class="tarifs-row"><span class="name">Réparations</span><span class="price">3$ / doigt</span></div>
+      </div>
+    </div>
+
+    <!-- Pieds -->
+    <div class="tarifs-panel" data-panel="pieds">
+      <div class="tarifs-card">
+        <div class="tarifs-row"><span class="name">Embelliseur d'orteils — vernis régulier</span><span class="price">37$</span></div>
+        <div class="tarifs-row sub"><span class="name">avec vernis semi permanent</span><span class="price">42$</span></div>
+        <div class="tarifs-row"><span class="name">Pédicure — vernis régulier</span><span class="price">59$</span></div>
+        <div class="tarifs-row sub"><span class="name">avec vernis semi permanent</span><span class="price">69$</span></div>
+      </div>
+    </div>
+
+    <!-- Lashlift & Teintures -->
+    <div class="tarifs-panel" data-panel="lashlift">
+      <div class="tarifs-card">
+        <div class="tarifs-row"><span class="name">Lashlift (incluant la teinture)</span><span class="price">67$</span></div>
+        <div class="tarifs-row"><span class="name">Teinture de cils</span><span class="price">40$</span></div>
+        <div class="tarifs-row"><span class="name">Teinture de sourcil (incluant le shaping)</span><span class="price">50$</span></div>
+      </div>
+    </div>
+
+    <!-- Épilations -->
+    <div class="tarifs-panel" data-panel="epilation">
+      <div class="tarifs-card">
+        <div class="tarifs-row heading-row"><span class="name">Visage</span></div>
+        <div class="tarifs-row"><span class="name">Nettoyage sourcils</span><span class="price">21$</span></div>
+        <div class="tarifs-row"><span class="name">Structure de sourcils</span><span class="price">25$</span></div>
+        <div class="tarifs-row"><span class="name">Inter sourcilier</span><span class="price">10$</span></div>
+        <div class="tarifs-row"><span class="name">Lèvres supérieur</span><span class="price">15$</span></div>
+        <div class="tarifs-row"><span class="name">Côtés visage</span><span class="price">21$</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Corps</span></div>
+        <div class="tarifs-row"><span class="name">Aisselles</span><span class="price">22$</span></div>
+        <div class="tarifs-row"><span class="name">Avant-bras</span><span class="price">22$</span></div>
+        <div class="tarifs-row"><span class="name">Bras complet</span><span class="price">27$</span></div>
+        <div class="tarifs-row"><span class="name">Demi torse</span><span class="price">20$</span></div>
+        <div class="tarifs-row"><span class="name">Torse complet</span><span class="price">30$</span></div>
+        <div class="tarifs-row"><span class="name">Dos</span><span class="price">30$</span></div>
+        <div class="tarifs-row"><span class="name">Fesses</span><span class="price">24$</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Bikini</span></div>
+        <div class="tarifs-row"><span class="name">Bikini régulier</span><span class="price">22$</span></div>
+        <div class="tarifs-row"><span class="name">Bikini brésilien (incluant interfessier)</span><span class="price">30$</span></div>
+        <div class="tarifs-row"><span class="name">Bikini complet (incluant interfessier)</span><span class="price">36$</span></div>
+        <div class="tarifs-row"><span class="name">Plis interfessier</span><span class="price">17$</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Jambes</span></div>
+        <div class="tarifs-row"><span class="name">Demi jambes</span><span class="price">27$</span></div>
+        <div class="tarifs-row"><span class="name">Cuisses</span><span class="price">27$</span></div>
+        <div class="tarifs-row"><span class="name">Jambes complètes</span><span class="price">45$</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Combos</span></div>
+        <div class="tarifs-row"><span class="name">Jambes complètes + bikini régulier</span><span class="price">52$</span></div>
+        <div class="tarifs-row"><span class="name">Jambes complètes + bikini brésilien</span><span class="price">64$</span></div>
+        <div class="tarifs-row"><span class="name">Jambes complètes + bikini complet</span><span class="price">72$</span></div>
+        <div class="tarifs-row"><span class="name">Demi jambes / aisselles / bikini régulier</span><span class="price">60$</span></div>
+        <div class="tarifs-row"><span class="name">Cuisses / aisselles / bikini régulier</span><span class="price">65$</span></div>
+        <div class="tarifs-row"><span class="name">Jambes complètes / bikini régulier / aisselles</span><span class="price">75$</span></div>
+      </div>
+    </div>
+
+    <!-- Électrolyse -->
+    <div class="tarifs-panel" data-panel="electrolyse">
+      <div class="tarifs-card">
+        <div class="tarifs-row"><span class="name">De 0 à 10 minutes</span><span class="price">3$ / min</span></div>
+        <div class="tarifs-row"><span class="name">De 11 à 30 minutes</span><span class="price">2$ / min</span></div>
+        <div class="tarifs-row"><span class="name">De 31 à 45 minutes</span><span class="price">1,90$ / min</span></div>
+        <div class="tarifs-row"><span class="name">46 minutes et plus</span><span class="price">1,75$ / min</span></div>
+        <p class="tarifs-note">Filament jetable inclus</p>
+      </div>
+    </div>
+
+  </div><!-- /tarifs-panels -->
 
 </section>
 
@@ -1702,6 +2155,7 @@
         <div class="footer-col-title">Navigation</div>
         <ul class="footer-links">
           <li><a href="#services">Nos Services</a></li>
+          <li><a href="#tarifs">Nos Tarifs</a></li>
           <li><a href="#gallery">Notre Univers</a></li>
           <li><a href="#testimonials">Témoignages</a></li>
           <li><a href="#contact">Nous Trouver</a></li>
@@ -2211,6 +2665,9 @@
           'Nettoyage en profondeur',
           'Hydratation intense',
           'Soin anti-âge sur mesure',
+          'Photorajeunissement',
+          'Microdermabrasion',
+          'Peeling',
           'Traitement éclat du teint',
           'Massage facial relaxant',
           'Masque revitalisant'
@@ -2220,36 +2677,37 @@
         img: 'epilation cire.avif',
         desc: 'Une peau douce et soyeuse grâce à nos techniques d\'épilation adaptées à chaque zone et type de peau. Confort et précision à chaque séance.',
         items: [
-          'Épilation à la cire tiède',
-          'Épilation au fil',
-          'Sourcils, lèvre, menton',
-          'Jambes complètes ou demi-jambes',
-          'Aisselles',
-          'Maillot classique ou brésilien'
+          'Épilation à la cire chaude',
+          'Pâte de sucre',
+          'Électrolyse',
+          'IPL',
+          'Maillot classique ou brésilien',
+          'Épilation homme et femme'
         ]
       },
       'Manucure & Nail Art': {
         img: 'nail art debut carré.avif',
         desc: 'Des mains impeccables et des ongles qui reflètent votre style. Nos techniciennes créent des designs uniques ou des looks classiques selon vos envies.',
         items: [
-          'Manucure classique',
-          'Pose de gel',
-          'Pose d\'acrylique',
-          'Nail art personnalisé',
-          'French manucure',
-          'Remplissage et réparation'
+          'Soins de base',
+          'Manucure japonaise',
+          'Capsule',
+          'Résine',
+          'Acrygel',
+          'Vernis semi permanent',
+          'Nail art personnalisé'
         ]
       },
       'Pédicure': {
         img: 'bain pieds.avif',
         desc: 'Un soin complet pour vos pieds qui allie détente et beauté. Repartez sur de beaux pieds, doux et soignés.',
         items: [
-          'Bain relaxant',
-          'Exfoliation et gommage',
-          'Soin des cuticules',
-          'Coupe et limage',
-          'Pose de vernis classique ou gel',
-          'Massage hydratant des pieds'
+          'Pédicure complet avec trempage',
+          'Traitement des callosités',
+          'Soins de l\'ongle',
+          'Massage hydratant des pieds',
+          'Pose de vernis gel ou classique',
+          'Nail art personnalisé'
         ]
       }
     };
@@ -2321,14 +2779,39 @@
     });
   })();
 
+  /* ─── Tarifs tab switching ────────────────────────────── */
+  (function() {
+    var tabsWrap = document.getElementById('tarifs-tabs');
+    var panels   = document.getElementById('tarifs-panels');
+    if (!tabsWrap || !panels) return;
+
+    tabsWrap.addEventListener('click', function(e) {
+      var tab = e.target.closest('.tarifs-tab');
+      if (!tab) return;
+      var target = tab.getAttribute('data-tab');
+
+      tabsWrap.querySelectorAll('.tarifs-tab').forEach(function(t) {
+        t.classList.toggle('active', t === tab);
+      });
+      panels.querySelectorAll('.tarifs-panel').forEach(function(p) {
+        p.classList.toggle('active', p.getAttribute('data-panel') === target);
+      });
+    });
+  })();
+
   /* ─── Scroll-reveal (IntersectionObserver) ───────────── */
   (function() {
     /* Selectors + per-item stagger (ms) */
     var groups = [
       { sel: '.services-header',  stagger: 0    },
       { sel: '.bento-card',       stagger: 80   },
+      { sel: '.partners-label',    stagger: 0    },
+      { sel: '.partners-grid',     stagger: 0    },
       { sel: '.gallery-header',   stagger: 0    },
       { sel: '.focus-card',       stagger: 80   },
+      { sel: '.tarifs-header',    stagger: 0    },
+      { sel: '.tarifs-tabs',      stagger: 0    },
+      { sel: '.tarifs-panels',    stagger: 0    },
       { sel: '.testimonials-header', stagger: 0 },
       { sel: '.testi-stack-wrap',  stagger: 0    },
       { sel: '.contact-header',   stagger: 0    },
