@@ -54,10 +54,14 @@
   <!-- Favicon -->
   <link rel="icon" type="image/avif" href="logo.avif" />
   <link rel="apple-touch-icon" href="logo.avif" />
-  <!-- Fonts -->
+  <!-- Preload LCP hero image -->
+  <link rel="preload" as="image" href="backgroud lilas.avif" type="image/avif" fetchpriority="high" />
+  <!-- Fonts — non-render-blocking -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" /></noscript>
   <!-- Lenis — smooth scroll -->
   <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
   <style>
@@ -1783,10 +1787,8 @@
   </div>
 </div>
 
-<!-- Facebook SDK -->
+<!-- Facebook SDK — lazy-loaded when #facebook section nears viewport -->
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/fr_CA/sdk.js#xfbml=1&version=v21.0"></script>
 
 <!-- ─── STICKY NAV ──────────────────────────────────────────── -->
 <nav id="site-nav" aria-label="Navigation principale">
@@ -1841,6 +1843,8 @@
       src="backgroud lilas.avif"
       alt="Soin esthétique au Centre Esthétique O"
       loading="eager"
+      fetchpriority="high"
+      width="1920" height="1080"
     />
   </div>
 
@@ -1848,7 +1852,7 @@
 
     <!-- Expanding media -->
     <div id="media-wrap">
-      <video autoplay muted loop playsinline poster="backgroud lilas.avif">
+      <video autoplay muted loop playsinline preload="metadata" poster="backgroud lilas.avif">
         <source src="2femmes.mp4" type="video/mp4">
       </video>
       <div id="media-overlay"></div>
@@ -3088,6 +3092,25 @@
         io.observe(el);
       });
     });
+  })();
+
+  /* ─── Lazy-load Facebook SDK ─────────────────────────── */
+  (function() {
+    var fbSection = document.getElementById('facebook');
+    if (!fbSection) return;
+    var fbLoaded = false;
+    var fbObs = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting && !fbLoaded) {
+        fbLoaded = true;
+        var s = document.createElement('script');
+        s.src = 'https://connect.facebook.net/fr_CA/sdk.js#xfbml=1&version=v21.0';
+        s.async = true; s.defer = true;
+        s.crossOrigin = 'anonymous';
+        document.body.appendChild(s);
+        fbObs.disconnect();
+      }
+    }, { rootMargin: '200px' });
+    fbObs.observe(fbSection);
   })();
 
   /* ─── Dismiss loader ─────────────────────────────────── */
