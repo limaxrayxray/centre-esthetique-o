@@ -14,6 +14,11 @@
   <meta property="og:description" content="Votre espace de beauté et de bien-être à Bois-des-Filion. Soins visage, épilation, manucure, pédicure et nail art." />
   <meta property="og:image" content="https://o.galx.ca/logo.avif" />
   <meta property="og:url" content="https://o.galx.ca/" />
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Centre Esthétique O — Soins beauté à Bois-des-Filion" />
+  <meta name="twitter:description" content="Votre espace de beauté et de bien-être à Bois-des-Filion. Soins visage, épilation, manucure, pédicure et nail art." />
+  <meta name="twitter:image" content="https://o.galx.ca/logo.avif" />
   <!-- Structured Data — LocalBusiness -->
   <script type="application/ld+json">
   {
@@ -60,6 +65,53 @@
     /* Cacher la scrollbar */
     ::-webkit-scrollbar { display: none; }
     html { scrollbar-width: none; }
+
+    /* ─── WAVE LOADER ──────────────────────────────────────── */
+    #page-loader {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      background: #0a0a12;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      transition: opacity .5s ease, visibility .5s ease;
+    }
+    #page-loader.hide {
+      opacity: 0;
+      visibility: hidden;
+    }
+    .loader-logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .wave-bars {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+    .wave-bar {
+      width: 4px;
+      height: 20px;
+      border-radius: 2px;
+      background: rgba(79,196,240,.6);
+      transform-origin: bottom;
+      animation: waveScale 1s ease-in-out infinite;
+    }
+    .wave-bar:nth-child(1) { animation-delay: 0s; }
+    .wave-bar:nth-child(2) { animation-delay: .1s; }
+    .wave-bar:nth-child(3) { animation-delay: .2s; }
+    .wave-bar:nth-child(4) { animation-delay: .3s; }
+    .wave-bar:nth-child(5) { animation-delay: .4s; }
+    @keyframes waveScale {
+      0%, 100% { transform: scaleY(1); }
+      50%      { transform: scaleY(1.8); }
+    }
 
     html, body {
       width: 100%;
@@ -1719,6 +1771,18 @@
 </head>
 <body>
 
+<!-- ─── WAVE LOADER ────────────────────────────────────────── -->
+<div id="page-loader">
+  <img class="loader-logo" src="logo.avif" alt="" />
+  <div class="wave-bars">
+    <div class="wave-bar"></div>
+    <div class="wave-bar"></div>
+    <div class="wave-bar"></div>
+    <div class="wave-bar"></div>
+    <div class="wave-bar"></div>
+  </div>
+</div>
+
 <!-- Facebook SDK -->
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous"
@@ -3024,6 +3088,23 @@
         io.observe(el);
       });
     });
+  })();
+
+  /* ─── Dismiss loader ─────────────────────────────────── */
+  (function() {
+    var loader = document.getElementById('page-loader');
+    if (!loader) return;
+    function dismiss() {
+      if (loader.classList.contains('hide')) return;
+      loader.classList.add('hide');
+      // Remove from DOM after transition (with fallback timeout)
+      loader.addEventListener('transitionend', function() { loader.remove(); });
+      setTimeout(function() { if (loader.parentNode) loader.remove(); }, 600);
+    }
+    // Dismiss on window load (all resources) with a small delay for the animation
+    window.addEventListener('load', function() { setTimeout(dismiss, 400); });
+    // Safety: dismiss after 3s max even if resources are slow
+    setTimeout(dismiss, 3000);
   })();
 </script>
 </body>
