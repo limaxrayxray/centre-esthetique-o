@@ -54,8 +54,8 @@
   <!-- Favicon -->
   <link rel="icon" type="image/avif" href="logo.avif" />
   <link rel="apple-touch-icon" href="logo.avif" />
-  <!-- Preload LCP hero image -->
-  <link rel="preload" as="image" href="backgroud lilas.avif" type="image/avif" fetchpriority="high" />
+  <!-- Preload LCP hero image (mobile-optimized) -->
+  <link rel="preload" as="image" href="backgroud lilas-sm.avif" type="image/avif" fetchpriority="high" />
   <!-- Fonts — non-render-blocking -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1794,7 +1794,7 @@
 <nav id="site-nav" aria-label="Navigation principale">
   <!-- Logo mark + brand -->
   <a class="nav-brand" href="#hero">
-    <img class="nav-logo-img" src="logo.avif" alt="Centre Esthétique O" />
+    <img class="nav-logo-img" src="logo-nav.avif" alt="Centre Esthétique O" width="40" height="40" />
     <span class="nav-brand-text">Centre Esthétique O</span>
   </a>
 
@@ -1840,11 +1840,13 @@
   <!-- Background -->
   <div id="hero-bg">
     <img
-      src="backgroud lilas.avif"
+      src="backgroud lilas-sm.avif"
+      srcset="backgroud lilas-sm.avif 960w, backgroud lilas.avif 1280w"
+      sizes="100vw"
       alt="Soin esthétique au Centre Esthétique O"
       loading="eager"
       fetchpriority="high"
-      width="1920" height="1080"
+      width="960" height="1440"
     />
   </div>
 
@@ -1852,7 +1854,7 @@
 
     <!-- Expanding media -->
     <div id="media-wrap">
-      <video autoplay muted loop playsinline preload="metadata" poster="backgroud lilas.avif">
+      <video autoplay muted loop playsinline preload="metadata" poster="backgroud lilas-sm.avif">
         <source src="2femmes.mp4" type="video/mp4">
       </video>
       <div id="media-overlay"></div>
