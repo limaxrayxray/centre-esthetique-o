@@ -14,11 +14,6 @@
   <meta property="og:description" content="Votre espace de beauté et de bien-être à Bois-des-Filion. Soins visage, épilation, manucure, pédicure et nail art." />
   <meta property="og:image" content="https://o.galx.ca/logo.avif" />
   <meta property="og:url" content="https://o.galx.ca/" />
-  <!-- Twitter / X Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Centre Esthétique O — Soins beauté à Bois-des-Filion" />
-  <meta name="twitter:description" content="Votre espace de beauté et de bien-être à Bois-des-Filion. Soins visage, épilation, manucure, pédicure et nail art." />
-  <meta name="twitter:image" content="https://o.galx.ca/logo.avif" />
   <!-- Structured Data — LocalBusiness -->
   <script type="application/ld+json">
   {
@@ -54,14 +49,10 @@
   <!-- Favicon -->
   <link rel="icon" type="image/avif" href="logo.avif" />
   <link rel="apple-touch-icon" href="logo.avif" />
-  <!-- Preload LCP hero image (mobile-optimized) -->
-  <link rel="preload" as="image" href="backgroud lilas-sm.avif" type="image/avif" fetchpriority="high" />
-  <!-- Fonts — non-render-blocking -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" /></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
   <!-- Lenis — smooth scroll -->
   <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
   <style>
@@ -69,53 +60,6 @@
     /* Cacher la scrollbar */
     ::-webkit-scrollbar { display: none; }
     html { scrollbar-width: none; }
-
-    /* ─── WAVE LOADER ──────────────────────────────────────── */
-    #page-loader {
-      position: fixed;
-      inset: 0;
-      z-index: 99999;
-      background: #0a0a12;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-      transition: opacity .5s ease, visibility .5s ease;
-    }
-    #page-loader.hide {
-      opacity: 0;
-      visibility: hidden;
-    }
-    .loader-logo {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    .wave-bars {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-    }
-    .wave-bar {
-      width: 4px;
-      height: 20px;
-      border-radius: 2px;
-      background: rgba(79,196,240,.6);
-      transform-origin: bottom;
-      animation: waveScale 1s ease-in-out infinite;
-    }
-    .wave-bar:nth-child(1) { animation-delay: 0s; }
-    .wave-bar:nth-child(2) { animation-delay: .1s; }
-    .wave-bar:nth-child(3) { animation-delay: .2s; }
-    .wave-bar:nth-child(4) { animation-delay: .3s; }
-    .wave-bar:nth-child(5) { animation-delay: .4s; }
-    @keyframes waveScale {
-      0%, 100% { transform: scaleY(1); }
-      50%      { transform: scaleY(1.8); }
-    }
 
     html, body {
       width: 100%;
@@ -129,7 +73,7 @@
       font-family: 'Cormorant Garamond', serif;
       font-weight: 300;
     }
-
+Boutique Liquidation
     /* ─── HERO ─────────────────────────────────────────────── */
     #hero {
       position: relative;
@@ -905,83 +849,6 @@
       .tarifs-row.sub { padding-left: 32px; }
     }
 
-    /* ─── BOUTIQUE BANNER ───────────────────────────────────── */
-    #boutique {
-      background: #0e0e1a;
-      padding: 80px 40px;
-      text-align: center;
-      border-top: 1px solid rgba(255,255,255,.04);
-    }
-    .boutique-inner {
-      max-width: 720px;
-      margin: 0 auto;
-      background: linear-gradient(135deg, rgba(79,196,240,.06), rgba(138,92,246,.08));
-      border: 1px solid rgba(79,196,240,.15);
-      border-radius: 1.25rem;
-      padding: 50px 40px;
-      position: relative;
-      overflow: hidden;
-    }
-    .boutique-inner::before {
-      content: '';
-      position: absolute;
-      top: -60px; right: -60px;
-      width: 180px; height: 180px;
-      background: radial-gradient(circle, rgba(79,196,240,.12), transparent 70%);
-      pointer-events: none;
-    }
-    .boutique-badge {
-      display: inline-block;
-      font-size: .8rem;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: #f59e0b;
-      background: rgba(245,158,11,.1);
-      border: 1px solid rgba(245,158,11,.25);
-      padding: 5px 16px;
-      border-radius: 999px;
-      margin-bottom: 20px;
-    }
-    .boutique-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-      font-weight: 300;
-      color: #f1f5f9;
-      letter-spacing: -.02em;
-      line-height: 1.2;
-      margin-bottom: 16px;
-    }
-    .boutique-desc {
-      font-size: 1.05rem;
-      color: #94a3b8;
-      line-height: 1.7;
-      max-width: 520px;
-      margin: 0 auto 28px;
-    }
-    .boutique-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: .5rem;
-      font-size: .95rem;
-      font-weight: 600;
-      color: #fff;
-      background: rgba(79,196,240,.15);
-      border: 1px solid rgba(79,196,240,.3);
-      padding: 12px 28px;
-      border-radius: 999px;
-      text-decoration: none;
-      transition: background .3s, transform .2s;
-    }
-    .boutique-cta:hover {
-      background: rgba(79,196,240,.25);
-      transform: translateY(-2px);
-    }
-    @media (max-width: 600px) {
-      #boutique { padding: 50px 20px; }
-      .boutique-inner { padding: 36px 24px; }
-    }
-
     /* ─── TESTIMONIALS / DRAG CARDS ─────────────────────────── */
     #testimonials {
       background: #0a0a0a;
@@ -1140,7 +1007,7 @@
       font-weight: 600;
       letter-spacing: .15em;
       text-transform: uppercase;
-      color: #4d9cf5;
+      color: #1877f2;
       background: rgba(24,119,242,.08);
       border: 1px solid rgba(24,119,242,.2);
       padding: 5px 14px;
@@ -1157,7 +1024,7 @@
     .facebook-header p {
       margin-top: 14px;
       font-size: 1.05rem;
-      color: #94a3b8;
+      color: #64748b;
       max-width: 480px;
       margin-left: auto;
       margin-right: auto;
@@ -1374,7 +1241,7 @@
     }
     .footer-tagline {
       font-size: .875rem;
-      color: #94a3b8;
+      color: #475569;
       line-height: 1.65;
       max-width: 250px;
     }
@@ -1389,7 +1256,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #94a3b8;
+      color: #64748b;
       transition: all .2s ease;
       text-decoration: none;
     }
@@ -1401,20 +1268,20 @@
       font-weight: 600;
       letter-spacing: .12em;
       text-transform: uppercase;
-      color: #94a3b8;
+      color: #334155;
       margin-bottom: 1rem;
     }
     .footer-links { list-style: none; display: flex; flex-direction: column; gap: .55rem; }
     .footer-links a {
       font-size: .875rem;
-      color: #94a3b8;
+      color: #475569;
       text-decoration: none;
       transition: color .2s;
     }
     .footer-links a:hover { color: #e2e8f0; }
 
-    .footer-addr { font-size: .875rem; color: #94a3b8; line-height: 1.75; }
-    .footer-addr a { color: #94a3b8; text-decoration: none; transition: color .2s; }
+    .footer-addr { font-size: .875rem; color: #475569; line-height: 1.75; }
+    .footer-addr a { color: #475569; text-decoration: none; transition: color .2s; }
     .footer-addr a:hover { color: #e2e8f0; }
 
     .footer-bottom {
@@ -1426,7 +1293,7 @@
       flex-wrap: wrap;
       gap: .75rem;
     }
-    .footer-copy { font-size: .78rem; color: #94a3b8; }
+    .footer-copy { font-size: .78rem; color: #64748b; }
 
     @media (max-width: 900px) {
       .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -1435,6 +1302,151 @@
       footer { padding: 48px 20px 24px; }
       .footer-grid { grid-template-columns: 1fr; gap: 2rem; margin-bottom: 36px; }
       .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* ─── BOUTIQUE LIQUIDATION ─────────────────────────────── */
+    #boutique {
+      padding: 100px 5.5%;
+      background: #0a0a12;
+    }
+    .boutique-inner {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .boutique-content {
+      flex: 1;
+      max-width: 50%;
+    }
+    .boutique-content .label {
+      display: inline-block;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: #4fc4f0;
+      margin-bottom: 1rem;
+    }
+    .boutique-content h2 {
+      font-size: clamp(2.1rem, 4vw, 3.4rem);
+      font-weight: 300;
+      line-height: 1.1;
+      color: #f0f4ff;
+      margin-bottom: 1.2rem;
+    }
+    .boutique-separator {
+      width: 6.25rem;
+      height: 3px;
+      background: linear-gradient(135deg, #3a2d9e, #4fc4f0);
+      border: none;
+      margin: 0 0 1.5rem;
+    }
+    .boutique-content p {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: #94a3b8;
+      margin-bottom: 2rem;
+      max-width: 440px;
+    }
+    .boutique-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .8rem 2rem;
+      background: linear-gradient(135deg, #3a2d9e, #5540cc);
+      color: #fff;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 2rem;
+      transition: opacity .2s, transform .2s;
+    }
+    .boutique-btn:hover { opacity: .88; transform: translateY(-2px); }
+    .boutique-grid {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 520px;
+    }
+    .boutique-tile {
+      position: relative;
+      width: 100%;
+      padding-bottom: 100%;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    .boutique-tile img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease;
+      --r: 20px;
+      --s: 40px;
+      --x: 25px;
+      --y: 5px;
+    }
+    .boutique-tile:hover img { transform: scale(1.06); }
+    /* Diced — notch pointe vers le centre de la grille */
+    .boutique-tile:nth-child(1) img {
+      --_m: / calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%);
+      --_g: conic-gradient(from 90deg at calc(100% - var(--r)) calc(100% - var(--r)),#0000 25%,#000 0);
+      --_d: (var(--s) + var(--r));
+      mask:
+        calc(100% - var(--_d) - var(--x)) 100% var(--_m),
+        100% calc(100% - var(--_d) - var(--y)) var(--_m),
+        radial-gradient(var(--s) at 100% 100%,#0000 99%,#000 calc(100% + 1px)) calc(-1*var(--r) - var(--x)) calc(-1*var(--r) - var(--y)),
+        var(--_g) calc(-1*var(--_d) - var(--x)) 0,
+        var(--_g) 0 calc(-1*var(--_d) - var(--y));
+      mask-repeat: no-repeat;
+    }
+    .boutique-tile:nth-child(2) img {
+      --_m: / calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%);
+      --_g: conic-gradient(from 180deg at var(--r) calc(100% - var(--r)),#0000 25%,#000 0);
+      --_d: (var(--s) + var(--r));
+      mask:
+        calc(var(--_d) + var(--x)) 100% var(--_m),
+        0 calc(100% - var(--_d) - var(--y)) var(--_m),
+        radial-gradient(var(--s) at 0 100%,#0000 99%,#000 calc(100% + 1px)) calc(var(--r) + var(--x)) calc(-1*var(--r) - var(--y)),
+        var(--_g) calc(var(--_d) + var(--x)) 0,
+        var(--_g) 0 calc(-1*var(--_d) - var(--y));
+      mask-repeat: no-repeat;
+    }
+    .boutique-tile:nth-child(3) img {
+      --_m: / calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%);
+      --_g: conic-gradient(at calc(100% - var(--r)) var(--r),#0000 25%,#000 0);
+      --_d: (var(--s) + var(--r));
+      mask:
+        calc(100% - var(--_d) - var(--x)) 0 var(--_m),
+        100% calc(var(--_d) + var(--y)) var(--_m),
+        radial-gradient(var(--s) at 100% 0,#0000 99%,#000 calc(100% + 1px)) calc(-1*var(--r) - var(--x)) calc(var(--r) + var(--y)),
+        var(--_g) calc(-1*var(--_d) - var(--x)) 0,
+        var(--_g) 0 calc(var(--_d) + var(--y));
+      mask-repeat: no-repeat;
+    }
+    .boutique-tile:nth-child(4) img {
+      --_m: / calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%);
+      --_g: conic-gradient(at var(--r) var(--r),#000 75%,#0000 0);
+      --_d: (var(--s) + var(--r));
+      mask:
+        calc(var(--_d) + var(--x)) 0 var(--_m),
+        0 calc(var(--_d) + var(--y)) var(--_m),
+        radial-gradient(var(--s) at 0 0,#0000 99%,#000 calc(100% + 1px)) calc(var(--r) + var(--x)) calc(var(--r) + var(--y)),
+        var(--_g) calc(var(--_d) + var(--x)) 0,
+        var(--_g) 0 calc(var(--_d) + var(--y));
+      mask-repeat: no-repeat;
+    }
+    @media (max-width: 900px) {
+      #boutique { padding: 70px 20px; }
+      .boutique-inner { flex-direction: column; gap: 3rem; }
+      .boutique-content { max-width: 100%; }
+      .boutique-grid { max-width: 100%; width: 100%; }
     }
 
     /* ─── STICKY NAV ─────────────────────────────────────────── */
@@ -1501,6 +1513,7 @@
     }
     .nav-links a::after {
       content: '';
+      display: block;
       position: absolute;
       bottom: 0; left: 0;
       width: 0; height: 1px;
@@ -1761,6 +1774,118 @@
       .svc-modal-title { font-size: 1.4rem; }
     }
 
+    /* ─── BOUTIQUE LIQUIDATION ──────────────────────────────── */
+    #boutique {
+      padding: 100px 40px;
+      background: #0a0a12;
+      position: relative;
+      overflow: hidden;
+    }
+    #boutique::before {
+      content: '';
+      position: absolute;
+      top: 50%; right: 5%;
+      width: 500px; height: 500px;
+      background: radial-gradient(ellipse, rgba(85,64,204,.13) 0%, transparent 70%);
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+    .boutique-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+    }
+    .boutique-content { flex: 1; max-width: 500px; }
+    .boutique-content .label {
+      display: inline-block;
+      font-size: .72rem; font-weight: 700;
+      letter-spacing: .18em; text-transform: uppercase;
+      color: #4fc4f0; margin-bottom: 1.2rem;
+    }
+    .boutique-content h2 {
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      font-weight: 300; line-height: 1.1;
+      color: #fff; margin-bottom: 1.4rem;
+    }
+    .boutique-separator {
+      width: 6rem; height: 3px;
+      background: linear-gradient(90deg, #5540cc, #4fc4f0);
+      border-radius: 2px; margin-bottom: 1.5rem;
+    }
+    .boutique-content p {
+      font-size: 1rem; line-height: 1.75;
+      color: #94a3b8; margin-bottom: 2.5rem;
+    }
+    .boutique-cta {
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .75rem 2rem;
+      background: linear-gradient(135deg, #3a2d9e, #5540cc);
+      color: #fff; font-size: .8rem; font-weight: 700;
+      letter-spacing: .08em; text-transform: uppercase;
+      text-decoration: none; border-radius: 2rem;
+      transition: opacity .2s, transform .2s;
+    }
+    .boutique-cta:hover { opacity: .85; transform: translateY(-2px); }
+    .boutique-cta svg { width: 14px; height: 14px; }
+    /* Diced grid */
+    .boutique-grid {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 520px;
+    }
+    .boutique-tile {
+      position: relative;
+      width: 100%; padding-bottom: 100%;
+      overflow: hidden; border-radius: 20px;
+      --r: 20px; --s: 40px; --x: 25px; --y: 5px;
+    }
+    .boutique-tile img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease;
+    }
+    .boutique-tile:hover img { transform: scale(1.07); }
+    /* Warped corner masks */
+    .boutique-tile.top-right {
+      --_m:/calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%);
+      --_g:conic-gradient(at calc(100% - var(--r)) var(--r),#0000 25%,#000 0);
+      --_d:(var(--s) + var(--r));
+      mask: calc(100% - var(--_d) - var(--x)) 0 var(--_m), 100% calc(var(--_d) + var(--y)) var(--_m), radial-gradient(var(--s) at 100% 0,#0000 99%,#000 calc(100% + 1px)) calc(-1*var(--r) - var(--x)) calc(var(--r) + var(--y)), var(--_g) calc(-1*var(--_d) - var(--x)) 0, var(--_g) 0 calc(var(--_d) + var(--y));
+      mask-repeat: no-repeat;
+    }
+    .boutique-tile.top-left {
+      --_m:/calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%);
+      --_g:conic-gradient(at var(--r) var(--r),#000 75%,#0000 0);
+      --_d:(var(--s) + var(--r));
+      mask: calc(var(--_d) + var(--x)) 0 var(--_m), 0 calc(var(--_d) + var(--y)) var(--_m), radial-gradient(var(--s) at 0 0,#0000 99%,#000 calc(100% + 1px)) calc(var(--r) + var(--x)) calc(var(--r) + var(--y)), var(--_g) calc(var(--_d) + var(--x)) 0, var(--_g) 0 calc(var(--_d) + var(--y));
+      mask-repeat: no-repeat;
+    }
+    .boutique-tile.bottom-left {
+      --_m:/calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%);
+      --_g:conic-gradient(from 180deg at var(--r) calc(100% - var(--r)),#0000 25%,#000 0);
+      --_d:(var(--s) + var(--r));
+      mask: calc(var(--_d) + var(--x)) 100% var(--_m), 0 calc(100% - var(--_d) - var(--y)) var(--_m), radial-gradient(var(--s) at 0 100%,#0000 99%,#000 calc(100% + 1px)) calc(var(--r) + var(--x)) calc(-1*var(--r) - var(--y)), var(--_g) calc(var(--_d) + var(--x)) 0, var(--_g) 0 calc(-1*var(--_d) - var(--y));
+      mask-repeat: no-repeat;
+    }
+    .boutique-tile.bottom-right {
+      --_m:/calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%);
+      --_g:conic-gradient(from 90deg at calc(100% - var(--r)) calc(100% - var(--r)),#0000 25%,#000 0);
+      --_d:(var(--s) + var(--r));
+      mask: calc(100% - var(--_d) - var(--x)) 100% var(--_m), 100% calc(100% - var(--_d) - var(--y)) var(--_m), radial-gradient(var(--s) at 100% 100%,#0000 99%,#000 calc(100% + 1px)) calc(-1*var(--r) - var(--x)) calc(-1*var(--r) - var(--y)), var(--_g) calc(-1*var(--_d) - var(--x)) 0, var(--_g) 0 calc(-1*var(--_d) - var(--y));
+      mask-repeat: no-repeat;
+    }
+    @media (max-width: 900px) {
+      #boutique { padding: 70px 20px; }
+      .boutique-inner { flex-direction: column; gap: 3rem; }
+      .boutique-content { max-width: 100%; }
+      .boutique-grid { max-width: 380px; margin: 0 auto; gap: 12px; }
+    }
+
     /* ─── SCROLL-REVEAL ──────────────────────────────────────── */
     .reveal {
       opacity: 0;
@@ -1775,32 +1900,23 @@
 </head>
 <body>
 
-<!-- ─── WAVE LOADER ────────────────────────────────────────── -->
-<div id="page-loader">
-  <img class="loader-logo" src="logo-sm.avif" alt="" width="60" height="60" />
-  <div class="wave-bars">
-    <div class="wave-bar"></div>
-    <div class="wave-bar"></div>
-    <div class="wave-bar"></div>
-    <div class="wave-bar"></div>
-    <div class="wave-bar"></div>
-  </div>
-</div>
-
-<!-- Facebook SDK — lazy-loaded when #facebook section nears viewport -->
+<!-- Facebook SDK -->
 <div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/fr_CA/sdk.js#xfbml=1&version=v21.0"></script>
 
 <!-- ─── STICKY NAV ──────────────────────────────────────────── -->
 <nav id="site-nav" aria-label="Navigation principale">
   <!-- Logo mark + brand -->
   <a class="nav-brand" href="#hero">
-    <img class="nav-logo-img" src="logo-nav.avif" alt="Centre Esthétique O" width="40" height="40" />
+    <img class="nav-logo-img" src="logo.avif" alt="Centre Esthétique O" />
     <span class="nav-brand-text">Centre Esthétique O</span>
   </a>
 
   <!-- Desktop centered links -->
   <ul class="nav-links" role="list">
     <li><a href="#services" data-nav="services">Services</a></li>
+    <li><a href="#boutique" data-nav="boutique">Boutique</a></li>
     <li><a href="#gallery"  data-nav="gallery">Galerie</a></li>
     <li><a href="#tarifs"   data-nav="tarifs">Tarifs</a></li>
     <li><a href="#testimonials" data-nav="testimonials">Avis</a></li>
@@ -1827,8 +1943,9 @@
 <!-- Mobile overlay menu -->
 <div id="nav-overlay" role="dialog" aria-label="Menu" aria-modal="true">
   <a href="#services" data-nav-mob="services">Services</a>
-  <a href="#tarifs"   data-nav-mob="tarifs">Tarifs</a>
+  <a href="#boutique" data-nav-mob="boutique">Boutique</a>
   <a href="#gallery"  data-nav-mob="gallery">Galerie</a>
+  <a href="#tarifs"   data-nav-mob="tarifs">Tarifs</a>
   <a href="#testimonials" data-nav-mob="testimonials">Avis</a>
   <a href="#contact"  data-nav-mob="contact">Contact</a>
   <a href="tel:+14509659773" class="nav-cta nav-cta-mob">Appeler</a>
@@ -1840,13 +1957,9 @@
   <!-- Background -->
   <div id="hero-bg">
     <img
-      src="backgroud lilas-sm.avif"
-      srcset="backgroud lilas-sm.avif 960w, backgroud lilas.avif 1280w"
-      sizes="100vw"
+      src="backgroud lilas.avif"
       alt="Soin esthétique au Centre Esthétique O"
       loading="eager"
-      fetchpriority="high"
-      width="960" height="1440"
     />
   </div>
 
@@ -1854,7 +1967,7 @@
 
     <!-- Expanding media -->
     <div id="media-wrap">
-      <video autoplay muted loop playsinline preload="metadata" poster="backgroud lilas-sm.avif">
+      <video autoplay muted loop playsinline poster="backgroud lilas.avif">
         <source src="2femmes.mp4" type="video/mp4">
       </video>
       <div id="media-overlay"></div>
@@ -1909,6 +2022,9 @@
         <img src="Mains esthéticienne massage visage gros plan.avif" alt="Soins Visage" loading="lazy" />
       </div>
       <div class="bento-content">
+        <div class="bento-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg>
+        </div>
         <div class="bento-title">Soins Visage</div>
         <div class="bento-desc">Nettoyage en profondeur, hydratation, photorajeunissement, microdermabrasion et peeling pour révéler votre éclat naturel.</div>
       </div>
@@ -1924,6 +2040,9 @@
         <img src="epilation cire.avif" alt="Épilation" loading="lazy" />
       </div>
       <div class="bento-content">
+        <div class="bento-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
+        </div>
         <div class="bento-title">Épilation</div>
         <div class="bento-desc">Cire chaude, pâte de sucre, électrolyse et IPL. Homme et femme.</div>
       </div>
@@ -1939,6 +2058,9 @@
         <img src="nail art debut carré.avif" alt="Manucure & Nail Art" loading="lazy" />
       </div>
       <div class="bento-content">
+        <div class="bento-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>
+        </div>
         <div class="bento-title">Manucure & Nail Art</div>
         <div class="bento-desc">Pose gel, french, nail art personnalisé. Des mains parfaites en toute occasion.</div>
       </div>
@@ -1954,6 +2076,9 @@
         <img src="bain pieds.avif" alt="Pédicure" loading="lazy" />
       </div>
       <div class="bento-content">
+        <div class="bento-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z"/></svg>
+        </div>
         <div class="bento-title">Pédicure</div>
         <div class="bento-desc">Soin complet des pieds, bain, exfoliation et pose de vernis. Repartez sur de beaux pieds.</div>
       </div>
@@ -1964,6 +2089,41 @@
     </div>
 
   </div><!-- /bento-grid -->
+</section>
+
+<!-- ─── BOUTIQUE LIQUIDATION ────────────────────────────────── -->
+<section id="boutique">
+  <div class="boutique-inner">
+
+    <!-- Contenu texte -->
+    <div class="boutique-content">
+      <span class="label">Boutique Liquidation</span>
+      <h2>Produits professionnels<br>à prix imbattable</h2>
+      <hr class="boutique-separator">
+      <p>Nous achetons en lots des produits de grandes marques professionnelles et les revendons à des prix défiant toute concurrence. Passez nous voir pour découvrir nos trouvailles du moment&nbsp;!</p>
+      <a href="#contact" class="boutique-btn">
+        Nous visiter
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+      </a>
+    </div>
+
+    <!-- Grille diced -->
+    <div class="boutique-grid">
+      <div class="boutique-tile">
+        <img src="produit-levissime.png" alt="Gamme Levissime Vita C Splendor" loading="lazy" />
+      </div>
+      <div class="boutique-tile">
+        <img src="produit-anesi.jpg" alt="Anesi Lab 3C Vitamin Glow" loading="lazy" />
+      </div>
+      <div class="boutique-tile">
+        <img src="produit-depileve.jpg" alt="Depilève Folifree Hair Stop Serum" loading="lazy" />
+      </div>
+      <div class="boutique-tile">
+        <img src="produit-sugar-scrub.jpg" alt="Sugar Scrub artisanal fleurs" loading="lazy" />
+      </div>
+    </div>
+
+  </div>
 </section>
 
 <!-- ─── PARTNERS / LOGO CLOUD ──────────────────────────────── -->
@@ -2206,19 +2366,6 @@
 
 </section>
 
-<!-- ─── BOUTIQUE / PRODUITS PRO ─────────────────────────────── -->
-<section id="boutique">
-  <div class="boutique-inner">
-    <div class="boutique-badge">Jusqu'à 65% de rabais</div>
-    <h2 class="boutique-title">Produits professionnels<br>à prix imbattable</h2>
-    <p class="boutique-desc">Nous achetons en lots des produits de grandes marques professionnelles et les revendons à des prix défiant toute concurrence. Passez nous voir pour découvrir nos trouvailles du moment!</p>
-    <a href="tel:+14509659773" class="boutique-cta">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
-      Appelez-nous
-    </a>
-  </div>
-</section>
-
 <!-- ─── TESTIMONIALS ─────────────────────────────────────────── -->
 <!--
   Pour remplacer par de vrais avis Google :
@@ -2329,10 +2476,10 @@
           <div class="contact-card-title">Horaires</div>
           <div class="contact-card-text">
             <ul class="hours-list" id="hours-list">
-              <li data-days="1"><span class="hours-day">Lundi</span>        <span class="hours-closed">Fermé</span></li>
+              <li data-days="1"><span class="hours-day">Lundi</span>        <span class="hours-a">Sur rendez-vous</span></li>
               <li data-days="2,3,4,5"><span class="hours-day">Mar – Ven</span> <span>9h00 – 18h00</span></li>
               <li data-days="6"><span class="hours-day">Samedi</span>       <span>9h00 – 17h00</span></li>
-              <li data-days="0"><span class="hours-day">Dimanche</span>     <span class="hours-closed">Fermé</span></li>
+              <li data-days="0"><span class="hours-day">Dimanche</span>     <span class="hours-closed">Sur rendez-vous</span></li>
             </ul>
           </div>
         </div>
@@ -2400,6 +2547,7 @@
           <li><a href="#services">Nos Services</a></li>
           <li><a href="#tarifs">Nos Tarifs</a></li>
           <li><a href="#gallery">Notre Univers</a></li>
+          <li><a href="#boutique">Boutique Liquidation</a></li>
           <li><a href="#testimonials">Témoignages</a></li>
           <li><a href="#contact">Nous Trouver</a></li>
         </ul>
@@ -2535,7 +2683,7 @@
     }
     if (!mediaExpanded) {
       e.preventDefault();
-      targetProgress = Math.min(Math.max(targetProgress + e.deltaY * 0.0009, 0), 1);
+      targetProgress = Math.min(Math.max(targetProgress + e.deltaY * 0.002, 0), 1);
       scheduleRaf();
     }
   }
@@ -2883,24 +3031,20 @@
     });
   });
 
-  /* Active section highlight — pick the section closest to the viewport top */
-  var navSections = ['services','gallery','tarifs','testimonials','contact'];
+  /* Active section highlight */
+  var navSections = ['services','gallery','tarifs','boutique','testimonials','contact'];
   var sectionEls  = navSections.map(function(id) { return document.getElementById(id); });
   var navLinkEls  = navSections.map(function(id) {
     return document.querySelector('.nav-links a[data-nav="' + id + '"]');
   });
-  function updateActiveNav() {
-    var scrollY = window.scrollY + 120;
-    var active = null;
-    for (var i = sectionEls.length - 1; i >= 0; i--) {
-      if (sectionEls[i] && sectionEls[i].offsetTop <= scrollY) { active = i; break; }
-    }
-    navLinkEls.forEach(function(el, j) {
-      if (el) el.classList.toggle('active', j === active);
+  var ioNav = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      var idx = sectionEls.indexOf(entry.target);
+      if (idx === -1 || !navLinkEls[idx]) return;
+      navLinkEls[idx].classList.toggle('active', entry.isIntersecting);
     });
-  }
-  window.addEventListener('scroll', updateActiveNav, { passive: true });
-  updateActiveNav();
+  }, { threshold: 0.35 });
+  sectionEls.forEach(function(el) { if (el) ioNav.observe(el); });
 
   /* ─── Service Modal ─────────────────────────────────── */
   (function() {
@@ -2989,13 +3133,6 @@
     var modalDesc  = backdrop.querySelector('.svc-modal-desc');
     var modalList  = backdrop.querySelector('.svc-modal-list');
 
-    /* Block Lenis wheel events while modal is open so the card scrolls natively */
-    var modalCard = backdrop.querySelector('.svc-modal-card');
-    function trapWheel(e) {
-      // Let the modal card scroll; stop Lenis from hijacking
-      e.stopPropagation();
-    }
-
     function openModal(serviceName) {
       var svc = SERVICES[serviceName];
       if (!svc) return;
@@ -3006,20 +3143,15 @@
       modalList.innerHTML = svc.items.map(function(item) {
         return '<li>' + item + '</li>';
       }).join('');
-      modalCard.scrollTop = 0;
       backdrop.classList.add('active');
       document.body.style.overflow = 'hidden';
       if (typeof lenis !== 'undefined' && lenis) lenis.stop();
-      backdrop.addEventListener('wheel', trapWheel, true);
-      backdrop.addEventListener('touchmove', trapWheel, true);
     }
 
     function closeModal() {
       backdrop.classList.remove('active');
       document.body.style.overflow = '';
       if (typeof lenis !== 'undefined' && lenis) lenis.start();
-      backdrop.removeEventListener('wheel', trapWheel, true);
-      backdrop.removeEventListener('touchmove', trapWheel, true);
     }
 
     /* Click handlers on bento cards */
@@ -3071,6 +3203,8 @@
       { sel: '.tarifs-header',    stagger: 0    },
       { sel: '.tarifs-tabs',      stagger: 0    },
       { sel: '.tarifs-panels',    stagger: 0    },
+      { sel: '.boutique-content', stagger: 0    },
+      { sel: '.boutique-tile',    stagger: 80   },
       { sel: '.testimonials-header', stagger: 0 },
       { sel: '.testi-stack-wrap',  stagger: 0    },
       { sel: '.contact-header',   stagger: 0    },
@@ -3094,42 +3228,6 @@
         io.observe(el);
       });
     });
-  })();
-
-  /* ─── Lazy-load Facebook SDK ─────────────────────────── */
-  (function() {
-    var fbSection = document.getElementById('facebook');
-    if (!fbSection) return;
-    var fbLoaded = false;
-    var fbObs = new IntersectionObserver(function(entries) {
-      if (entries[0].isIntersecting && !fbLoaded) {
-        fbLoaded = true;
-        var s = document.createElement('script');
-        s.src = 'https://connect.facebook.net/fr_CA/sdk.js#xfbml=1&version=v21.0';
-        s.async = true; s.defer = true;
-        s.crossOrigin = 'anonymous';
-        document.body.appendChild(s);
-        fbObs.disconnect();
-      }
-    }, { rootMargin: '200px' });
-    fbObs.observe(fbSection);
-  })();
-
-  /* ─── Dismiss loader ─────────────────────────────────── */
-  (function() {
-    var loader = document.getElementById('page-loader');
-    if (!loader) return;
-    function dismiss() {
-      if (loader.classList.contains('hide')) return;
-      loader.classList.add('hide');
-      // Remove from DOM after transition (with fallback timeout)
-      loader.addEventListener('transitionend', function() { loader.remove(); });
-      setTimeout(function() { if (loader.parentNode) loader.remove(); }, 600);
-    }
-    // Dismiss on window load (all resources) with a small delay for the animation
-    window.addEventListener('load', function() { setTimeout(dismiss, 400); });
-    // Safety: dismiss after 3s max even if resources are slow
-    setTimeout(dismiss, 3000);
   })();
 </script>
 </body>
