@@ -85,67 +85,49 @@ Boutique Liquidation
       overflow: hidden;
     }
 
-    /* Ethereal blob background */
+    /* ─── Ethereal Shadow background ──────────────────────── */
     #hero-bg {
       position: absolute;
       inset: 0;
       z-index: 0;
-      background: #07070f;
+      background: #0c0818;
       overflow: hidden;
       will-change: opacity;
     }
-    .hero-blob {
+    .etheral-outer {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .etheral-inner {
       position: absolute;
-      border-radius: 50%;
-      filter: blur(100px);
+      inset: -100px;
+      filter: url(#etheral-filter) blur(4px);
     }
-    .hero-blob-1 {
-      width: 700px; height: 700px;
-      background: radial-gradient(ellipse, #5540cc 0%, transparent 70%);
-      top: -15%; left: -10%;
-      opacity: .55;
-      animation: blobDrift1 20s infinite alternate ease-in-out;
+    .etheral-shape {
+      background-color: rgba(110, 55, 185, 1);
+      -webkit-mask-image: url('https://framerusercontent.com/images/ceBGguIpUU8luwByxuQz79t7To.png');
+      mask-image: url('https://framerusercontent.com/images/ceBGguIpUU8luwByxuQz79t7To.png');
+      -webkit-mask-size: cover;
+      mask-size: cover;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+      width: 100%;
+      height: 100%;
     }
-    .hero-blob-2 {
-      width: 550px; height: 550px;
-      background: radial-gradient(ellipse, #7c3aed 0%, transparent 70%);
-      top: 25%; right: -8%;
-      opacity: .45;
-      animation: blobDrift2 27s infinite alternate ease-in-out;
+    .etheral-noise {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://framerusercontent.com/images/g0QcWrxr87K0ufOxIUFBakwYA8.png');
+      background-size: 240px;
+      background-repeat: repeat;
+      opacity: .5;
+      pointer-events: none;
     }
-    .hero-blob-3 {
-      width: 420px; height: 420px;
-      background: radial-gradient(ellipse, #c084fc 0%, transparent 70%);
-      bottom: 0%; left: 25%;
-      opacity: .28;
-      animation: blobDrift3 18s infinite alternate ease-in-out;
-    }
-    .hero-blob-4 {
-      width: 280px; height: 280px;
-      background: radial-gradient(ellipse, #4fc4f0 0%, transparent 70%);
-      top: 55%; left: 10%;
-      opacity: .15;
-      animation: blobDrift4 23s infinite alternate ease-in-out;
-    }
-    @keyframes blobDrift1 {
-      0%   { transform: translate(0, 0) scale(1); }
-      50%  { transform: translate(80px, 70px) scale(1.1); }
-      100% { transform: translate(-30px, 100px) scale(0.95); }
-    }
-    @keyframes blobDrift2 {
-      0%   { transform: translate(0, 0) scale(1); }
-      50%  { transform: translate(-70px, -90px) scale(1.08); }
-      100% { transform: translate(50px, -50px) scale(1.12); }
-    }
-    @keyframes blobDrift3 {
-      0%   { transform: translate(0, 0) scale(1); }
-      100% { transform: translate(-80px, -50px) scale(1.15); }
-    }
-    @keyframes blobDrift4 {
-      0%   { transform: translate(0, 0) scale(1); }
-      50%  { transform: translate(60px, 40px) scale(1.1); }
-      100% { transform: translate(-20px, 60px) scale(0.9); }
-    }
+
 
     /* Hero inner — left-aligned, offset */
     #hero-inner {
@@ -1995,12 +1977,25 @@ Boutique Liquidation
 <!-- ─── HERO ─────────────────────────────────────────────────── -->
 <section id="hero">
 
-  <!-- Background — ethereal blobs -->
+  <!-- Background — Ethereal Shadow (SVG displacement filter) -->
   <div id="hero-bg">
-    <div class="hero-blob hero-blob-1"></div>
-    <div class="hero-blob hero-blob-2"></div>
-    <div class="hero-blob hero-blob-3"></div>
-    <div class="hero-blob hero-blob-4"></div>
+    <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+      <defs>
+        <filter id="etheral-filter">
+          <feTurbulence result="undulation" numOctaves="2" baseFrequency="0.0005 0.002" seed="0" type="turbulence"/>
+          <feColorMatrix id="etheral-hue" in="undulation" type="hueRotate" values="180"/>
+          <feColorMatrix in="dist" result="circulation" type="matrix" values="4 0 0 0 1  4 0 0 0 1  4 0 0 0 1  1 0 0 0 0"/>
+          <feDisplacementMap in="SourceGraphic" in2="circulation" scale="100" result="dist"/>
+          <feDisplacementMap in="dist" in2="undulation" scale="100" result="output"/>
+        </filter>
+      </defs>
+    </svg>
+    <div class="etheral-outer">
+      <div class="etheral-inner">
+        <div class="etheral-shape"></div>
+      </div>
+      <div class="etheral-noise"></div>
+    </div>
   </div>
 
   <div id="hero-inner">
@@ -2688,7 +2683,7 @@ Boutique Liquidation
         document.documentElement.style.overflow = '';
         initLenis();
         /* Libérer les couches GPU du hero — plus besoin de will-change */
-        document.querySelectorAll('#hero, #hero-bg, #hero-bg img, #media-wrap, #media-overlay, #word-1, #word-2, #label-scroll, #hero-content').forEach(function(el) {
+        document.querySelectorAll('#hero, #hero-bg, #media-wrap, #media-overlay, #word-1, #word-2, #label-scroll, #hero-content').forEach(function(el) {
           el.style.willChange = 'auto';
         });
       }
@@ -2815,6 +2810,21 @@ Boutique Liquidation
     /* Lenis is loaded via defer — wait for it */
     window.addEventListener('load', function() { initLenis(); });
   }
+
+  /* ─── Ethereal Shadow — animate hueRotate ───────────── */
+  (function() {
+    var hueEl = document.getElementById('etheral-hue');
+    if (!hueEl) return;
+    var DURATION = 5820; /* ms for 0→360 (speed=90 → ~5.82s/tour) */
+    var startTime = null;
+    function tickEtheral(ts) {
+      if (!startTime) startTime = ts;
+      var hue = ((ts - startTime) % DURATION) / DURATION * 360;
+      hueEl.setAttribute('values', hue.toFixed(1));
+      requestAnimationFrame(tickEtheral);
+    }
+    requestAnimationFrame(tickEtheral);
+  })();
 
   /* Année dynamique (footer copyright) */
   (function() {
