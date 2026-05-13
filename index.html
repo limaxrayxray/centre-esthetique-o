@@ -85,26 +85,49 @@ Boutique Liquidation
       overflow: hidden;
     }
 
-    /* Background image */
+    /* ─── Ethereal Shadow background ──────────────────────── */
     #hero-bg {
       position: absolute;
       inset: 0;
       z-index: 0;
+      background: #0c0818;
+      overflow: hidden;
       will-change: opacity;
     }
-    #hero-bg img {
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      object-position: center;
-      display: block;
+    .etheral-outer {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 100%;
     }
-    #hero-bg::after {
-      content: '';
+    .etheral-inner {
+      position: absolute;
+      inset: -100px;
+      filter: url(#etheral-filter) blur(4px);
+    }
+    .etheral-shape {
+      background-color: rgba(110, 55, 185, 1);
+      -webkit-mask-image: url('https://framerusercontent.com/images/ceBGguIpUU8luwByxuQz79t7To.png');
+      mask-image: url('https://framerusercontent.com/images/ceBGguIpUU8luwByxuQz79t7To.png');
+      -webkit-mask-size: cover;
+      mask-size: cover;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+      width: 100%;
+      height: 100%;
+    }
+    .etheral-noise {
       position: absolute;
       inset: 0;
-      background: rgba(0,0,0,.15);
+      background-image: url('https://framerusercontent.com/images/g0QcWrxr87K0ufOxIUFBakwYA8.png');
+      background-size: 240px;
+      background-repeat: repeat;
+      opacity: .5;
+      pointer-events: none;
     }
+
 
     /* Hero inner — left-aligned, offset */
     #hero-inner {
@@ -1954,20 +1977,32 @@ Boutique Liquidation
 <!-- ─── HERO ─────────────────────────────────────────────────── -->
 <section id="hero">
 
-  <!-- Background -->
+  <!-- Background — Ethereal Shadow (SVG displacement filter) -->
   <div id="hero-bg">
-    <img
-      src="backgroud lilas.avif"
-      alt="Soin esthétique au Centre Esthétique O"
-      loading="eager"
-    />
+    <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+      <defs>
+        <filter id="etheral-filter">
+          <feTurbulence result="undulation" numOctaves="2" baseFrequency="0.0005 0.002" seed="0" type="turbulence"/>
+          <feColorMatrix id="etheral-hue" in="undulation" type="hueRotate" values="180"/>
+          <feColorMatrix in="dist" result="circulation" type="matrix" values="4 0 0 0 1  4 0 0 0 1  4 0 0 0 1  1 0 0 0 0"/>
+          <feDisplacementMap in="SourceGraphic" in2="circulation" scale="100" result="dist"/>
+          <feDisplacementMap in="dist" in2="undulation" scale="100" result="output"/>
+        </filter>
+      </defs>
+    </svg>
+    <div class="etheral-outer">
+      <div class="etheral-inner">
+        <div class="etheral-shape"></div>
+      </div>
+      <div class="etheral-noise"></div>
+    </div>
   </div>
 
   <div id="hero-inner">
 
     <!-- Expanding media -->
     <div id="media-wrap">
-      <video autoplay muted loop playsinline poster="backgroud lilas.avif">
+      <video autoplay muted loop playsinline>
         <source src="2femmes.mp4" type="video/mp4">
       </video>
       <div id="media-overlay"></div>
@@ -2185,18 +2220,8 @@ Boutique Liquidation
     </div>
 
     <div class="focus-card">
-      <img src="epilation.avif" alt="Épilation professionnelle à la cire" loading="lazy" />
-      <div class="focus-overlay"><div class="focus-title">Épilation</div></div>
-    </div>
-
-    <div class="focus-card">
       <img src="pedicure.avif" alt="Pédicure complète avec vernis" loading="lazy" />
       <div class="focus-overlay"><div class="focus-title">Pédicure</div></div>
-    </div>
-
-    <div class="focus-card">
-      <img src="amies.avif" alt="Amies relaxant au spa en peignoir" loading="lazy" />
-      <div class="focus-overlay"><div class="focus-title">Espace Détente</div></div>
     </div>
 
     <div class="focus-card">
@@ -2658,7 +2683,7 @@ Boutique Liquidation
         document.documentElement.style.overflow = '';
         initLenis();
         /* Libérer les couches GPU du hero — plus besoin de will-change */
-        document.querySelectorAll('#hero, #hero-bg, #hero-bg img, #media-wrap, #media-overlay, #word-1, #word-2, #label-scroll, #hero-content').forEach(function(el) {
+        document.querySelectorAll('#hero, #hero-bg, #media-wrap, #media-overlay, #word-1, #word-2, #label-scroll, #hero-content').forEach(function(el) {
           el.style.willChange = 'auto';
         });
       }
@@ -2785,6 +2810,21 @@ Boutique Liquidation
     /* Lenis is loaded via defer — wait for it */
     window.addEventListener('load', function() { initLenis(); });
   }
+
+  /* ─── Ethereal Shadow — animate hueRotate ───────────── */
+  (function() {
+    var hueEl = document.getElementById('etheral-hue');
+    if (!hueEl) return;
+    var DURATION = 5820; /* ms for 0→360 (speed=90 → ~5.82s/tour) */
+    var startTime = null;
+    function tickEtheral(ts) {
+      if (!startTime) startTime = ts;
+      var hue = ((ts - startTime) % DURATION) / DURATION * 360;
+      hueEl.setAttribute('values', hue.toFixed(1));
+      requestAnimationFrame(tickEtheral);
+    }
+    requestAnimationFrame(tickEtheral);
+  })();
 
   /* Année dynamique (footer copyright) */
   (function() {
