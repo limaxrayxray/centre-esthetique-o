@@ -173,46 +173,13 @@ Boutique Liquidation
       transition: none;
       z-index: 0;
     }
-    #media-wrap video,
     #media-wrap img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      object-position: center 25%;
+      object-fit: contain;
+      object-position: center center;
       display: block;
-    }
-    #media-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,.4);
-      border-radius: 16px;
-      will-change: opacity;
-    }
-
-    /* ── Title — large, left-aligned, editorial ── */
-    #hero-title {
-      position: relative;
-      z-index: 10;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0;
-      text-align: left;
-      pointer-events: none;
-      will-change: transform;
-      mix-blend-mode: difference;
-    }
-    #hero-title .word {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(4.5rem, 13vw, 11rem);
-      font-weight: 300;
-      color: #fff;
-      letter-spacing: -.04em;
-      line-height: .85;
-      will-change: transform;
-    }
-    #hero-title .word:last-child {
-      font-style: italic;
+      padding: 1.5rem;
     }
 
     /* ── Sub-label (scroll hint only) ── */
@@ -2018,19 +1985,10 @@ Boutique Liquidation
 
   <div id="hero-inner">
 
-    <!-- Expanding media -->
+    <!-- Expanding logo -->
     <div id="media-wrap">
-      <video autoplay muted loop playsinline>
-        <source src="2femmes.mp4" type="video/mp4">
-      </video>
-      <div id="media-overlay"></div>
+      <img src="logo.avif" alt="Centre Esthétique O" />
     </div>
-
-    <!-- Split title — large, left-aligned -->
-    <h1 id="hero-title">
-      <span class="word" id="word-1">Centre</span>
-      <span class="word" id="word-2">Esthétique O</span>
-    </h1>
 
     <!-- Scroll hint -->
     <div id="hero-labels">
@@ -2637,9 +2595,6 @@ Boutique Liquidation
   /* ─── DOM refs ───────────────────────────────────────── */
   const heroBg       = document.getElementById('hero-bg');
   const mediaWrap    = document.getElementById('media-wrap');
-  const mediaOverlay = document.getElementById('media-overlay');
-  const word1        = document.getElementById('word-1');
-  const word2        = document.getElementById('word-2');
   const labelScroll  = document.getElementById('label-scroll');
   const heroContent  = document.getElementById('hero-content');
   const scrollArrow  = document.getElementById('scroll-arrow');
@@ -2649,26 +2604,17 @@ Boutique Liquidation
     const mobile  = isMobile;
     const W_MAX   = mobile ? 650 : 1250;
     const H_MAX   = mobile ? 200 :  400;
-    const TX_MAX  = mobile ? 180 :  150;
 
     const w  = 300 + p * W_MAX;
     const h  = 400 + p * H_MAX;
-    const tx = p * TX_MAX;
 
     /* Media size */
     mediaWrap.style.width    = Math.min(w, window.innerWidth  * .95) + 'px';
     mediaWrap.style.height   = Math.min(h, window.innerHeight * .85) + 'px';
     mediaWrap.style.borderRadius = (1 - p) * 16 + 'px';
 
-    /* Media overlay opacity */
-    mediaOverlay.style.opacity = Math.max(0.5 - p * 0.3, 0);
-
     /* Background fade */
     heroBg.style.opacity = Math.max(1 - p, 0);
-
-    /* Title split */
-    word1.style.transform = `translateX(-${tx}vw)`;
-    word2.style.transform = `translateX(${tx}vw)`;
 
     /* Label fade out */
     if (labelScroll) labelScroll.style.opacity = Math.max(1 - p * 3, 0);
@@ -2701,7 +2647,7 @@ Boutique Liquidation
         document.documentElement.style.overflow = '';
         initLenis();
         /* Libérer les couches GPU du hero — plus besoin de will-change */
-        document.querySelectorAll('#hero, #hero-bg, #media-wrap, #media-overlay, #word-1, #word-2, #label-scroll, #hero-content').forEach(function(el) {
+        document.querySelectorAll('#hero, #hero-bg, #media-wrap, #label-scroll, #hero-content').forEach(function(el) {
           el.style.willChange = 'auto';
         });
       }
