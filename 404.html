@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page introuvable — Centre Esthétique O</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="icon" type="image/avif" href="logo.avif" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 100%; height: 100%;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #0c0818;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    /* ── Ethereal Shadow ── */
+    #bg {
+      position: fixed;
+      inset: 0;
+      background: #0c0818;
+      overflow: hidden;
+    }
+    .etheral-outer { overflow: hidden; position: relative; width: 100%; height: 100%; }
+    .etheral-inner {
+      position: absolute;
+      inset: -100px;
+      filter: url(#etheral-filter) blur(4px);
+    }
+    .etheral-shape {
+      background-color: rgba(110, 55, 185, 1);
+      -webkit-mask-image: url('https://framerusercontent.com/images/ceBGguIpUU8luwByxuQz79t7To.png');
+      mask-image: url('https://framerusercontent.com/images/ceBGguIpUU8luwByxuQz79t7To.png');
+      -webkit-mask-size: cover;
+      mask-size: cover;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+      width: 100%; height: 100%;
+    }
+    .etheral-noise {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://framerusercontent.com/images/g0QcWrxr87K0ufOxIUFBakwYA8.png');
+      background-size: 240px;
+      background-repeat: repeat;
+      opacity: .5;
+      pointer-events: none;
+    }
+
+    /* ── Content ── */
+    #content {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100dvh;
+      text-align: center;
+      padding: 2rem;
+    }
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      text-decoration: none;
+      margin-bottom: 3rem;
+      opacity: .7;
+      transition: opacity .2s;
+    }
+    .logo-link:hover { opacity: 1; }
+    .logo-link img { width: 32px; height: 32px; object-fit: contain; }
+    .logo-link span {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #c8d8f5;
+      letter-spacing: .05em;
+    }
+    .code-404 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(6rem, 20vw, 12rem);
+      font-weight: 300;
+      line-height: 1;
+      color: rgba(200, 216, 245, .12);
+      letter-spacing: -.02em;
+      user-select: none;
+      margin-bottom: -1rem;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      font-weight: 300;
+      color: #f0f4ff;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: .95rem;
+      color: #94a3b8;
+      line-height: 1.6;
+      max-width: 380px;
+      margin-bottom: 2.5rem;
+    }
+    .btn-home {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .75rem 2rem;
+      background: linear-gradient(135deg, #3a2d9e, #5540cc);
+      color: #fff;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 2rem;
+      transition: opacity .2s, transform .2s;
+    }
+    .btn-home:hover { opacity: .85; transform: translateY(-2px); }
+    .btn-home svg { width: 14px; height: 14px; }
+  </style>
+</head>
+<body>
+
+  <!-- Ethereal Shadow background -->
+  <div id="bg">
+    <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+      <defs>
+        <filter id="etheral-filter">
+          <feTurbulence result="undulation" numOctaves="2" baseFrequency="0.0005 0.002" seed="0" type="turbulence"/>
+          <feColorMatrix id="etheral-hue" in="undulation" type="hueRotate" values="180"/>
+          <feColorMatrix in="dist" result="circulation" type="matrix" values="4 0 0 0 1  4 0 0 0 1  4 0 0 0 1  1 0 0 0 0"/>
+          <feDisplacementMap in="SourceGraphic" in2="circulation" scale="100" result="dist"/>
+          <feDisplacementMap in="dist" in2="undulation" scale="100" result="output"/>
+        </filter>
+      </defs>
+    </svg>
+    <div class="etheral-outer">
+      <div class="etheral-inner">
+        <div class="etheral-shape"></div>
+      </div>
+      <div class="etheral-noise"></div>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div id="content">
+    <a href="/" class="logo-link">
+      <img src="logo.avif" alt="Centre Esthétique O" />
+      <span>Centre Esthétique O</span>
+    </a>
+    <div class="code-404">404</div>
+    <h1>Page introuvable</h1>
+    <p>Cette page n'existe pas ou a été déplacée. Retournez à l'accueil pour découvrir nos soins.</p>
+    <a href="/" class="btn-home">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"/>
+      </svg>
+      Retour à l'accueil
+    </a>
+  </div>
+
+  <script>
+    (function() {
+      var hueEl = document.getElementById('etheral-hue');
+      if (!hueEl) return;
+      var DURATION = 5820;
+      var startTime = null;
+      function tick(ts) {
+        if (!startTime) startTime = ts;
+        var hue = ((ts - startTime) % DURATION) / DURATION * 360;
+        hueEl.setAttribute('values', hue.toFixed(1));
+        requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    })();
+  </script>
+</body>
+</html>
