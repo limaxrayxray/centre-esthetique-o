@@ -7,6 +7,11 @@
   <meta name="description" content="Centre Esthétique O — votre espace de beauté et de bien-être à Bois-des-Filion. Soins visage, épilation, manucure, pédicure et nail art." />
   <link rel="canonical" href="https://o.galx.ca/" />
   <meta name="robots" content="index, follow" />
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Centre Esthétique O — Soins beauté à Bois-des-Filion" />
+  <meta name="twitter:description" content="Votre espace de beauté et de bien-être à Bois-des-Filion. Soins visage, épilation, manucure, pédicure et nail art." />
+  <meta name="twitter:image" content="https://o.galx.ca/logo.avif" />
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_CA" />
@@ -43,7 +48,20 @@
       "bestRating": "5"
     },
     "priceRange": "$$",
-    "image": "https://o.galx.ca/logo.avif"
+    "image": "https://o.galx.ca/logo.avif",
+    "openingHours": [
+      "Tu-Fr 09:00-18:00",
+      "Sa 09:00-17:00"
+    ],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "17:00" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/centreesthetiqueo/",
+      "https://www.facebook.com/CentreEsthetiqueO",
+      "https://tiktok.com/@ocentredesthetique"
+    ]
   }
   </script>
   <!-- Favicon -->
@@ -155,46 +173,13 @@ Boutique Liquidation
       transition: none;
       z-index: 0;
     }
-    #media-wrap video,
     #media-wrap img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      object-position: center 25%;
+      object-fit: contain;
+      object-position: center center;
       display: block;
-    }
-    #media-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,.4);
-      border-radius: 16px;
-      will-change: opacity;
-    }
-
-    /* ── Title — large, left-aligned, editorial ── */
-    #hero-title {
-      position: relative;
-      z-index: 10;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0;
-      text-align: left;
-      pointer-events: none;
-      will-change: transform;
-      mix-blend-mode: difference;
-    }
-    #hero-title .word {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(4.5rem, 13vw, 11rem);
-      font-weight: 300;
-      color: #fff;
-      letter-spacing: -.04em;
-      line-height: .85;
-      will-change: transform;
-    }
-    #hero-title .word:last-child {
-      font-style: italic;
+      padding: 1.5rem;
     }
 
     /* ── Sub-label (scroll hint only) ── */
@@ -409,24 +394,6 @@ Boutique Liquidation
     .bento-card:hover .bento-content {
       transform: translateY(-2.8rem);
     }
-
-    .bento-icon {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 2.4rem;
-      height: 2.4rem;
-      border-radius: .6rem;
-      background: rgba(79,196,240,.1);
-      border: 1px solid rgba(79,196,240,.15);
-      margin-bottom: .85rem;
-      transition: transform .35s ease;
-      color: #4fc4f0;
-    }
-    .bento-card:hover .bento-icon {
-      transform: scale(.78);
-    }
-    .bento-icon svg { width: 1.1rem; height: 1.1rem; }
 
     .bento-title {
       font-size: 1.2rem;
@@ -1255,11 +1222,12 @@ Boutique Liquidation
     }
 
     .footer-brand {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.2rem;
-      font-weight: 400;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: .65rem;
+      font-weight: 700;
       color: #f1f5f9;
-      letter-spacing: -.01em;
+      letter-spacing: .18em;
+      text-transform: uppercase;
       margin-bottom: .5rem;
     }
     .footer-tagline {
@@ -1507,11 +1475,13 @@ Boutique Liquidation
     /* .nav-logo-mark removed — using .nav-logo-img instead */
     .nav-logo-img { width: 26px; height: 26px; object-fit: contain; flex-shrink: 0; }
     .nav-brand-text {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: .95rem;
-      font-weight: 400;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: .6rem;
+      font-weight: 700;
+      font-style: normal;
       color: #c8d8f5;
-      letter-spacing: .04em;
+      letter-spacing: .18em;
+      text-transform: uppercase;
       white-space: nowrap;
     }
     /* Centered links */
@@ -2000,19 +1970,10 @@ Boutique Liquidation
 
   <div id="hero-inner">
 
-    <!-- Expanding media -->
+    <!-- Expanding logo -->
     <div id="media-wrap">
-      <video autoplay muted loop playsinline>
-        <source src="2femmes.mp4" type="video/mp4">
-      </video>
-      <div id="media-overlay"></div>
+      <img src="logo.avif" alt="Centre Esthétique O" />
     </div>
-
-    <!-- Split title — large, left-aligned -->
-    <h1 id="hero-title">
-      <span class="word" id="word-1">Centre</span>
-      <span class="word" id="word-2">Esthétique O</span>
-    </h1>
 
     <!-- Scroll hint -->
     <div id="hero-labels">
@@ -2031,10 +1992,10 @@ Boutique Liquidation
   <!-- Content revealed after expansion -->
   <div id="hero-content">
     <div class="hero-intro">
-      <span class="hero-intro-line">Votre espace de <em>bien-être</em></span>
-      <span class="hero-intro-line">et de <em>beauté</em>, à Bois-des-Filion.</span>
+      <span class="hero-intro-line">Votre beauté,</span>
+      <span class="hero-intro-line">c'est notre <em>affaire</em>.</span>
       <span class="hero-intro-divider"></span>
-      <span class="hero-intro-sub">Soins personnalisés depuis 2019</span>
+      <span class="hero-intro-sub">Venez comme vous êtes — à Bois-des-Filion.</span>
     </div>
   </div>
 
@@ -2045,8 +2006,8 @@ Boutique Liquidation
 
   <div class="services-header">
     <span class="label">Nos Services</span>
-    <h2>Prenez soin de vous,<br>de la tête aux pieds</h2>
-    <p>Des soins personnalisés, dispensés par nos expertes esthéticiennes dans un cadre apaisant.</p>
+    <h2>On prend soin de vous,<br>de la tête aux pieds</h2>
+    <p>Des soins faits avec soin, dans un espace où vous pouvez souffler.</p>
   </div>
 
   <div class="bento-grid">
@@ -2057,9 +2018,6 @@ Boutique Liquidation
         <img src="Mains esthéticienne massage visage gros plan.avif" alt="Soins Visage" loading="lazy" />
       </div>
       <div class="bento-content">
-        <div class="bento-icon">
-          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg>
-        </div>
         <div class="bento-title">Soins Visage</div>
         <div class="bento-desc">Nettoyage en profondeur, hydratation, photorajeunissement, microdermabrasion et peeling pour révéler votre éclat naturel.</div>
       </div>
@@ -2075,9 +2033,6 @@ Boutique Liquidation
         <img src="epilation cire.avif" alt="Épilation" loading="lazy" />
       </div>
       <div class="bento-content">
-        <div class="bento-icon">
-          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
-        </div>
         <div class="bento-title">Épilation</div>
         <div class="bento-desc">Cire chaude, pâte de sucre, électrolyse et IPL. Homme et femme.</div>
       </div>
@@ -2093,9 +2048,6 @@ Boutique Liquidation
         <img src="nail art debut carré.avif" alt="Manucure & Nail Art" loading="lazy" />
       </div>
       <div class="bento-content">
-        <div class="bento-icon">
-          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>
-        </div>
         <div class="bento-title">Manucure & Nail Art</div>
         <div class="bento-desc">Pose gel, french, nail art personnalisé. Des mains parfaites en toute occasion.</div>
       </div>
@@ -2111,9 +2063,6 @@ Boutique Liquidation
         <img src="bain pieds.avif" alt="Pédicure" loading="lazy" />
       </div>
       <div class="bento-content">
-        <div class="bento-icon">
-          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z"/></svg>
-        </div>
         <div class="bento-title">Pédicure</div>
         <div class="bento-desc">Soin complet des pieds, bain, exfoliation et pose de vernis. Repartez sur de beaux pieds.</div>
       </div>
@@ -2133,9 +2082,9 @@ Boutique Liquidation
     <!-- Contenu texte -->
     <div class="boutique-content">
       <span class="label">Boutique Liquidation</span>
-      <h2>Produits professionnels<br>à prix imbattable</h2>
+      <h2>De grandes marques,<br>à petit prix</h2>
       <hr class="boutique-separator">
-      <p>Nous achetons en lots des produits de grandes marques professionnelles et les revendons à des prix défiant toute concurrence. Passez nous voir pour découvrir nos trouvailles du moment&nbsp;!</p>
+      <p>On déniche des produits pro de grandes marques et on les revend à prix doux. Venez voir ce qu'on a en stock&nbsp;!</p>
       <a href="#contact" class="boutique-btn">
         Nous visiter
         <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
@@ -2198,8 +2147,8 @@ Boutique Liquidation
 
   <div class="gallery-header">
     <span class="label">Notre Univers</span>
-    <h2>L'art du soin,<br>révélé</h2>
-    <p>Plongez dans l'atmosphère du Centre Esthétique O — un espace pensé pour votre bien-être.</p>
+    <h2>Un coup d'œil<br>chez nous</h2>
+    <p>Un espace chaleureux, pensé pour que vous vous sentiez bien dès que vous entrez.</p>
   </div>
 
   <div class="focus-grid">
@@ -2268,7 +2217,7 @@ Boutique Liquidation
 
   <div class="tarifs-header">
     <span class="label">Nos Tarifs</span>
-    <h2>Grille de prix</h2>
+    <h2>Nos prix</h2>
     <p>Des soins de qualité à prix accessible. Contactez-nous pour toute question.</p>
   </div>
 
@@ -2405,8 +2354,8 @@ Boutique Liquidation
 
   <div class="testimonials-header">
     <span class="label">Témoignages</span>
-    <h2>Ce que disent<br>nos clientes</h2>
-    <p>Des retours authentiques de celles qui nous font confiance au quotidien.</p>
+    <h2>Elles en parlent<br>mieux que nous</h2>
+    <p>Ce qu'elles disent après leur visite — sans filtre.</p>
   </div>
 
   <!-- Draggable card stack — 3 cards always visible, drag front left to shuffle -->
@@ -2429,8 +2378,8 @@ Boutique Liquidation
 
   <div class="facebook-header">
     <span class="label">Suivez-nous</span>
-    <h2>Notre actualité<br>sur Facebook</h2>
-    <p>Restez au courant de nos dernières nouveautés, promotions et inspirations beauté.</p>
+    <h2>On est aussi<br>sur Facebook</h2>
+    <p>Promos, nouveautés et inspirations — tout est là.</p>
   </div>
 
   <div class="facebook-embed">
@@ -2456,8 +2405,8 @@ Boutique Liquidation
 
   <div class="contact-header">
     <span class="label">Nous Trouver</span>
-    <h2>Venez nous rendre visite</h2>
-    <p>Prenez rendez-vous par téléphone — notre équipe est là pour vous accueillir.</p>
+    <h2>On vous attend</h2>
+    <p>Appelez-nous pour prendre rendez-vous — on a hâte de vous voir&nbsp;!</p>
   </div>
 
   <div class="contact-grid">
@@ -2619,9 +2568,6 @@ Boutique Liquidation
   /* ─── DOM refs ───────────────────────────────────────── */
   const heroBg       = document.getElementById('hero-bg');
   const mediaWrap    = document.getElementById('media-wrap');
-  const mediaOverlay = document.getElementById('media-overlay');
-  const word1        = document.getElementById('word-1');
-  const word2        = document.getElementById('word-2');
   const labelScroll  = document.getElementById('label-scroll');
   const heroContent  = document.getElementById('hero-content');
   const scrollArrow  = document.getElementById('scroll-arrow');
@@ -2631,26 +2577,17 @@ Boutique Liquidation
     const mobile  = isMobile;
     const W_MAX   = mobile ? 650 : 1250;
     const H_MAX   = mobile ? 200 :  400;
-    const TX_MAX  = mobile ? 180 :  150;
 
     const w  = 300 + p * W_MAX;
     const h  = 400 + p * H_MAX;
-    const tx = p * TX_MAX;
 
     /* Media size */
     mediaWrap.style.width    = Math.min(w, window.innerWidth  * .95) + 'px';
     mediaWrap.style.height   = Math.min(h, window.innerHeight * .85) + 'px';
     mediaWrap.style.borderRadius = (1 - p) * 16 + 'px';
 
-    /* Media overlay opacity */
-    mediaOverlay.style.opacity = Math.max(0.5 - p * 0.3, 0);
-
     /* Background fade */
     heroBg.style.opacity = Math.max(1 - p, 0);
-
-    /* Title split */
-    word1.style.transform = `translateX(-${tx}vw)`;
-    word2.style.transform = `translateX(${tx}vw)`;
 
     /* Label fade out */
     if (labelScroll) labelScroll.style.opacity = Math.max(1 - p * 3, 0);
@@ -2683,7 +2620,7 @@ Boutique Liquidation
         document.documentElement.style.overflow = '';
         initLenis();
         /* Libérer les couches GPU du hero — plus besoin de will-change */
-        document.querySelectorAll('#hero, #hero-bg, #media-wrap, #media-overlay, #word-1, #word-2, #label-scroll, #hero-content').forEach(function(el) {
+        document.querySelectorAll('#hero, #hero-bg, #media-wrap, #label-scroll, #hero-content').forEach(function(el) {
           el.style.willChange = 'auto';
         });
       }
