@@ -85,25 +85,66 @@ Boutique Liquidation
       overflow: hidden;
     }
 
-    /* Background image */
+    /* Ethereal blob background */
     #hero-bg {
       position: absolute;
       inset: 0;
       z-index: 0;
+      background: #07070f;
+      overflow: hidden;
       will-change: opacity;
     }
-    #hero-bg img {
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-    }
-    #hero-bg::after {
-      content: '';
+    .hero-blob {
       position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,.15);
+      border-radius: 50%;
+      filter: blur(100px);
+    }
+    .hero-blob-1 {
+      width: 700px; height: 700px;
+      background: radial-gradient(ellipse, #5540cc 0%, transparent 70%);
+      top: -15%; left: -10%;
+      opacity: .55;
+      animation: blobDrift1 20s infinite alternate ease-in-out;
+    }
+    .hero-blob-2 {
+      width: 550px; height: 550px;
+      background: radial-gradient(ellipse, #7c3aed 0%, transparent 70%);
+      top: 25%; right: -8%;
+      opacity: .45;
+      animation: blobDrift2 27s infinite alternate ease-in-out;
+    }
+    .hero-blob-3 {
+      width: 420px; height: 420px;
+      background: radial-gradient(ellipse, #c084fc 0%, transparent 70%);
+      bottom: 0%; left: 25%;
+      opacity: .28;
+      animation: blobDrift3 18s infinite alternate ease-in-out;
+    }
+    .hero-blob-4 {
+      width: 280px; height: 280px;
+      background: radial-gradient(ellipse, #4fc4f0 0%, transparent 70%);
+      top: 55%; left: 10%;
+      opacity: .15;
+      animation: blobDrift4 23s infinite alternate ease-in-out;
+    }
+    @keyframes blobDrift1 {
+      0%   { transform: translate(0, 0) scale(1); }
+      50%  { transform: translate(80px, 70px) scale(1.1); }
+      100% { transform: translate(-30px, 100px) scale(0.95); }
+    }
+    @keyframes blobDrift2 {
+      0%   { transform: translate(0, 0) scale(1); }
+      50%  { transform: translate(-70px, -90px) scale(1.08); }
+      100% { transform: translate(50px, -50px) scale(1.12); }
+    }
+    @keyframes blobDrift3 {
+      0%   { transform: translate(0, 0) scale(1); }
+      100% { transform: translate(-80px, -50px) scale(1.15); }
+    }
+    @keyframes blobDrift4 {
+      0%   { transform: translate(0, 0) scale(1); }
+      50%  { transform: translate(60px, 40px) scale(1.1); }
+      100% { transform: translate(-20px, 60px) scale(0.9); }
     }
 
     /* Hero inner — left-aligned, offset */
@@ -1954,20 +1995,19 @@ Boutique Liquidation
 <!-- ─── HERO ─────────────────────────────────────────────────── -->
 <section id="hero">
 
-  <!-- Background -->
+  <!-- Background — ethereal blobs -->
   <div id="hero-bg">
-    <img
-      src="backgroud lilas.avif"
-      alt="Soin esthétique au Centre Esthétique O"
-      loading="eager"
-    />
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
+    <div class="hero-blob hero-blob-4"></div>
   </div>
 
   <div id="hero-inner">
 
     <!-- Expanding media -->
     <div id="media-wrap">
-      <video autoplay muted loop playsinline poster="backgroud lilas.avif">
+      <video autoplay muted loop playsinline>
         <source src="2femmes.mp4" type="video/mp4">
       </video>
       <div id="media-overlay"></div>
@@ -2185,18 +2225,8 @@ Boutique Liquidation
     </div>
 
     <div class="focus-card">
-      <img src="epilation.avif" alt="Épilation professionnelle à la cire" loading="lazy" />
-      <div class="focus-overlay"><div class="focus-title">Épilation</div></div>
-    </div>
-
-    <div class="focus-card">
       <img src="pedicure.avif" alt="Pédicure complète avec vernis" loading="lazy" />
       <div class="focus-overlay"><div class="focus-title">Pédicure</div></div>
-    </div>
-
-    <div class="focus-card">
-      <img src="amies.avif" alt="Amies relaxant au spa en peignoir" loading="lazy" />
-      <div class="focus-overlay"><div class="focus-title">Espace Détente</div></div>
     </div>
 
     <div class="focus-card">
