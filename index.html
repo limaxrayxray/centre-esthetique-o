@@ -946,6 +946,24 @@ Boutique Liquidation
       .tarifs-epil-thead span { font-size: .6rem; }
     }
 
+    /* Description bloc dans un panneau tarif */
+    .tarifs-desc {
+      padding: 14px 24px 16px;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      color: rgba(255,255,255,.46);
+      font-size: .82rem;
+      line-height: 1.72;
+    }
+    .tarifs-desc ul {
+      margin: 8px 0 0;
+      padding-left: 1.1rem;
+      list-style: disc;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .tarifs-desc li { font-size: .78rem; color: rgba(255,255,255,.36); }
+
     /* ─── TESTIMONIALS / DRAG CARDS ─────────────────────────── */
     #testimonials {
       background: #0a0a0a;
@@ -2360,14 +2378,17 @@ Boutique Liquidation
         <div class="tarifs-row"><span class="name">Contrôle peau grasse <span style="font-size:.78rem;opacity:.58">— pores dilatés, purifiant &amp; matifiant</span></span><span class="price">90$</span></div>
 
         <div class="tarifs-row heading-row"><span class="name">Dermo Peel Expert</span></div>
+        <div class="tarifs-desc">Peeling combinant 3 types d'exfoliants en 1 — plancton, BHA et enzyme — pour éliminer 10 fois plus de cellules mortes qu'un exfoliant classique.</div>
         <div class="tarifs-row"><span class="name">Soin Express <span style="font-size:.78rem;opacity:.58">— peau mixte, asphyxique &amp; hyperkératinisée</span></span><span class="price">90$</span></div>
         <div class="tarifs-row"><span class="name">Soin complet <span style="font-size:.78rem;opacity:.58">— extraction, massage &amp; masque</span></span><span class="price">120$</span></div>
 
         <div class="tarifs-row heading-row"><span class="name">Dermo Peel Corrector</span></div>
+        <div class="tarifs-desc">Peeling à l'acide salicylique et au peroxyde d'hydrogène, spécifiquement formulé pour les peaux à tendance acnéique. Exfoliant 3 en 1.</div>
         <div class="tarifs-row"><span class="name">Soin Express <span style="font-size:.78rem;opacity:.58">— peau à tendance acnéique</span></span><span class="price">90$</span></div>
         <div class="tarifs-row"><span class="name">Soin complet <span style="font-size:.78rem;opacity:.58">— extraction, sérum &amp; masque aux alginates</span></span><span class="price">120$</span></div>
 
         <div class="tarifs-row heading-row"><span class="name">Dermo Peel Renewal</span></div>
+        <div class="tarifs-desc">Peeling aux éponges de mer, AHA, acides glycolique et salicylique. Agit durant 72 heures pour un effet similaire au microneedling.</div>
         <div class="tarifs-row"><span class="name">Soin Express <span style="font-size:.78rem;opacity:.58">— peau mature, abîmée par le soleil, rides et taches</span></span><span class="price">90$</span></div>
         <div class="tarifs-row sub"><span class="name">En complément à un autre soin</span><span class="price">+40$</span></div>
 
@@ -2397,6 +2418,7 @@ Boutique Liquidation
         <div class="tarifs-row sub"><span class="name">En complément à un soin visage</span><span class="price">+45$</span></div>
 
         <div class="tarifs-row heading-row"><span class="name">Microdermabrasion</span></div>
+        <div class="tarifs-desc">Soin esthétique non invasif qui exfolie la peau en profondeur grâce à une pointe abrasive. Atténue les imperfections et active la production de collagène.</div>
         <div class="tarifs-row"><span class="name">Exfoliation non invasive en profondeur</span><span class="price">125$</span></div>
 
       </div>
@@ -2406,9 +2428,10 @@ Boutique Liquidation
     <div class="tarifs-panel" data-panel="qpeeling">
       <div class="tarifs-card">
         <div class="tarifs-row heading-row"><span class="name">Peeling chimique doux — 65$ / traitement</span></div>
-        <div class="tarifs-row"><span class="name">Age Renew <span style="font-size:.78rem;opacity:.58">— rajeunissant, peau mature, rides et ridules</span></span><span class="price">65$</span></div>
-        <div class="tarifs-row"><span class="name">White Pearl <span style="font-size:.78rem;opacity:.58">— dépigmentant, éclat du teint</span></span><span class="price">65$</span></div>
-        <div class="tarifs-row"><span class="name">Pure Balance <span style="font-size:.78rem;opacity:.58">— purifiant, peau grasse &amp; acnéique</span></span><span class="price">65$</span></div>
+        <div class="tarifs-desc">Peeling chimique doux pour régénérer, unifier et assainir la peau. Trois formules disponibles selon votre besoin.</div>
+        <div class="tarifs-row"><span class="name">Age Renew <span style="font-size:.78rem;opacity:.58">— acides lactique, glycolique &amp; férulique · peau mature, rides et ridules, stimule le collagène</span></span><span class="price">65$</span></div>
+        <div class="tarifs-row"><span class="name">White Pearl <span style="font-size:.78rem;opacity:.58">— acide kojique, azélaïque &amp; niacinamide · dépigmentant, éclaircit le teint</span></span><span class="price">65$</span></div>
+        <div class="tarifs-row"><span class="name">Pure Balance <span style="font-size:.78rem;opacity:.58">— acides azélaïque, salicylique &amp; hyaluronique · régule le sébum, peau grasse &amp; acnéique</span></span><span class="price">65$</span></div>
       </div>
     </div>
 
@@ -2416,6 +2439,7 @@ Boutique Liquidation
     <div class="tarifs-panel" data-panel="kinelift">
       <div class="tarifs-card">
         <div class="tarifs-row heading-row"><span class="name">Luminothérapie &amp; Micro-courants</span></div>
+        <div class="tarifs-desc">Traitement non invasif combinant la luminothérapie rouge et les micro-courants. La lumière rouge pénètre la peau pour stimuler les fibroblastes producteurs de collagène, tandis que les micro-courants tonifient les muscles du visage comme un entraînement au gym. Plus d'un traitement sera nécessaire.<ul><li>Stimule la production de collagène</li><li>Améliore le tonus musculaire</li><li>Raffermit l'ovale du visage</li></ul></div>
         <div class="tarifs-row"><span class="name">Traitement seul</span><span class="price">65$</span></div>
         <div class="tarifs-row sub"><span class="name">En ajout à un soin visage</span><span class="price">+45$</span></div>
         <div class="tarifs-row cure"><span class="name">Série de 6 traitements</span><span class="price">330$ (55$ / soin)</span></div>
@@ -2426,6 +2450,7 @@ Boutique Liquidation
     <div class="tarifs-panel" data-panel="dermalift">
       <div class="tarifs-card">
         <div class="tarifs-row heading-row"><span class="name">Micro-courants modulés</span></div>
+        <div class="tarifs-desc">Micro-courants ciblant les groupes musculaires plus larges, à une fréquence plus basse que le KINÉLIFT pour une stimulation plus profonde. Lifting sans chirurgie, idéal pour les bajoues, le cou et le buste. Plus d'un traitement sera nécessaire.</div>
         <div class="tarifs-row"><span class="name">Traitement seul</span><span class="price">65$</span></div>
         <div class="tarifs-row sub"><span class="name">En ajout à un soin visage</span><span class="price">+45$</span></div>
         <div class="tarifs-row cure"><span class="name">Série de 6 traitements</span><span class="price">330$ (55$ / soin)</span></div>
@@ -2436,6 +2461,7 @@ Boutique Liquidation
     <div class="tarifs-panel" data-panel="purelight">
       <div class="tarifs-card">
         <div class="tarifs-row heading-row"><span class="name">Lumière bleue anti-acné</span></div>
+        <div class="tarifs-desc">La lumière bleue contrôle les bactéries responsables de l'acné et s'adresse aux cas d'acné simples à modérés. Jusqu'à 12 traitements pour les atteintes plus intenses.<ul><li>Purifie la peau</li><li>Contrôle la prolifération de la bactérie P-acné</li><li>Attaque les cellules bactériennes</li><li>Effet blanchissant</li></ul></div>
         <div class="tarifs-row sub"><span class="name">En ajout à un soin</span><span class="price">+45$</span></div>
         <div class="tarifs-row cure"><span class="name">Série de 6 traitements</span><span class="price">330$ (55$ / soin)</span></div>
       </div>
