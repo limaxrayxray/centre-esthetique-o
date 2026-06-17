@@ -795,7 +795,7 @@ Boutique Liquidation
     }
     .tarifs-row .price {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.05rem;
+      font-size: 1.25rem;
       font-weight: 600;
       color: #4fc4f0;
       white-space: nowrap;
@@ -808,7 +808,7 @@ Boutique Liquidation
       color: rgba(255,255,255,.55);
     }
     .tarifs-row.sub .price {
-      font-size: .95rem;
+      font-size: 1.1rem;
       color: rgba(79,196,240,.7);
     }
     .tarifs-row.heading-row {
@@ -838,6 +838,131 @@ Boutique Liquidation
       .tarifs-row .price { font-size: .95rem; }
       .tarifs-row.sub { padding-left: 32px; }
     }
+
+    /* Cure pricing sub-row */
+    .tarifs-row.cure .name {
+      font-size: .8rem;
+      color: rgba(255,255,255,.42);
+      font-style: italic;
+    }
+    .tarifs-row.cure .price {
+      font-size: .88rem;
+      color: rgba(79,196,240,.65);
+    }
+
+    /* Épilation – grille 4 colonnes */
+    .tarifs-epil-thead,
+    .tarifs-epil-row {
+      display: grid;
+      grid-template-columns: 1fr 64px 88px 58px;
+      align-items: baseline;
+      gap: 0 6px;
+      padding: 10px 24px;
+      border-bottom: 1px solid rgba(255,255,255,.05);
+    }
+    .tarifs-epil-thead {
+      background: rgba(79,196,240,.06);
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+    .tarifs-epil-thead span {
+      font-size: .67rem;
+      font-weight: 700;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: rgba(79,196,240,.72);
+      text-align: right;
+    }
+    .tarifs-epil-thead span:first-child { text-align: left; }
+    .tarifs-epil-row:last-child { border-bottom: none; }
+    .tarifs-epil-row:hover { background: rgba(79,196,240,.04); }
+    .tarifs-epil-row .name {
+      font-size: .87rem;
+      color: rgba(255,255,255,.82);
+    }
+    .tarifs-epil-row .col {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #4fc4f0;
+      text-align: right;
+      white-space: nowrap;
+    }
+    .tarifs-epil-row .col.na {
+      color: rgba(255,255,255,.18);
+      font-size: .78rem;
+      font-weight: 400;
+      font-family: inherit;
+      text-align: right;
+    }
+
+    /* IPL info box */
+    .tarifs-ipl-box {
+      padding: 18px 24px 22px;
+    }
+    .tarifs-ipl-box p {
+      color: rgba(255,255,255,.52);
+      font-size: .83rem;
+      line-height: 1.65;
+      margin-bottom: 10px;
+    }
+    .tarifs-ipl-box .ipl-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 10px 0 16px;
+    }
+    .tarifs-ipl-box .ipl-tag {
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      padding: 4px 11px;
+      border-radius: 999px;
+      border: 1px solid rgba(79,196,240,.25);
+      color: rgba(79,196,240,.85);
+      background: rgba(79,196,240,.06);
+    }
+    .tarifs-ipl-cta {
+      display: inline-block;
+      font-size: .82rem;
+      font-weight: 600;
+      padding: 9px 22px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #4fc4f0, #3a2d9e);
+      color: #fff;
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+    .tarifs-ipl-cta:hover { opacity: .85; }
+
+    @media (max-width: 600px) {
+      .tarifs-epil-thead, .tarifs-epil-row {
+        grid-template-columns: 1fr 52px 70px 50px;
+        padding: 9px 12px;
+        gap: 0 3px;
+      }
+      .tarifs-epil-row .name { font-size: .78rem; }
+      .tarifs-epil-row .col  { font-size: .88rem; }
+      .tarifs-epil-thead span { font-size: .6rem; }
+    }
+
+    /* Description bloc dans un panneau tarif */
+    .tarifs-desc {
+      padding: 14px 24px 16px;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      color: rgba(255,255,255,.46);
+      font-size: .82rem;
+      line-height: 1.72;
+    }
+    .tarifs-desc ul {
+      margin: 8px 0 0;
+      padding-left: 1.1rem;
+      list-style: disc;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .tarifs-desc li { font-size: .78rem; color: rgba(255,255,255,.36); }
 
     /* ─── TESTIMONIALS / DRAG CARDS ─────────────────────────── */
     #testimonials {
@@ -2012,7 +2137,7 @@ Boutique Liquidation
 
   <div class="bento-grid">
 
-    <!-- 1. Soins Visage — large (col-span-2) -->
+    <!-- 1. Soins Visage — large -->
     <div class="bento-card wide">
       <div class="bento-bg">
         <img src="Mains esthéticienne massage visage gros plan.avif" alt="Soins Visage" loading="lazy" />
@@ -2057,7 +2182,7 @@ Boutique Liquidation
       </div>
     </div>
 
-    <!-- 4. Pédicure — large (col-span-2) -->
+    <!-- 4. Pédicure — large -->
     <div class="bento-card wide">
       <div class="bento-bg">
         <img src="bain pieds.avif" alt="Pédicure" loading="lazy" />
@@ -2223,116 +2348,240 @@ Boutique Liquidation
 
   <div class="tarifs-tabs" id="tarifs-tabs">
     <button class="tarifs-tab active" data-tab="visage">Soins Visage</button>
+    <button class="tarifs-tab" data-tab="qpeeling">Q-Peeling</button>
+    <button class="tarifs-tab" data-tab="kinelift">KINÉLIFT</button>
+    <button class="tarifs-tab" data-tab="dermalift">DERMALIFT</button>
+    <button class="tarifs-tab" data-tab="purelight">PURELIGHT</button>
+    <button class="tarifs-tab" data-tab="ipl">IPL</button>
+    <button class="tarifs-tab" data-tab="cils">Cils &amp; Sourcils</button>
+    <button class="tarifs-tab" data-tab="epilation">Épilation</button>
+    <button class="tarifs-tab" data-tab="electrolyse">Électrolyse</button>
     <button class="tarifs-tab" data-tab="mains">Mains</button>
     <button class="tarifs-tab" data-tab="pieds">Pieds</button>
-    <button class="tarifs-tab" data-tab="lashlift">Lashlift &amp; Teintures</button>
-    <button class="tarifs-tab" data-tab="epilation">Épilations</button>
-    <button class="tarifs-tab" data-tab="electrolyse">Électrolyse</button>
   </div>
 
   <div class="tarifs-panels" id="tarifs-panels">
 
-    <!-- Soins Visage -->
+    <!-- ── Soins Visage ─────────────────────────────── -->
     <div class="tarifs-panel active" data-panel="visage">
       <div class="tarifs-card">
-        <div class="tarifs-row heading-row"><span class="name">ANESI</span></div>
-        <div class="tarifs-row"><span class="name">Hydratant</span><span class="price">80$ / de luxe 85$</span></div>
-        <div class="tarifs-row"><span class="name">Purifiant</span><span class="price">90$</span></div>
-        <div class="tarifs-row"><span class="name">Sensible</span><span class="price">80$ / 90$</span></div>
-        <div class="tarifs-row"><span class="name">Éclaircissant</span><span class="price">125$</span></div>
-        <div class="tarifs-row"><span class="name">Épigenesse</span><span class="price">70$</span></div>
-        <div class="tarifs-row"><span class="name">Cellulaire 3</span><span class="price">125$</span></div>
-        <div class="tarifs-row"><span class="name">Vitamine C</span><span class="price">95$</span></div>
-        <div class="tarifs-row"><span class="name">Lumière bleue</span><span class="price">95$</span></div>
-        <div class="tarifs-row"><span class="name">Contour yeux / lèvres</span><span class="price">120$</span></div>
-        <div class="tarifs-row"><span class="name">Microdermabrasion</span><span class="price">120$</span></div>
-        <div class="tarifs-row"><span class="name">Facial étudiant</span><span class="price">60$</span></div>
-        <div class="tarifs-row"><span class="name">Q peeling</span><span class="price">60$</span></div>
-        <div class="tarifs-row sub"><span class="name">En ajout</span><span class="price">40$</span></div>
-        <div class="tarifs-row"><span class="name">Dermopeel</span><span class="price">90$</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Aquavital</span></div>
+        <div class="tarifs-row"><span class="name">Hydra-Détox <span style="font-size:.78rem;opacity:.58">— peau normale, mixte, asphyxique</span></span><span class="price">80$</span></div>
+        <div class="tarifs-row"><span class="name">Hydra-Nutrition <span style="font-size:.78rem;opacity:.58">— peau sèche</span></span><span class="price">85$</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Harmony Probiotics</span></div>
+        <div class="tarifs-row"><span class="name">Soin Apaisant <span style="font-size:.78rem;opacity:.58">— peau sensible, couperose, rosacée</span></span><span class="price">80$</span></div>
+        <div class="tarifs-row"><span class="name">Purifiant &amp; Apaisant + Masque alginates <span style="font-size:.78rem;opacity:.58">— acné, rosacée</span></span><span class="price">90$</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Dermo-Contrôle</span></div>
+        <div class="tarifs-row"><span class="name">Contrôle peau grasse <span style="font-size:.78rem;opacity:.58">— pores dilatés, purifiant &amp; matifiant</span></span><span class="price">90$</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Dermo Peel Expert</span></div>
+        <div class="tarifs-desc">Peeling combinant 3 types d'exfoliants en 1 — plancton, BHA et enzyme — pour éliminer 10 fois plus de cellules mortes qu'un exfoliant classique.</div>
+        <div class="tarifs-row"><span class="name">Soin Express <span style="font-size:.78rem;opacity:.58">— peau mixte, asphyxique &amp; hyperkératinisée</span></span><span class="price">90$</span></div>
+        <div class="tarifs-row"><span class="name">Soin complet <span style="font-size:.78rem;opacity:.58">— extraction, massage &amp; masque</span></span><span class="price">120$</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Dermo Peel Corrector</span></div>
+        <div class="tarifs-desc">Peeling à l'acide salicylique et au peroxyde d'hydrogène, spécifiquement formulé pour les peaux à tendance acnéique. Exfoliant 3 en 1.</div>
+        <div class="tarifs-row"><span class="name">Soin Express <span style="font-size:.78rem;opacity:.58">— peau à tendance acnéique</span></span><span class="price">90$</span></div>
+        <div class="tarifs-row"><span class="name">Soin complet <span style="font-size:.78rem;opacity:.58">— extraction, sérum &amp; masque aux alginates</span></span><span class="price">120$</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Dermo Peel Renewal</span></div>
+        <div class="tarifs-desc">Peeling aux éponges de mer, AHA, acides glycolique et salicylique. Agit durant 72 heures pour un effet similaire au microneedling.</div>
+        <div class="tarifs-row"><span class="name">Soin Express <span style="font-size:.78rem;opacity:.58">— peau mature, abîmée par le soleil, rides et taches</span></span><span class="price">90$</span></div>
+        <div class="tarifs-row sub"><span class="name">En complément à un autre soin</span><span class="price">+40$</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">3C Vitamin Glow</span></div>
+        <div class="tarifs-row"><span class="name">Coup d'éclat, correcteur et préventif</span><span class="price">95$</span></div>
+        <div class="tarifs-row cure"><span class="name">Cure de 4 soins — 1 / semaine</span><span class="price">340$ (85$ / soin)</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Urban BlueDefense</span></div>
+        <div class="tarifs-row"><span class="name">Réparation &amp; protection <span style="font-size:.78rem;opacity:.58">— lumière bleue, pollution, UV</span></span><span class="price">95$</span></div>
+        <div class="tarifs-row cure"><span class="name">Cure de 4 soins — 1 / semaine</span><span class="price">340$ (85$ / soin)</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Luminosity</span></div>
+        <div class="tarifs-row"><span class="name">Éclaircissant taches pigmentaires <span style="font-size:.78rem;opacity:.58">— double peeling</span></span><span class="price">125$</span></div>
+        <div class="tarifs-row cure"><span class="name">Cure de 4 soins — 3 à 4 semaines entre chaque</span><span class="price">440$ (110$ / soin)</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Cellulaire 3</span></div>
+        <div class="tarifs-row"><span class="name">Anti-âge tenseur &amp; lissant <span style="font-size:.78rem;opacity:.58">— peau normale à grasse</span></span><span class="price">125$</span></div>
+        <div class="tarifs-row cure"><span class="name">Cure de 4 soins — 1 / semaine</span><span class="price">440$ (110$ / soin)</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Épigenesse</span></div>
+        <div class="tarifs-row"><span class="name">Anti-âge épigénétique <span style="font-size:.78rem;opacity:.58">— peau normale à sèche, masque alginates &amp; or</span></span><span class="price">125$</span></div>
+        <div class="tarifs-row cure"><span class="name">Cure de 4 soins — 1 / semaine</span><span class="price">440$ (110$ / soin)</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Expression Ritual</span></div>
+        <div class="tarifs-row"><span class="name">Contour des yeux &amp; lèvres <span style="font-size:.78rem;opacity:.58">— poches, cernes, cils et sourcils</span></span><span class="price">60$</span></div>
+        <div class="tarifs-row cure"><span class="name">Cure de 4 soins — 1 / semaine</span><span class="price">220$ (55$ / soin)</span></div>
+        <div class="tarifs-row sub"><span class="name">En complément à un soin visage</span><span class="price">+45$</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Microdermabrasion</span></div>
+        <div class="tarifs-desc">Soin esthétique non invasif qui exfolie la peau en profondeur grâce à une pointe abrasive. Atténue les imperfections et active la production de collagène.</div>
+        <div class="tarifs-row"><span class="name">Exfoliation non invasive en profondeur</span><span class="price">125$</span></div>
+
       </div>
     </div>
 
-    <!-- Mains -->
-    <div class="tarifs-panel" data-panel="mains">
+    <!-- ── Q-Peeling ──────────────────────────────────── -->
+    <div class="tarifs-panel" data-panel="qpeeling">
       <div class="tarifs-card">
-        <div class="tarifs-row"><span class="name">Manucure vernis</span><span class="price">37$</span></div>
-        <div class="tarifs-row"><span class="name">Vernis semi permanent</span><span class="price">42$</span></div>
-        <div class="tarifs-row"><span class="name">Recouvrement de résine</span><span class="price">44$</span></div>
-        <div class="tarifs-row"><span class="name">Pose de pointe et résine</span><span class="price">55$</span></div>
-        <div class="tarifs-row"><span class="name">Capsules et vernis gel</span><span class="price">55$</span></div>
-        <div class="tarifs-row"><span class="name">Fantaisie</span><span class="price">7$ / 15 min</span></div>
-        <div class="tarifs-row"><span class="name">Réparations</span><span class="price">3$ / doigt</span></div>
+        <div class="tarifs-row heading-row"><span class="name">Peeling chimique doux — 65$ / traitement</span></div>
+        <div class="tarifs-desc">Peeling chimique doux pour régénérer, unifier et assainir la peau. Trois formules disponibles selon votre besoin.</div>
+        <div class="tarifs-row"><span class="name">Age Renew <span style="font-size:.78rem;opacity:.58">— acides lactique, glycolique &amp; férulique · peau mature, rides et ridules, stimule le collagène</span></span><span class="price">65$</span></div>
+        <div class="tarifs-row"><span class="name">White Pearl <span style="font-size:.78rem;opacity:.58">— acide kojique, azélaïque &amp; niacinamide · dépigmentant, éclaircit le teint</span></span><span class="price">65$</span></div>
+        <div class="tarifs-row"><span class="name">Pure Balance <span style="font-size:.78rem;opacity:.58">— acides azélaïque, salicylique &amp; hyaluronique · régule le sébum, peau grasse &amp; acnéique</span></span><span class="price">65$</span></div>
       </div>
     </div>
 
-    <!-- Pieds -->
-    <div class="tarifs-panel" data-panel="pieds">
+    <!-- ── KINÉLIFT ───────────────────────────────────── -->
+    <div class="tarifs-panel" data-panel="kinelift">
       <div class="tarifs-card">
-        <div class="tarifs-row"><span class="name">Embelliseur d'orteils — vernis régulier</span><span class="price">37$</span></div>
-        <div class="tarifs-row sub"><span class="name">avec vernis semi permanent</span><span class="price">42$</span></div>
-        <div class="tarifs-row"><span class="name">Pédicure — vernis régulier</span><span class="price">59$</span></div>
-        <div class="tarifs-row sub"><span class="name">avec vernis semi permanent</span><span class="price">69$</span></div>
+        <div class="tarifs-row heading-row"><span class="name">Luminothérapie &amp; Micro-courants</span></div>
+        <div class="tarifs-desc">Traitement non invasif combinant la luminothérapie rouge et les micro-courants. La lumière rouge pénètre la peau pour stimuler les fibroblastes producteurs de collagène, tandis que les micro-courants tonifient les muscles du visage comme un entraînement au gym. Plus d'un traitement sera nécessaire.<ul><li>Stimule la production de collagène</li><li>Améliore le tonus musculaire</li><li>Raffermit l'ovale du visage</li></ul></div>
+        <div class="tarifs-row"><span class="name">Traitement seul</span><span class="price">65$</span></div>
+        <div class="tarifs-row sub"><span class="name">En ajout à un soin visage</span><span class="price">+45$</span></div>
+        <div class="tarifs-row cure"><span class="name">Série de 6 traitements</span><span class="price">330$ (55$ / soin)</span></div>
       </div>
     </div>
 
-    <!-- Lashlift & Teintures -->
-    <div class="tarifs-panel" data-panel="lashlift">
+    <!-- ── DERMALIFT ──────────────────────────────────── -->
+    <div class="tarifs-panel" data-panel="dermalift">
       <div class="tarifs-card">
-        <div class="tarifs-row"><span class="name">Lashlift (incluant la teinture)</span><span class="price">67$</span></div>
-        <div class="tarifs-row"><span class="name">Teinture de cils</span><span class="price">40$</span></div>
-        <div class="tarifs-row"><span class="name">Teinture de sourcil (incluant le shaping)</span><span class="price">50$</span></div>
+        <div class="tarifs-row heading-row"><span class="name">Micro-courants modulés</span></div>
+        <div class="tarifs-desc">Micro-courants ciblant les groupes musculaires plus larges, à une fréquence plus basse que le KINÉLIFT pour une stimulation plus profonde. Lifting sans chirurgie, idéal pour les bajoues, le cou et le buste. Plus d'un traitement sera nécessaire.</div>
+        <div class="tarifs-row"><span class="name">Traitement seul</span><span class="price">65$</span></div>
+        <div class="tarifs-row sub"><span class="name">En ajout à un soin visage</span><span class="price">+45$</span></div>
+        <div class="tarifs-row cure"><span class="name">Série de 6 traitements</span><span class="price">330$ (55$ / soin)</span></div>
       </div>
     </div>
 
-    <!-- Épilations -->
+    <!-- ── PURELIGHT ──────────────────────────────────── -->
+    <div class="tarifs-panel" data-panel="purelight">
+      <div class="tarifs-card">
+        <div class="tarifs-row heading-row"><span class="name">Lumière bleue anti-acné</span></div>
+        <div class="tarifs-desc">La lumière bleue contrôle les bactéries responsables de l'acné et s'adresse aux cas d'acné simples à modérés. Jusqu'à 12 traitements pour les atteintes plus intenses.<ul><li>Purifie la peau</li><li>Contrôle la prolifération de la bactérie P-acné</li><li>Attaque les cellules bactériennes</li><li>Effet blanchissant</li></ul></div>
+        <div class="tarifs-row sub"><span class="name">En ajout à un soin</span><span class="price">+45$</span></div>
+        <div class="tarifs-row cure"><span class="name">Série de 6 traitements</span><span class="price">330$ (55$ / soin)</span></div>
+      </div>
+    </div>
+
+    <!-- ── IPL ────────────────────────────────────────── -->
+    <div class="tarifs-panel" data-panel="ipl">
+      <div class="tarifs-card">
+        <div class="tarifs-row heading-row"><span class="name">Lumière Intense Pulsée</span></div>
+        <div class="tarifs-ipl-box">
+          <p>Traitement idéal pour corriger les imperfections de la peau sans période de récupération prolongée. Plus d'un traitement sera nécessaire selon le problème ciblé. Le tarif varie selon la surface traitée — contactez-nous pour un estimé personnalisé.</p>
+          <div class="ipl-tags">
+            <span class="ipl-tag">Photorajeunissement</span>
+            <span class="ipl-tag">Taches pigmentaires</span>
+            <span class="ipl-tag">Couperose &amp; rosacée</span>
+            <span class="ipl-tag">Épilation permanente</span>
+            <span class="ipl-tag">Acné</span>
+          </div>
+          <a href="#contact" class="tarifs-ipl-cta">Contactez-nous pour un estimé</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Cils & Sourcils ───────────────────────────── -->
+    <div class="tarifs-panel" data-panel="cils">
+      <div class="tarifs-card">
+        <div class="tarifs-row"><span class="name">Teinture &amp; permanente de cils (lashlift)</span><span class="price">70$</span></div>
+        <div class="tarifs-row"><span class="name">Teinture des cils</span><span class="price">40$</span></div>
+        <div class="tarifs-row"><span class="name">Lamination des sourcils</span><span class="price">70$</span></div>
+        <div class="tarifs-row"><span class="name">Teinture de sourcils (inclus la forme)</span><span class="price">50$</span></div>
+      </div>
+    </div>
+
+    <!-- ── Épilation (Femmes + Hommes) ───────────────── -->
     <div class="tarifs-panel" data-panel="epilation">
       <div class="tarifs-card">
-        <div class="tarifs-row heading-row"><span class="name">Visage</span></div>
-        <div class="tarifs-row"><span class="name">Nettoyage sourcils</span><span class="price">21$</span></div>
-        <div class="tarifs-row"><span class="name">Structure de sourcils</span><span class="price">25$</span></div>
-        <div class="tarifs-row"><span class="name">Inter sourcilier</span><span class="price">10$</span></div>
-        <div class="tarifs-row"><span class="name">Lèvres supérieur</span><span class="price">15$</span></div>
-        <div class="tarifs-row"><span class="name">Côtés visage</span><span class="price">21$</span></div>
 
-        <div class="tarifs-row heading-row"><span class="name">Corps</span></div>
-        <div class="tarifs-row"><span class="name">Aisselles</span><span class="price">22$</span></div>
-        <div class="tarifs-row"><span class="name">Avant-bras</span><span class="price">22$</span></div>
-        <div class="tarifs-row"><span class="name">Bras complet</span><span class="price">27$</span></div>
-        <div class="tarifs-row"><span class="name">Demi torse</span><span class="price">20$</span></div>
-        <div class="tarifs-row"><span class="name">Torse complet</span><span class="price">30$</span></div>
-        <div class="tarifs-row"><span class="name">Dos</span><span class="price">30$</span></div>
-        <div class="tarifs-row"><span class="name">Fesses</span><span class="price">24$</span></div>
+        <div class="tarifs-epil-thead">
+          <span>Service</span><span>Cire*</span><span>Pâte sucre</span><span>IPL</span>
+        </div>
+        <p class="tarifs-note">* Cire tiède et/ou chaude</p>
 
-        <div class="tarifs-row heading-row"><span class="name">Bikini</span></div>
-        <div class="tarifs-row"><span class="name">Bikini régulier</span><span class="price">22$</span></div>
-        <div class="tarifs-row"><span class="name">Bikini brésilien (incluant interfessier)</span><span class="price">30$</span></div>
-        <div class="tarifs-row"><span class="name">Bikini complet (incluant interfessier)</span><span class="price">36$</span></div>
-        <div class="tarifs-row"><span class="name">Plis interfessier</span><span class="price">17$</span></div>
+        <div class="tarifs-row heading-row"><span class="name">Femmes — Visage</span></div>
+        <div class="tarifs-epil-row"><span class="name">Sourcils structure</span><span class="col">28$</span><span class="col na">—</span><span class="col na">—</span></div>
+        <div class="tarifs-epil-row"><span class="name">Sourcils nettoyage</span><span class="col">24$</span><span class="col na">—</span><span class="col na">—</span></div>
+        <div class="tarifs-epil-row"><span class="name">Inter-sourcilier</span><span class="col">12$</span><span class="col na">—</span><span class="col na">—</span></div>
+        <div class="tarifs-epil-row"><span class="name">Lèvre supérieure</span><span class="col">18$</span><span class="col">25$</span><span class="col">38$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Favoris</span><span class="col">18$</span><span class="col">25$</span><span class="col">40$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Menton et cou</span><span class="col">20$</span><span class="col">25$</span><span class="col">42$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Favoris, menton et cou</span><span class="col">32$</span><span class="col">40$</span><span class="col">50$</span></div>
 
-        <div class="tarifs-row heading-row"><span class="name">Jambes</span></div>
-        <div class="tarifs-row"><span class="name">Demi jambes</span><span class="price">27$</span></div>
-        <div class="tarifs-row"><span class="name">Cuisses</span><span class="price">27$</span></div>
-        <div class="tarifs-row"><span class="name">Jambes complètes</span><span class="price">45$</span></div>
+        <div class="tarifs-row heading-row"><span class="name">Femmes — Corps</span></div>
+        <div class="tarifs-epil-row"><span class="name">Avant-bras</span><span class="col">25$</span><span class="col">30$</span><span class="col">90$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Bras complet</span><span class="col">30$</span><span class="col">35$</span><span class="col">120$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Aisselles</span><span class="col">25$</span><span class="col">30$</span><span class="col">55$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Ligne du ventre</span><span class="col">15$</span><span class="col">28$</span><span class="col">25$</span></div>
 
-        <div class="tarifs-row heading-row"><span class="name">Combos</span></div>
-        <div class="tarifs-row"><span class="name">Jambes complètes + bikini régulier</span><span class="price">52$</span></div>
-        <div class="tarifs-row"><span class="name">Jambes complètes + bikini brésilien</span><span class="price">64$</span></div>
-        <div class="tarifs-row"><span class="name">Jambes complètes + bikini complet</span><span class="price">72$</span></div>
-        <div class="tarifs-row"><span class="name">Demi jambes / aisselles / bikini régulier</span><span class="price">60$</span></div>
-        <div class="tarifs-row"><span class="name">Cuisses / aisselles / bikini régulier</span><span class="price">65$</span></div>
-        <div class="tarifs-row"><span class="name">Jambes complètes / bikini régulier / aisselles</span><span class="price">75$</span></div>
+        <div class="tarifs-row heading-row"><span class="name">Femmes — Bikini</span></div>
+        <div class="tarifs-epil-row"><span class="name">Bikini régulier</span><span class="col">25$</span><span class="col">30$</span><span class="col">65$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Bikini brésilien (inclus inter-fessier)</span><span class="col">32$</span><span class="col">40$</span><span class="col">95$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Bikini complet (inclus inter-fessier)</span><span class="col">38$</span><span class="col">45$</span><span class="col">125$</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Femmes — Jambes</span></div>
+        <div class="tarifs-epil-row"><span class="name">Cuisses</span><span class="col">27$</span><span class="col">32$</span><span class="col">115$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Demi jambes (inclus le genou)</span><span class="col">29$</span><span class="col">35$</span><span class="col">115$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Jambes complètes</span><span class="col">48$</span><span class="col">60$</span><span class="col">220$</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Femmes — Combos</span></div>
+        <div class="tarifs-epil-row"><span class="name">Jambes complètes + bikini régulier</span><span class="col">60$</span><span class="col">80$</span><span class="col">250$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Jambes complètes + bikini brésilien</span><span class="col">68$</span><span class="col">90$</span><span class="col">270$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Jambes complètes + bikini complet</span><span class="col">74$</span><span class="col">100$</span><span class="col">290$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Demi jambes + aisselles + bikini rég.</span><span class="col">69$</span><span class="col">80$</span><span class="col">215$</span></div>
+
+        <div class="tarifs-row heading-row"><span class="name">Hommes</span></div>
+        <div class="tarifs-epil-row"><span class="name">Torse demi</span><span class="col">22$</span><span class="col">30$</span><span class="col">75$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Torse complet (jusqu'à la ceinture)</span><span class="col">35$</span><span class="col">45$</span><span class="col">130$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Dos demi</span><span class="col">22$</span><span class="col">30$</span><span class="col">75$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Dos complet (jusqu'à la ceinture)</span><span class="col">35$</span><span class="col">45$</span><span class="col">130$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Fesses sans bikini</span><span class="col">30$</span><span class="col">35$</span><span class="col">80$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Bikini complet</span><span class="col">45$</span><span class="col">55$</span><span class="col">125$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Aisselles</span><span class="col">30$</span><span class="col">35$</span><span class="col">60$</span></div>
+        <div class="tarifs-epil-row"><span class="name">Sous menton et cou</span><span class="col na">—</span><span class="col na">—</span><span class="col">55$</span></div>
+
       </div>
     </div>
 
-    <!-- Électrolyse -->
+    <!-- ── Électrolyse ───────────────────────────────── -->
     <div class="tarifs-panel" data-panel="electrolyse">
       <div class="tarifs-card">
-        <div class="tarifs-row"><span class="name">De 0 à 10 minutes</span><span class="price">3$ / min</span></div>
-        <div class="tarifs-row"><span class="name">De 11 à 30 minutes</span><span class="price">2$ / min</span></div>
+        <div class="tarifs-row"><span class="name">De 0 à 10 minutes</span><span class="price">3,00$ / min</span></div>
+        <div class="tarifs-row"><span class="name">De 11 à 30 minutes</span><span class="price">2,25$ / min</span></div>
         <div class="tarifs-row"><span class="name">De 31 à 45 minutes</span><span class="price">1,90$ / min</span></div>
         <div class="tarifs-row"><span class="name">46 minutes et plus</span><span class="price">1,75$ / min</span></div>
         <p class="tarifs-note">Filament jetable inclus</p>
+      </div>
+    </div>
+
+    <!-- ── Mains ─────────────────────────────────────── -->
+    <div class="tarifs-panel" data-panel="mains">
+      <div class="tarifs-card">
+        <div class="tarifs-row"><span class="name">Manucure et durcisseur</span><span class="price">40$</span></div>
+        <div class="tarifs-row"><span class="name">Manucure et vernis</span><span class="price">43$</span></div>
+        <div class="tarifs-row"><span class="name">Recouvrement vernis gel</span><span class="price">45$</span></div>
+        <div class="tarifs-row"><span class="name">Recouvrement de résine</span><span class="price">46$</span></div>
+        <div class="tarifs-row"><span class="name">Pose de gel</span><span class="price">46$</span></div>
+        <div class="tarifs-row"><span class="name">Pose de pointe et résine</span><span class="price">60$</span></div>
+        <div class="tarifs-row"><span class="name">Capsules et vernis gel</span><span class="price">60$</span></div>
+        <div class="tarifs-row"><span class="name">Pose de gel et construction de pointes</span><span class="price">60$</span></div>
+        <div class="tarifs-row"><span class="name">Réparation ongles (à l'unité)</span><span class="price">6$</span></div>
+        <div class="tarifs-row"><span class="name">Fantaisie sur demande</span><span class="price">8$ / 15 min</span></div>
+      </div>
+    </div>
+
+    <!-- ── Pieds ─────────────────────────────────────── -->
+    <div class="tarifs-panel" data-panel="pieds">
+      <div class="tarifs-card">
+        <div class="tarifs-row"><span class="name">Embellisseur d'orteils — vernis régulier</span><span class="price">37$</span></div>
+        <div class="tarifs-row sub"><span class="name">avec vernis semi-permanent</span><span class="price">42$</span></div>
+        <div class="tarifs-row"><span class="name">Pédicure — vernis régulier</span><span class="price">59$</span></div>
+        <div class="tarifs-row sub"><span class="name">avec vernis semi-permanent</span><span class="price">69$</span></div>
       </div>
     </div>
 
