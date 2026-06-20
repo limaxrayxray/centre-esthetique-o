@@ -2804,8 +2804,8 @@ Boutique Liquidation
   let isMobile         = window.innerWidth < 768;
   let rafId            = null;
 
-  /* Lock scroll during hero expansion — but skip if user landed on an anchor */
-  if (window.location.hash && window.location.hash !== '#hero') {
+  /* Lock scroll during hero expansion — but skip if user landed on an anchor or on mobile */
+  if (isMobile || (window.location.hash && window.location.hash !== '#hero')) {
     mediaExpanded = true;
     scrollProgress = 1;
     targetProgress = 1;
@@ -2878,6 +2878,15 @@ Boutique Liquidation
 
   function scheduleRaf() {
     if (!rafId) rafId = requestAnimationFrame(tick);
+  }
+
+  /* ─── Mobile : skip hero animation, init directly ───── */
+  if (isMobile) {
+    applyProgress(1);
+    initLenis();
+    document.querySelectorAll('#hero, #hero-bg, #media-wrap, #label-scroll, #hero-content').forEach(function(el) {
+      el.style.willChange = 'auto';
+    });
   }
 
   /* ─── Wheel (reste actif en permanence) ─────────────── */
